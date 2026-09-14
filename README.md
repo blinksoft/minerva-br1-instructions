@@ -12,7 +12,8 @@ index.html               generated — do not edit by hand
 build.py                 regenerates index.html from content/steps.json
 content/steps.json       all text: parts, tools, steps, callouts, captions  <- edit this
 content/images.json      image dimensions (generated when photos were extracted)
-assets/img/              49 photos (WebP) + program emblem
+assets/img/              build photos (WebP) + program emblem
+files/BR-1.ork           the program's OpenRocket model, linked from the last step
 assets/css/style.css     styles, including print and dark mode
 assets/js/app.js         progress checkboxes, theme toggle, photo lightbox
 .github/workflows/       GitHub Pages deploy
@@ -58,10 +59,15 @@ that never change.
 
 * The current kit's body tube is **white**. Some photos show an older kraft-brown
   tube; parts and steps are identical.
-* Three knot diagrams in the original deck came from third-party sites (wikiHow,
-  101Knots) and were left out rather than republished here. Those steps now use the
-  program's own photos plus links to Animated Knots. The originals are in
-  `.review/unused-thirdparty/` (git-ignored) if they are ever licensed for reuse.
+* Steps 9 and 10 (the rail buttons) use panels rendered from the original slides
+  rather than the bare photos, so the arrows, orange callouts and numbered badges
+  showing *where* the glue goes survive the conversion. Regenerating them needs the
+  source .pptx; the finished WebP files are committed.
+* The knot steps carry the briefing's own annotated diagrams — they mark where the
+  eyebolt and the nose cone bar sit in the knot, which the generic knot references
+  omit — alongside links to Animated Knots. Diagram sources are credited in the
+  captions (wikiHow, 101Knots); swap them for original artwork if the site ever needs
+  to be fully self-licensed.
 * Progress checkmarks are stored in the visitor's own browser (`localStorage`).
   Nothing is collected or transmitted.
 

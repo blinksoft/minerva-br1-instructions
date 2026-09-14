@@ -268,6 +268,10 @@
           "notes": [
             {
               "type": "tip",
+              "text": "The numbered photos below match the numbered steps above — arrows and labels are from the original build briefing."
+            },
+            {
+              "type": "tip",
               "text": "If you have never done this, do a test pull with no glue first."
             },
             {
@@ -281,24 +285,28 @@
           ],
           "images": [
             {
-              "file": "s11-1.webp",
-              "cap": "Wire run through the hole and out the aft end, weld nut knotted on."
+              "file": "s11a-1.webp",
+              "cap": "1 — Wire threaded in through the rail button hole and back out the aft end of the tube."
             },
             {
-              "file": "s11-2.webp",
-              "cap": "Nut pulled into the hole, wire still sticking out. Snip it flush once the glue is dry."
+              "file": "s11a-2.webp",
+              "cap": "2 — Weld nut on the wire with an overhand knot behind it. The arrow shows the edge the superglue goes around."
             },
             {
-              "file": "s11-3.webp",
-              "cap": "Rail button seated — flat side to the tube, concave side out."
+              "file": "s11a-3.webp",
+              "cap": "3 — Nut pulled up into the hole, wire still protruding. Hold 60 seconds, then snip the wire flush at the nut."
             },
             {
-              "file": "s11-4.webp",
-              "cap": "Pull the button outward while tightening."
+              "file": "s11a-4.webp",
+              "cap": "4 — Rail button on the nut: flat side toward the tube, concave side up, so the screw sits flat."
             },
             {
-              "file": "s11-5.webp",
-              "cap": "Screw sits flush when the button is oriented correctly."
+              "file": "s11a-5.webp",
+              "cap": "5 — Start the screw by hand, then pull the button outward as you tighten."
+            },
+            {
+              "file": "s11a-6.webp",
+              "cap": "6 — Snug is good. Stop there."
             }
           ]
         },
@@ -315,6 +323,10 @@
           "notes": [
             {
               "type": "tip",
+              "text": "The numbered photos below match the numbered steps above — arrows and labels are from the original build briefing."
+            },
+            {
+              "type": "tip",
               "text": "Practice putting the nut into the hole dry before you add glue."
             },
             {
@@ -324,24 +336,24 @@
           ],
           "images": [
             {
-              "file": "s12-3.webp",
-              "cap": "Weld nut carried in on a fingertip and pressed into the hole from inside."
+              "file": "s12a-1.webp",
+              "cap": "1 — Weld nut balanced on a fingertip. The arrow shows the inner edge that gets the superglue."
             },
             {
-              "file": "s12-4.webp",
-              "cap": "Nut seated in the hole, seen from outside."
+              "file": "s12a-2.webp",
+              "cap": "2 — Nut pressed into the hole from inside and held there."
             },
             {
-              "file": "s12-1.webp",
-              "cap": "Pull the button outward while tightening."
+              "file": "s12a-3.webp",
+              "cap": "3 — Rail button on: flat side toward the tube, concave side up, so the screw sits flush."
             },
             {
-              "file": "s12-2.webp",
-              "cap": "Tightening the screw."
+              "file": "s12a-4.webp",
+              "cap": "4 — Start the screw by hand, pulling the button outward as you tighten."
             },
             {
-              "file": "s12-5.webp",
-              "cap": "Finished rail button."
+              "file": "s12a-5.webp",
+              "cap": "5 — Snug is good. Do not crack the button."
             }
           ]
         }
@@ -440,12 +452,20 @@
               "text": "Rabbit out of the hole, around the tree, back down the hole. Then dress it and pull it tight before you trust it."
             },
             {
+              "type": "warn",
+              "text": "Pull the correct side tight. The last frame of the diagram shows which end to load — pull the wrong one and the knot capsizes instead of setting."
+            },
+            {
               "type": "link",
-              "text": "Step-by-step bowline reference",
+              "text": "Animated step-by-step bowline",
               "href": "https://www.animatedknots.com/bowline-knot"
             }
           ],
           "images": [
+            {
+              "file": "s16-1.webp",
+              "cap": "Bowline, step by step. Frame 2 is the part the generic references leave out: the line goes through the eyebolt there. (Diagram: wikiHow, annotated for this build.)"
+            },
             {
               "file": "s16-2.webp",
               "cap": "Finished bowline on the eyebolt."
@@ -678,12 +698,20 @@
               "text": "In the photo the blue rope is the nylon (bigger) and the yellow rope is the Kevlar (smaller)."
             },
             {
+              "type": "warn",
+              "text": "Pull the thick end and the thin ends in the directions the last frame shows. Loaded the wrong way the bend slips, and slick nylon is unforgiving about it."
+            },
+            {
               "type": "link",
-              "text": "Step-by-step double sheet bend reference",
+              "text": "Animated step-by-step sheet bend",
               "href": "https://www.animatedknots.com/sheet-bend-knot"
             }
           ],
           "images": [
+            {
+              "file": "s26-1.webp",
+              "cap": "Double sheet bend, step by step. (Diagram: 101Knots.)"
+            },
             {
               "file": "s26-2.webp",
               "cap": "Finished double sheet bend joining nylon to Kevlar."
@@ -699,12 +727,20 @@
           ],
           "notes": [
             {
+              "type": "warn",
+              "text": "Pull the correct side tight. The last frame of the diagram shows which end to load — pull the wrong one and the knot capsizes instead of setting."
+            },
+            {
               "type": "link",
-              "text": "Step-by-step bowline reference",
+              "text": "Animated step-by-step bowline",
               "href": "https://www.animatedknots.com/bowline-knot"
             }
           ],
           "images": [
+            {
+              "file": "s27-1.webp",
+              "cap": "Same bowline — at frame 2 the line goes around the bar inside the nose cone shoulder. (Diagram: wikiHow, annotated for this build.)"
+            },
             {
               "file": "s27-2.webp",
               "cap": "Nylon tied around the nose cone bar."
@@ -723,7 +759,12 @@
           "notes": [
             {
               "type": "tip",
-              "text": "Parachutes are issued on launch day — you do not need one to finish the build."
+              "text": "Parachutes are loaned out on launch day rather than included in the kit — they run about $15 each, and keeping them program property keeps the participant fee down. Hand yours back after recovery."
+            },
+            {
+              "type": "link",
+              "text": "Want your own? 30\" printed nylon parachute at Apogee Rockets",
+              "href": "https://www.apogeerockets.com/Building-Supplies/Parachutes/Larger-than-24in/30in-Printed-Nylon-Parachute"
             }
           ],
           "images": [
@@ -755,9 +796,20 @@
           "slide": 29,
           "title": "Homework: simulate your rocket in OpenRocket",
           "body": [
-            "Learn to simulate your build. Play with launch angle and wind to see how far you might have to walk, and improve your odds of getting the rocket back."
+            "Learn to simulate your build. Play with launch angle and wind to see how far you might have to walk, and improve your odds of getting the rocket back.",
+            "Start from the program's own BR-1 model rather than building the airframe from scratch — open it in OpenRocket, then change motors, mass and conditions and watch what happens."
           ],
           "notes": [
+            {
+              "type": "link",
+              "text": "Download the BR-1 OpenRocket file (BR-1.ork)",
+              "href": "files/BR-1.ork"
+            },
+            {
+              "type": "link",
+              "text": "Get OpenRocket (free, Windows / macOS / Linux)",
+              "href": "https://openrocket.info/"
+            },
             {
               "type": "link",
               "text": "Basics of OpenRocket",

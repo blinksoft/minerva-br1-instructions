@@ -188,7 +188,7 @@ page = f"""<!doctype html>
   <footer class="site">
     <p><strong>{e(meta['program'])}</strong> &middot; Civil Air Patrol</p>
     <p>{e(meta['source'])} Built {built}.</p>
-    <p>Photos and build content by the Georgia Wing High Power Rocketry program. Knot references link out to Animated Knots.</p>
+    <p>Photos and build content by the Georgia Wing High Power Rocketry program. Knot diagrams are credited in their captions; animated knot references link out to Animated Knots.</p>
   </footer>
 </main>
 

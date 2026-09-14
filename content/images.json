@@ -195,136 +195,6 @@
   "Ht": 5.45
  },
  {
-  "slide": 11,
-  "idx": 1,
-  "file": "s11-1.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image20.jpeg",
-  "shape": "Picture 14",
-  "L": 4.17,
-  "T": 3.51,
-  "Wd": 3.8,
-  "Ht": 2.85
- },
- {
-  "slide": 11,
-  "idx": 2,
-  "file": "s11-2.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image21.jpeg",
-  "shape": "Picture 20",
-  "L": 7.07,
-  "T": 1.71,
-  "Wd": 3.43,
-  "Ht": 2.57
- },
- {
-  "slide": 11,
-  "idx": 3,
-  "file": "s11-3.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image22.jpeg",
-  "shape": "Picture 26",
-  "L": 7.15,
-  "T": 3.92,
-  "Wd": 3.27,
-  "Ht": 2.57
- },
- {
-  "slide": 11,
-  "idx": 4,
-  "file": "s11-4.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image23.jpeg",
-  "shape": "Picture 29",
-  "L": 10.05,
-  "T": 1.32,
-  "Wd": 3.0,
-  "Ht": 2.25
- },
- {
-  "slide": 11,
-  "idx": 5,
-  "file": "s11-5.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image24.jpeg",
-  "shape": "Picture 31",
-  "L": 10.07,
-  "T": 3.57,
-  "Wd": 2.99,
-  "Ht": 2.24
- },
- {
-  "slide": 12,
-  "idx": 1,
-  "file": "s12-1.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image23.jpeg",
-  "shape": "Picture 29",
-  "L": 4.67,
-  "T": 5.04,
-  "Wd": 3.0,
-  "Ht": 2.25
- },
- {
-  "slide": 12,
-  "idx": 2,
-  "file": "s12-2.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image24.jpeg",
-  "shape": "Picture 31",
-  "L": 7.65,
-  "T": 5.05,
-  "Wd": 2.98,
-  "Ht": 2.24
- },
- {
-  "slide": 12,
-  "idx": 3,
-  "file": "s12-3.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image25.jpeg",
-  "shape": "Picture 5",
-  "L": 4.19,
-  "T": 1.75,
-  "Wd": 3.78,
-  "Ht": 2.83
- },
- {
-  "slide": 12,
-  "idx": 4,
-  "file": "s12-4.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image26.jpeg",
-  "shape": "Picture 10",
-  "L": 6.83,
-  "T": 1.62,
-  "Wd": 3.79,
-  "Ht": 3.11
- },
- {
-  "slide": 12,
-  "idx": 5,
-  "file": "s12-5.webp",
-  "w": 1500,
-  "h": 1125,
-  "src": "/ppt/media/image22.jpeg",
-  "shape": "Picture 26",
-  "L": 9.88,
-  "T": 1.68,
-  "Wd": 3.79,
-  "Ht": 2.98
- },
- {
   "slide": 13,
   "idx": 1,
   "file": "s13-1.webp",
@@ -674,5 +544,104 @@
   "T": 1.87,
   "Wd": 6.2,
   "Ht": 4.67
+ },
+ {
+  "slide": 11,
+  "idx": 1,
+  "file": "s11a-1.webp",
+  "w": 580,
+  "h": 356,
+  "src": "rendered slide panel",
+  "shape": "s11a-1"
+ },
+ {
+  "slide": 11,
+  "idx": 2,
+  "file": "s11a-2.webp",
+  "w": 580,
+  "h": 748,
+  "src": "rendered slide panel",
+  "shape": "s11a-2"
+ },
+ {
+  "slide": 11,
+  "idx": 3,
+  "file": "s11a-3.webp",
+  "w": 496,
+  "h": 448,
+  "src": "rendered slide panel",
+  "shape": "s11a-3"
+ },
+ {
+  "slide": 11,
+  "idx": 4,
+  "file": "s11a-4.webp",
+  "w": 496,
+  "h": 660,
+  "src": "rendered slide panel",
+  "shape": "s11a-4"
+ },
+ {
+  "slide": 11,
+  "idx": 5,
+  "file": "s11a-5.webp",
+  "w": 604,
+  "h": 440,
+  "src": "rendered slide panel",
+  "shape": "s11a-5"
+ },
+ {
+  "slide": 11,
+  "idx": 6,
+  "file": "s11a-6.webp",
+  "w": 604,
+  "h": 436,
+  "src": "rendered slide panel",
+  "shape": "s11a-6"
+ },
+ {
+  "slide": 12,
+  "idx": 1,
+  "file": "s12a-1.webp",
+  "w": 485,
+  "h": 744,
+  "src": "rendered slide panel",
+  "shape": "s12a-1"
+ },
+ {
+  "slide": 12,
+  "idx": 2,
+  "file": "s12a-2.webp",
+  "w": 644,
+  "h": 744,
+  "src": "rendered slide panel",
+  "shape": "s12a-2"
+ },
+ {
+  "slide": 12,
+  "idx": 3,
+  "file": "s12a-3.webp",
+  "w": 593,
+  "h": 744,
+  "src": "rendered slide panel",
+  "shape": "s12a-3"
+ },
+ {
+  "slide": 12,
+  "idx": 4,
+  "file": "s12a-4.webp",
+  "w": 597,
+  "h": 448,
+  "src": "rendered slide panel",
+  "shape": "s12a-4"
+ },
+ {
+  "slide": 12,
+  "idx": 5,
+  "file": "s12a-5.webp",
+  "w": 596,
+  "h": 448,
+  "src": "rendered slide panel",
+  "shape": "s12a-5"
  }
 ]
