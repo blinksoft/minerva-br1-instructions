@@ -137,11 +137,11 @@ page = f"""<!doctype html>
 
 <header class="topbar">
   <div class="wrap topbar-in">
-    <a class="mark" href="#top"><img src="assets/img/logo.svg" alt=""><span>{e(meta['kit'])} <span style="color:var(--ink-3)">{e(meta['block'])}</span></span></a>
+    <a class="mark" href="#top"><img src="assets/img/logo.svg" alt=""><span>{e(meta['kit'])} <span class="blk" style="color:var(--ink-3)">{e(meta['block'])}</span></span></a>
     <span class="spacer"></span>
     <span class="iconbtn" id="counter" style="cursor:default">0 / {total}</span>
     <button class="iconbtn resetbtn" id="reset" title="Clear all checkmarks">Reset</button>
-    <button class="iconbtn themebtn" id="theme" title="Toggle light / dark" aria-label="Toggle theme">&#9681;</button>
+    <button class="iconbtn themebtn" id="theme" title="Toggle light / dark" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg></button>
   </div>
   <div class="progressbar" id="bar"></div>
 </header>
@@ -194,7 +194,7 @@ page = f"""<!doctype html>
 
 <div id="lb" role="dialog" aria-modal="true" aria-label="Enlarged photo">
   <button class="close" id="lbclose" aria-label="Close">&times;</button>
-  <div><img id="lbimg" src="" alt=""><div class="cap" id="lbcap"></div></div>
+  <div><img id="lbimg" alt=""><div class="cap" id="lbcap"></div></div>
 </div>
 
 <script src="assets/js/app.js" defer></script>

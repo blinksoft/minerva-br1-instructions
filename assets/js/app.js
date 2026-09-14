@@ -74,7 +74,7 @@
     lb.classList.add("open"); document.body.style.overflow = "hidden";
   }
   function close() {
-    lb.classList.remove("open"); lbimg.src = ""; document.body.style.overflow = "";
+    lb.classList.remove("open"); lbimg.removeAttribute("src"); document.body.style.overflow = "";
   }
 
   document.addEventListener("click", function (ev) {
