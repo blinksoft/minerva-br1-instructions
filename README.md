@@ -38,12 +38,12 @@ with its pixel `w`/`h` (used to reserve layout space), then reference it from a 
 
 1. Create the repo and push:
    ```bash
-   git remote add origin git@github.com:<you>/minerva-br1-instructions.git
+   git remote add origin https://github.com/blinksoft/minerva-br1-instructions.git
    git push -u origin main
    ```
 2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. Every push to `main` rebuilds and publishes to
-   `https://<you>.github.io/minerva-br1-instructions/`.
+   `https://blinksoft.github.io/minerva-br1-instructions/`.
 
 The site uses only relative paths, so it works from a project subpath without
 extra configuration. `.nojekyll` is present so nothing gets filtered.
