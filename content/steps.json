@@ -1,0 +1,786 @@
+{
+  "meta": {
+    "program": "Georgia Wing High Power Rocketry",
+    "kit": "Minerva BR-1",
+    "block": "Block 0",
+    "title": "Minerva BR-1 Assembly Instructions",
+    "subtitle": "Block 0 build guide — Georgia Wing High Power Rocketry, Civil Air Patrol",
+    "source": "Converted from the Block 0 instruction deck. Steps follow the same order as the briefing."
+  },
+  "intro": {
+    "heading": "Before you start",
+    "points": [
+      "Read the whole page once before you open the epoxy. Several steps have a cure wait built in, and knowing what is coming keeps you from gluing yourself into a corner.",
+      "Work on a covered bench. Epoxy does not come off finished furniture.",
+      "Dry-fit every part before it gets glue on it. Every step that says \"test fit\" is there because parts vary.",
+      "Your body tube is white. Some photos in this guide show an older kraft-brown tube — the parts and steps are the same."
+    ],
+    "safety": [
+      "Wear eye protection when sanding and when mixing epoxy.",
+      "Work in a ventilated area. Epoxy and superglue fumes build up fast in a closed room.",
+      "Superglue bonds skin instantly. Keep acetone or debonder nearby, and never put your finger behind a hole you are about to glue into unless the step tells you to.",
+      "No motors, igniters, or black powder anywhere near the build table."
+    ]
+  },
+  "parts": [
+    "Body tube (now white)",
+    "Nosecone",
+    "Motor mount tube",
+    "Forward centering ring (with hole)",
+    "Aft centering ring",
+    "Fins × 3",
+    "Motor retainer",
+    "¼-20 eye bolt",
+    "¼-20 washers × 2",
+    "¼-20 nuts × 2",
+    "Rail buttons + screws + weld nuts",
+    "5 ft Kevlar cord",
+    "10 ft nylon cord"
+  ],
+  "tools": [
+    "2 × 7/16 wrenches",
+    "Phillips screwdriver",
+    "Scissors or wire cutters",
+    "Blue painter's tape",
+    "Sandpaper (80–100 grit)",
+    "5-minute epoxy",
+    "15-minute epoxy",
+    "Superglue (CA)",
+    "Marker or pen",
+    "Mixing sticks / stir sticks"
+  ],
+  "stages": [
+    {
+      "id": "motor-mount",
+      "name": "Motor Mount",
+      "blurb": "Build the motor mount as its own subassembly. It has to be square and fully cured before it goes anywhere near the body tube.",
+      "steps": [
+        {
+          "n": 1,
+          "slide": 3,
+          "title": "Sand the motor mount tube",
+          "body": [
+            "The cut ends of the motor mount tube usually have some fuzzy excess cardboard. Sand those smooth.",
+            "Sand the whole outside of the tube to knock off the shiny coating."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "That glossy coating is what epoxy fails to stick to. Dull the entire surface the centering rings will sit on."
+            }
+          ],
+          "images": [
+            {
+              "file": "s03-1.webp",
+              "cap": "Cut end before sanding — note the loose cardboard fibers."
+            },
+            {
+              "file": "s03-2.webp",
+              "cap": "Same end cleaned up."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "slide": 4,
+          "title": "Test fit the centering rings",
+          "body": [
+            "Slide each centering ring onto the motor mount tube. They should go on, but they should not be loose.",
+            "If a ring will not start, sand the inside diameter a little at a time and try again."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "A tight fit is what you want. Sand the ring, not the tube — you already sized the tube in step 1."
+            }
+          ],
+          "images": [
+            {
+              "file": "s04-1.webp",
+              "cap": "Centering ring dry-fit on the motor mount tube."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "slide": 5,
+          "title": "Mark the aft end",
+          "body": [
+            "Set the threaded end of the motor retainer onto the aft end of the motor mount tube.",
+            "Slide the aft centering ring down until it touches the retainer.",
+            "Mark all the way around the tube at the forward edge of the ring."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "That line is the forward edge of your epoxy zone for step 6. Everything aft of it gets glue."
+            }
+          ],
+          "images": [
+            {
+              "file": "s05-1.webp",
+              "cap": "Motor retainer on the tube with the aft ring pushed up against it."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "slide": 6,
+          "title": "Mark the forward end",
+          "body": [
+            "Make a mark ¼ inch down from the forward (top) end of the motor mount tube.",
+            "Slide the forward centering ring — the one with the eyebolt hole — down to that mark.",
+            "Mark all the way around the tube at both edges of the ring."
+          ],
+          "images": [
+            {
+              "file": "s06-1.webp",
+              "cap": "Marking around the tube at the edge of the forward ring."
+            },
+            {
+              "file": "s06-2.webp",
+              "cap": "Both reference lines marked on the tube."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "slide": 7,
+          "title": "Move the rings clear",
+          "body": [
+            "Take the forward centering ring back off the tube.",
+            "Slide the aft centering ring to about the middle of the tube so it is out of the way."
+          ],
+          "images": [
+            {
+              "file": "s07-1.webp",
+              "cap": "Aft ring parked mid-tube, forward ring removed."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "slide": 8,
+          "title": "Epoxy the motor retainer and aft centering ring",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Spread epoxy on the tube from the aft end up to the mark you made in step 3.",
+            "Slide the motor retainer on, then slide the aft centering ring down until it touches the retainer.",
+            "Check that the ring is square to the tube before the epoxy grabs."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Do not get any epoxy inside the motor mount tube. If you do, wipe it out immediately with alcohol — a cured ridge inside the tube will keep the motor from seating."
+            },
+            {
+              "type": "warn",
+              "text": "Keep epoxy off the retainer threads."
+            }
+          ],
+          "images": [
+            {
+              "file": "s08-1.webp",
+              "cap": "Epoxy spread between the aft end and the mark."
+            },
+            {
+              "file": "s08-2.webp",
+              "cap": "Retainer and aft ring slid into place against each other."
+            },
+            {
+              "file": "s08-3.webp",
+              "cap": "Assembled aft end — retainer, then centering ring."
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "slide": 9,
+          "title": "Epoxy the forward centering ring",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Run a band of epoxy all the way around the tube between the two forward marks.",
+            "Slide the forward centering ring down onto that band."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Get the ring perpendicular to the tube and hold it there. A cocked ring means the motor mount will not go into the body tube straight, and the whole rocket flies crooked."
+            }
+          ],
+          "images": [
+            {
+              "file": "s09-1.webp",
+              "cap": "Epoxy band applied between the two marks."
+            },
+            {
+              "file": "s09-2.webp",
+              "cap": "Ring square to the tube.",
+              "tag": "ok"
+            },
+            {
+              "file": "s09-3.webp",
+              "cap": "Ring cocked off-square — fix this before it cures.",
+              "tag": "no"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "slide": 10,
+          "title": "Let the motor mount cure",
+          "body": [
+            "Stand the assembly up with the retainer end pointing up and leave it alone until the epoxy is hard."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Standing it retainer-up lets gravity keep the rings seated instead of sagging."
+            }
+          ],
+          "images": [
+            {
+              "file": "s10-1.webp",
+              "cap": "Motor mount standing on the forward ring while it cures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rail-buttons",
+      "name": "Rail Buttons",
+      "blurb": "These go on the body tube, not the motor mount. Do them now — once the motor mount is glued inside, you cannot reach the forward hole.",
+      "steps": [
+        {
+          "n": 9,
+          "slide": 11,
+          "title": "Install the forward rail button",
+          "body": [
+            "The forward hole is too far down the tube to reach with a finger, so the weld nut gets pulled into place with the wire that came with your kit.",
+            "1. Thread the wire in through the forward rail button hole from the outside and out the aft end of the tube.",
+            "2. Slide the weld nut onto the wire, pointy side toward the inside of the tube. Tie an overhand knot (shoe knot) in the wire so the nut cannot come off.",
+            "3. Put superglue around the weld nut, then gently pull the wire until the nut seats in the hole and the point is sticking out. Hold for 60 seconds while the glue sets.",
+            "4. Cut the wire off right at the nut with scissors or wire cutters.",
+            "5. Put the rail button on the nut — flat side toward the tube, concave side out — and start the screw by hand.",
+            "6. Pull the rail button outward while you screw it down. Snug is good."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "If you have never done this, do a test pull with no glue first."
+            },
+            {
+              "type": "warn",
+              "text": "Be very careful not to push the nut back into the body — you cannot get it back."
+            },
+            {
+              "type": "warn",
+              "text": "Do not overtighten. The rail button will crack."
+            }
+          ],
+          "images": [
+            {
+              "file": "s11-1.webp",
+              "cap": "Wire run through the hole and out the aft end, weld nut knotted on."
+            },
+            {
+              "file": "s11-2.webp",
+              "cap": "Nut pulled into the hole, wire still sticking out. Snip it flush once the glue is dry."
+            },
+            {
+              "file": "s11-3.webp",
+              "cap": "Rail button seated — flat side to the tube, concave side out."
+            },
+            {
+              "file": "s11-4.webp",
+              "cap": "Pull the button outward while tightening."
+            },
+            {
+              "file": "s11-5.webp",
+              "cap": "Screw sits flush when the button is oriented correctly."
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "slide": 12,
+          "title": "Install the aft rail button",
+          "body": [
+            "The aft hole is close enough to the end that you can hold the nut with a finger, so no wire needed.",
+            "1. Balance the weld nut on your fingertip and put superglue around its inner edge.",
+            "2. Reach in through the aft end and press the nut into the hole from the inside.",
+            "3. Keep your finger on the back of the nut and put the rail button on — flat side toward the tube, concave side out. Start the screw by hand, then pull the button outward while you tighten it."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Practice putting the nut into the hole dry before you add glue."
+            },
+            {
+              "type": "warn",
+              "text": "Snug only. Do not crack the button."
+            }
+          ],
+          "images": [
+            {
+              "file": "s12-3.webp",
+              "cap": "Weld nut carried in on a fingertip and pressed into the hole from inside."
+            },
+            {
+              "file": "s12-4.webp",
+              "cap": "Nut seated in the hole, seen from outside."
+            },
+            {
+              "file": "s12-1.webp",
+              "cap": "Pull the button outward while tightening."
+            },
+            {
+              "file": "s12-2.webp",
+              "cap": "Tightening the screw."
+            },
+            {
+              "file": "s12-5.webp",
+              "cap": "Finished rail button."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eyebolt",
+      "name": "Eyebolt & Recovery Anchor",
+      "blurb": "The eyebolt in the forward centering ring is what the whole recovery system hangs off. Do not skimp here.",
+      "steps": [
+        {
+          "n": 11,
+          "slide": 13,
+          "title": "Assemble the eyebolt",
+          "body": [
+            "Put a nut and a washer onto the eyebolt.",
+            "Pass the eyebolt through the hole in the forward centering ring from the forward side.",
+            "Add the second washer and nut on the back and tighten with the two 7/16 wrenches."
+          ],
+          "images": [
+            {
+              "file": "s13-1.webp",
+              "cap": "¼-20 eyebolt with nut and washer."
+            },
+            {
+              "file": "s13-2.webp",
+              "cap": "Eyebolt through the ring, washer and nut on both sides."
+            },
+            {
+              "file": "s13-3.webp",
+              "cap": "Looking down the motor mount — eyebolt hardware on the back of the forward ring."
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "slide": 14,
+          "title": "Epoxy the back side of the centering rings",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Fillet epoxy into the joint between each centering ring and the motor mount tube, on the side you have not glued yet.",
+            "Put epoxy over both eyebolt nuts and washers. Not a lot — just enough that they can never back off.",
+            "Stand the assembly motor-mount-down to cure."
+          ],
+          "images": [
+            {
+              "file": "s14-1.webp",
+              "cap": "Standing motor-mount-down with fillets on the forward ring."
+            },
+            {
+              "file": "s14-2.webp",
+              "cap": "Ring-to-tube joint filleted all the way around."
+            },
+            {
+              "file": "s14-3.webp",
+              "cap": "Epoxy over the eyebolt nut and washer so they cannot loosen."
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "slide": 15,
+          "title": "Test fit the motor mount in the body tube",
+          "body": [
+            "Slide the motor mount into the body tube. Go in at a slight angle to clear the aft rail button nut.",
+            "Sand the outside diameter of the centering rings as needed. You want snug — it should slide with some resistance, not drop in."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Do this dry, and get the fit right now. Once there is 15-minute epoxy inside the body tube you have one shot."
+            }
+          ],
+          "images": [
+            {
+              "file": "s15-1.webp",
+              "cap": "Motor mount entering the body tube."
+            },
+            {
+              "file": "s15-2.webp",
+              "cap": "Enter at an angle to clear the rail button hardware."
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "slide": 16,
+          "title": "Tie the Kevlar cord to the eyebolt",
+          "body": [
+            "Tie the 5 ft Kevlar cord to the eyebolt with a bowline.",
+            "A bowline gives you a fixed loop that will not slip and will not jam shut under shock load, which is exactly what you want on the recovery anchor."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Rabbit out of the hole, around the tree, back down the hole. Then dress it and pull it tight before you trust it."
+            },
+            {
+              "type": "link",
+              "text": "Step-by-step bowline reference",
+              "href": "https://www.animatedknots.com/bowline-knot"
+            }
+          ],
+          "images": [
+            {
+              "file": "s16-2.webp",
+              "cap": "Finished bowline on the eyebolt."
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "slide": 17,
+          "title": "Protect the Kevlar from epoxy",
+          "body": [
+            "Tape over the cord where it meets the eyebolt with masking or painter's tape.",
+            "Feed the loose end of the cord down through the motor mount tube so it is out of the way while you glue."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Epoxy soaked into the Kevlar makes it stiff and brittle right where it takes the most shock. Tape it."
+            }
+          ],
+          "images": [
+            {
+              "file": "s17-1.webp",
+              "cap": "Bowline on the eyebolt before taping."
+            },
+            {
+              "file": "s17-2.webp",
+              "cap": "Blue tape over the cord and eyebolt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "install",
+      "name": "Install the Motor Mount",
+      "blurb": "15-minute epoxy from here — you need the working time. Read all four steps before you mix.",
+      "steps": [
+        {
+          "n": 16,
+          "slide": 18,
+          "title": "Mark your epoxy stick",
+          "body": [
+            "Hold a stir stick against the motor mount and mark the distance between the two centering rings on it.",
+            "That mark tells you how far down the body tube to reach when you put the glue ring inside."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "The sticks in the current kits are long enough that you do not need to tape an extension on."
+            }
+          ],
+          "images": [
+            {
+              "file": "s18-1.webp",
+              "cap": "Stick marked against the motor mount."
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "slide": 19,
+          "title": "Put a ring of epoxy inside the body tube",
+          "epoxy": "15-minute epoxy",
+          "body": [
+            "Using the marked stick as your depth guide, lay a ring of epoxy around the inside of the body tube where the forward centering ring will land."
+          ],
+          "images": [
+            {
+              "file": "s19-1.webp",
+              "cap": "Reaching in with the marked stick to lay the internal glue ring."
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "slide": 20,
+          "title": "Start the motor mount in and add epoxy",
+          "epoxy": "15-minute epoxy",
+          "body": [
+            "Partially insert the motor mount.",
+            "Spread more epoxy at the aft end of the body tube where the aft centering ring will sit.",
+            "Put a little epoxy on the rail button backing nut and the tube around it."
+          ],
+          "images": [
+            {
+              "file": "s20-1.webp",
+              "cap": "Motor mount started into the body tube."
+            },
+            {
+              "file": "s20-2.webp",
+              "cap": "Epoxy over the rail button weld nut on the inside."
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "slide": 21,
+          "title": "Seat the motor mount",
+          "body": [
+            "Push the motor mount the rest of the way in until it is fully seated as shown.",
+            "Let the epoxy cure completely before you go on."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Do not move to the fins until this is fully hard. The fins locate off the motor mount."
+            }
+          ],
+          "images": [
+            {
+              "file": "s21-1.webp",
+              "cap": "Motor mount fully seated."
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "slide": 22,
+          "title": "Epoxy the aft joint",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Fillet epoxy into the joint between the aft centering ring and the body tube, all the way around."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Keep epoxy off the retainer threads. Easiest way: thread the retainer screw cap on first, glue, then take it back off."
+            }
+          ],
+          "images": [
+            {
+              "file": "s22-1.webp",
+              "cap": "Filleting the aft ring to body tube joint."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fins",
+      "name": "Fins",
+      "blurb": "Three fins, through-the-wall into the motor mount. Alignment here is what makes the rocket fly straight.",
+      "steps": [
+        {
+          "n": 21,
+          "slide": 23,
+          "title": "Test fit the fins",
+          "body": [
+            "Slide each fin into its slot dry. The fin root should reach the motor mount tube and the fin should stand straight out along a radius — not leaning.",
+            "Wood thickness varies, so you may need to sand the slots to get a fin to go in."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Sand the slot, never the fin. Thinning the fin weakens it and opens up a gap you cannot fill."
+            }
+          ],
+          "images": [
+            {
+              "file": "s23-1.webp",
+              "cap": "Fin standing straight out, root down on the motor mount.",
+              "tag": "ok"
+            },
+            {
+              "file": "s23-2.webp",
+              "cap": "Fin leaning in the slot — not square to the tube.",
+              "tag": "no"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "slide": 24,
+          "title": "Epoxy the fins",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Put epoxy along the root (back) edge of the fin and slide it into the slot.",
+            "Make sure the root contacts the motor mount tube and the fin is aligned before the epoxy sets.",
+            "Do one fin at a time."
+          ],
+          "images": [
+            {
+              "file": "s24-1.webp",
+              "cap": "Fin seated square against the motor mount.",
+              "tag": "ok"
+            },
+            {
+              "file": "s24-2.webp",
+              "cap": "Fin canted in the slot — pull it and reset before it cures.",
+              "tag": "no"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "slide": 25,
+          "title": "Fillet the fin roots",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Run an epoxy fillet along each side of each fin where it meets the body tube — six fillets total.",
+            "For this power level, 5-minute epoxy laid along the root and allowed to settle into a smooth fillet is plenty strong."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Lay the rocket so the fin you are filleting points straight up. Gravity does the shaping for you."
+            }
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery Harness",
+      "blurb": "Kevlar to nylon, nylon to nose cone, and a loop in the middle for the parachute.",
+      "steps": [
+        {
+          "n": 24,
+          "slide": 26,
+          "title": "Tie the nylon shock cord to the Kevlar",
+          "body": [
+            "Join the 10 ft nylon cord to the Kevlar with a double sheet bend. A sheet bend is the right knot for joining two lines of different diameter, and doubling it keeps it from working loose in slick nylon.",
+            "Make the bight in the thicker line (the nylon) and pass the thinner line (the Kevlar) through it."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "In the photo the blue rope is the nylon (bigger) and the yellow rope is the Kevlar (smaller)."
+            },
+            {
+              "type": "link",
+              "text": "Step-by-step double sheet bend reference",
+              "href": "https://www.animatedknots.com/sheet-bend-knot"
+            }
+          ],
+          "images": [
+            {
+              "file": "s26-2.webp",
+              "cap": "Finished double sheet bend joining nylon to Kevlar."
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "slide": 27,
+          "title": "Tie the nylon to the nose cone",
+          "body": [
+            "Tie the free end of the nylon shock cord around the bar inside the nose cone shoulder with a bowline."
+          ],
+          "notes": [
+            {
+              "type": "link",
+              "text": "Step-by-step bowline reference",
+              "href": "https://www.animatedknots.com/bowline-knot"
+            }
+          ],
+          "images": [
+            {
+              "file": "s27-2.webp",
+              "cap": "Nylon tied around the nose cone bar."
+            }
+          ]
+        },
+        {
+          "n": 26,
+          "slide": 28,
+          "title": "Make the parachute attachment point",
+          "body": [
+            "Tie an overhand knot about 12 inches down from the nose cone attachment point.",
+            "Fold the shock cord in half at that spot and use the looped end to tie around the rest of the cord, making a fixed loop.",
+            "This is where the parachute clips in at the field."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Parachutes are issued on launch day — you do not need one to finish the build."
+            }
+          ],
+          "images": [
+            {
+              "file": "s28-1.webp",
+              "cap": "Folding the cord and tying the loop, in four steps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "name": "Finish & Homework",
+      "blurb": "",
+      "steps": [
+        {
+          "n": 27,
+          "slide": 29,
+          "title": "Decorate your rocket",
+          "body": [
+            "Paint, temporary tattoos, and other decoration are all fair game. Prizes may be given for the best-designed rocket.",
+            "Skip stickers and tape — at flight speed they peel off and change how the rocket flies."
+          ],
+          "images": []
+        },
+        {
+          "n": 28,
+          "slide": 29,
+          "title": "Homework: simulate your rocket in OpenRocket",
+          "body": [
+            "Learn to simulate your build. Play with launch angle and wind to see how far you might have to walk, and improve your odds of getting the rocket back."
+          ],
+          "notes": [
+            {
+              "type": "link",
+              "text": "Basics of OpenRocket",
+              "href": "https://www.youtube.com/watch?v=z16_uUnMarE"
+            },
+            {
+              "type": "link",
+              "text": "Interpreting OpenRocket simulation results",
+              "href": "https://www.youtube.com/watch?v=543Gnd63saM"
+            },
+            {
+              "type": "link",
+              "text": "Running a simulation in OpenRocket",
+              "href": "https://www.youtube.com/watch?v=H9S6yn9iwqc"
+            }
+          ],
+          "images": []
+        }
+      ]
+    }
+  ],
+  "partsPhoto": {
+    "file": "s02-1.webp",
+    "cap": "Everything that comes in the Minerva BR-1 Block 0 kit, laid out."
+  }
+}
