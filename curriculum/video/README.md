@@ -128,8 +128,10 @@ look like one series.
 .venv/bin/python curriculum/video/publish.py --status
 ```
 
-A segment is published when `videos/SNN.sha` differs from the sha recorded in `videos/youtube.json`.
-YouTube cannot replace a video's file, so a changed render is a new upload: title, description and tags
+A segment is published when the rendered output, the MP4 plus captions, differs by content hash from
+what is live in `videos/youtube.json`. Re-rendering follows the inputs; publishing follows the output, so
+a renderer change that produces identical bytes uploads nothing. YouTube cannot replace a video's file,
+so a changed output is a new upload: title, description and tags
 from `videos/SNN.youtube.md`, thumbnail, captions, placed in the "BR-1 Build Day" playlist in segment
 order, then the superseded video is deleted and the new ID is written to `videos/youtube.json` and the
 table in `curriculum/production.md`. Anything that embeds a segment should read the ID from

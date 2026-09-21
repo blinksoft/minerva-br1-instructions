@@ -57,7 +57,8 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 
 ## Hosting
 
-- Channel: https://www.youtube.com/@GAWingAEO (channel ID UC2rKU8yu51uJERekCOsdtYQ). Upload into an
+- Channel: "GA Wing AeroSpace and STEM Education", https://www.youtube.com/@GAWingAEO (channel ID
+  UC2rKU8yu51uJERekCOsdtYQ), phone-verified. Upload into an
   unlisted playlist named "BR-1 Build Day". Unlisted keeps them out of search but lets anyone with the
   guide link watch. Switch to public later if wanted.
 - Publishing is automated: `curriculum/video/publish.py`, run nightly by GitHub Actions, uploads any

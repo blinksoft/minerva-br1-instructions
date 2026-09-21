@@ -490,7 +490,7 @@ def upload_kit(seg, meta, cues, sdir, outdir):
     for c in meta.get("credits", []):
         desc.append(c)
     kit = [f"# YouTube upload kit — {seg}", "",
-           f"Channel: {CHANNEL_URL}", "Playlist: BR-1 Build Day (unlisted)", "Visibility: Unlisted",
+           f"Channel: GA Wing AeroSpace and STEM Education, {CHANNEL_URL}", "Playlist: BR-1 Build Day (unlisted)", "Visibility: Unlisted",
            "Audience: not made for kids (it is instructional for a mixed-age class; leave 'made for kids' off "
            "so captions, comments and playlists behave normally)",
            f"Video file: videos/{seg}.mp4", f"Captions file: videos/{seg}.srt (Subtitles > Upload file > With timing)",

@@ -1,10 +1,11 @@
 {
-  "channel": "https://www.youtube.com/@GAWingAEO",
+  "channel": "GA Wing AeroSpace and STEM Education, https://www.youtube.com/@GAWingAEO",
   "playlistId": "PLS84YDwO4-U4",
   "segments": {
     "S06": {
       "videoId": "DU7hl1mqEZw",
-      "sha": "615af7a947413946106338b6d0914bb8a22af703",
+      "outputSha": "fe472007be118c3a796814dc1e06d204fb223619",
+      "inputSha": "615af7a947413946106338b6d0914bb8a22af703",
       "title": "How a motor is measured \u2014 BR-1 Build Day, Segment 6",
       "url": "https://youtu.be/DU7hl1mqEZw",
       "publishedAt": "2026-09-21T06:01:57+00:00",

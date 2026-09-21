@@ -5,9 +5,12 @@
     python3 publish.py S06           publish one segment if its render changed
     python3 publish.py all           publish every rendered segment whose render changed
     python3 publish.py --status      show what is live
+    python3 publish.py --thumbnails  (re)set the title-slide thumbnail on every live video, no re-upload
 
-A segment is published when videos/SNN.sha (written by render.py) differs from the sha recorded in
-videos/youtube.json. YouTube cannot replace a video's file, so publishing uploads a new video, sets the
+A segment is published when the rendered output (videos/SNN.mp4 + .srt) differs from what is live,
+by content hash recorded in videos/youtube.json. Re-rendering is decided separately by render.py from
+the inputs; an encode that produces identical bytes publishes nothing, so renderer or CI changes never
+churn the channel. YouTube cannot replace a video's file, so publishing uploads a new video, sets the
 thumbnail and captions, puts it in the playlist in segment order, deletes the superseded video, and
 records the new ID in videos/youtube.json and curriculum/production.md.
 
@@ -21,7 +24,7 @@ In GitHub Actions both come from repository secrets of the same names.
 Quota: a new Google Cloud project allows about four full publishes a day. On quotaExceeded the script
 stops cleanly and the nightly run finishes the rest.
 """
-import datetime, json, os, re, sys, time
+import datetime, hashlib, json, os, re, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -151,7 +154,7 @@ def service():
 def load_state():
     if os.path.exists(STATE):
         return json.load(open(STATE))
-    return {"channel": "https://www.youtube.com/@GAWingAEO", "playlistId": None, "segments": {}}
+    return {"channel": "GA Wing AeroSpace and STEM Education, https://www.youtube.com/@GAWingAEO", "playlistId": None, "segments": {}}
 
 
 def save_state(st):
@@ -171,6 +174,15 @@ def read_kit(seg):
         return m.group(1).strip() if m else ""
     tags = [t.strip() for t in section("Tags").split(",") if t.strip()]
     return section("Title"), section("Description"), tags
+
+
+def output_hash(seg):
+    h = hashlib.sha1()
+    for ext in (".mp4", ".srt"):
+        p = os.path.join(VIDEOS, seg + ext)
+        if os.path.exists(p):
+            h.update(open(p, "rb").read())
+    return h.hexdigest()
 
 
 def is_quota(err):
@@ -230,10 +242,12 @@ def set_thumbnail(yt, seg, video_id):
         return
     try:
         yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(p, mimetype="image/jpeg")).execute()
+        return True
     except Exception as e:
         if is_quota(e):
             raise
         print(f"  {seg}: thumbnail not set ({str(e)[:90]}). Custom thumbnails need a phone-verified channel.")
+        return False
 
 
 def set_captions(yt, seg, video_id):
@@ -282,14 +296,15 @@ def publish(segs):
         if not os.path.exists(sha_p) or not os.path.exists(os.path.join(VIDEOS, f"{seg}.mp4")):
             print(f"{seg}: not rendered, skipped"); continue
         sha = open(sha_p).read().strip()
+        out_sha = output_hash(seg)
         cur = st["segments"].get(seg, {})
-        if cur.get("videoId") and cur.get("sha") == sha:
-            print(f"{seg}: unchanged, live as {cur['videoId']}"); continue
+        if cur.get("videoId") and cur.get("outputSha") == out_sha:
+            print(f"{seg}: output unchanged, live as {cur['videoId']}"); continue
         title, description, tags = read_kit(seg)
         old_id = cur.get("videoId")
         try:
             vid = upload_video(yt, seg, title, description, tags)
-            st["segments"][seg] = {"videoId": vid, "sha": sha, "title": title, "url": f"https://youtu.be/{vid}",
+            st["segments"][seg] = {"videoId": vid, "outputSha": out_sha, "inputSha": sha, "title": title, "url": f"https://youtu.be/{vid}",
                                    "publishedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
                                    "previousVideoId": old_id}
             save_state(st)                      # record the new ID before anything else can fail
@@ -319,13 +334,21 @@ def publish(segs):
     return 0
 
 
+def refresh_thumbnails():
+    yt = service()
+    st = load_state()
+    for seg in sorted(st["segments"], key=seg_number):
+        vid = st["segments"][seg].get("videoId")
+        if vid and set_thumbnail(yt, seg, vid):
+            print(f"{seg}: thumbnail set on {vid}")
+
+
 def status():
     st = load_state()
     print(f"playlist: {st.get('playlistId')}")
     for seg in sorted(st["segments"], key=seg_number):
         v = st["segments"][seg]
-        live_sha = open(os.path.join(VIDEOS, f"{seg}.sha")).read().strip() if os.path.exists(os.path.join(VIDEOS, f"{seg}.sha")) else None
-        state = "current" if live_sha == v.get("sha") else "render changed, republish pending"
+        state = "current" if output_hash(seg) == v.get("outputSha") else "output changed, republish pending"
         print(f"{seg}: {v.get('url')}  {v.get('privacyStatus', '?')}  {state}")
 
 
@@ -336,6 +359,8 @@ if __name__ == "__main__":
         auth(r); sys.exit(0)
     if "--status" in sys.argv:
         status(); sys.exit(0)
+    if "--thumbnails" in sys.argv:
+        refresh_thumbnails(); sys.exit(0)
     if not args:
         sys.exit(__doc__)
     if args[0] == "all":
