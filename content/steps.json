@@ -666,16 +666,34 @@
           "title": "Fillet the fin roots",
           "epoxy": "5-minute epoxy",
           "body": [
-            "Run an epoxy fillet along each side of each fin where it meets the body tube — six fillets total.",
-            "For this power level, 5-minute epoxy laid along the root and allowed to settle into a smooth fillet is plenty strong."
+            "Every fin gets an epoxy fillet on both sides where it meets the body tube — six fillets in all. You do them two at a time, letting gravity hold the epoxy in the joint.",
+            "1. Lay the rocket on the table resting on one fin, so the other two fins point up in a V. Roll it until both raised fins are at the same angle — the joints between those fins and the tube should face straight up.",
+            "2. Mix a small batch of plain 5-minute epoxy. Do not thicken it or add anything to it.",
+            "3. Dab the epoxy into the joint along the root of each raised fin, on the side facing up. Work from the front of the fin to the back so the whole root is covered. It will settle into a smooth fillet on its own.",
+            "4. Wait 5 minutes for it to set.",
+            "5. Roll the rocket onto the next fin so a fresh pair of joints faces up, and repeat.",
+            "6. Do it one more time. After three rounds every fin root is epoxied to the body on both sides."
           ],
           "notes": [
             {
               "type": "tip",
-              "text": "Lay the rocket so the fin you are filleting points straight up. Gravity does the shaping for you."
+              "text": "Small dabs, not a bead. Plain 5-minute epoxy is thin enough to flow into the joint by itself; a big bead runs down the tube."
+            },
+            {
+              "type": "warn",
+              "text": "Do not move the rocket until the epoxy has set. If it rolls while wet the fillet slumps to one side."
             }
           ],
-          "images": []
+          "images": [
+            {
+              "file": "s25-1.webp",
+              "cap": "Rocket resting on one fin with the other two pointing up equally. Epoxy goes into the two upward-facing root joints."
+            },
+            {
+              "file": "s25-2.webp",
+              "cap": "The two joints to fill in this position. Roll the rocket and repeat twice more for the other four."
+            }
+          ]
         }
       ]
     },

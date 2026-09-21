@@ -643,5 +643,23 @@
   "h": 448,
   "src": "rendered slide panel",
   "shape": "s12a-5"
+ },
+ {
+  "slide": 25,
+  "idx": 1,
+  "file": "s25-1.webp",
+  "w": 1500,
+  "h": 1125,
+  "src": "IMG_5621.jpeg",
+  "shape": "photo"
+ },
+ {
+  "slide": 25,
+  "idx": 2,
+  "file": "s25-2.webp",
+  "w": 1500,
+  "h": 1125,
+  "src": "fins.png (IMG_5621 with the joints boxed)",
+  "shape": "photo"
  }
 ]
