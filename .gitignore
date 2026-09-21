@@ -4,3 +4,6 @@
 Thumbs.db
 *.pptx
 ~$*
+curriculum/video/out/
+.env
+.venv/

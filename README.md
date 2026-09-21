@@ -14,9 +14,12 @@ content/steps.json       all text: parts, tools, steps, callouts, captions  <- e
 content/images.json      image dimensions (generated when photos were extracted)
 assets/img/              build photos (WebP), program emblem, qr.svg (QR code to the Pages URL, shown in the hero)
 files/BR-1.ork           the program's OpenRocket model, linked from the last step
+curriculum/              build-day teaching segments (scripts and shot lists) that fill the epoxy waits
+curriculum/video/        generates the segment videos: slides + ElevenLabs narration, see its README
+videos/                  the finished segment videos and captions, served by Pages
 assets/css/style.css     styles, including print and dark mode
 assets/js/app.js         progress checkboxes, theme toggle, photo lightbox
-.github/workflows/       GitHub Pages deploy
+.github/workflows/       GitHub Pages deploy; nightly render-and-publish of segment videos to YouTube
 deploy/                  AWS S3 + CloudFront alternative
 ```
 
