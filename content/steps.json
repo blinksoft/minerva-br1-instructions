@@ -51,209 +51,12 @@
   ],
   "stages": [
     {
-      "id": "motor-mount",
-      "name": "Motor Mount",
-      "blurb": "Build the motor mount as its own subassembly. It has to be square and fully cured before it goes anywhere near the body tube.",
+      "id": "rail-buttons",
+      "name": "Rail Buttons",
+      "blurb": "These go on the body tube, not the motor mount. Do them first — once the motor mount is glued inside, you cannot reach the forward hole.",
       "steps": [
         {
           "n": 1,
-          "slide": 3,
-          "title": "Sand the motor mount tube",
-          "body": [
-            "The cut ends of the motor mount tube usually have some fuzzy excess cardboard. Sand those smooth.",
-            "Sand the whole outside of the tube to knock off the shiny coating."
-          ],
-          "notes": [
-            {
-              "type": "tip",
-              "text": "That glossy coating is what epoxy fails to stick to. Dull the entire surface the centering rings will sit on."
-            }
-          ],
-          "images": [
-            {
-              "file": "s03-1.webp",
-              "cap": "Cut end before sanding — note the loose cardboard fibers."
-            },
-            {
-              "file": "s03-2.webp",
-              "cap": "Same end cleaned up."
-            }
-          ]
-        },
-        {
-          "n": 2,
-          "slide": 4,
-          "title": "Test fit the centering rings",
-          "body": [
-            "Slide each centering ring onto the motor mount tube. They should go on, but they should not be loose.",
-            "If a ring will not start, sand the inside diameter a little at a time and try again."
-          ],
-          "notes": [
-            {
-              "type": "warn",
-              "text": "A tight fit is what you want. Sand the ring, not the tube — you already sized the tube in step 1."
-            }
-          ],
-          "images": [
-            {
-              "file": "s04-1.webp",
-              "cap": "Centering ring dry-fit on the motor mount tube."
-            }
-          ]
-        },
-        {
-          "n": 3,
-          "slide": 5,
-          "title": "Mark the aft end",
-          "body": [
-            "Set the threaded end of the motor retainer onto the aft end of the motor mount tube.",
-            "Slide the aft centering ring down until it touches the retainer.",
-            "Mark all the way around the tube at the forward edge of the ring."
-          ],
-          "notes": [
-            {
-              "type": "tip",
-              "text": "That line is the forward edge of your epoxy zone for step 6. Everything aft of it gets glue."
-            }
-          ],
-          "images": [
-            {
-              "file": "s05-1.webp",
-              "cap": "Motor retainer on the tube with the aft ring pushed up against it."
-            }
-          ]
-        },
-        {
-          "n": 4,
-          "slide": 6,
-          "title": "Mark the forward end",
-          "body": [
-            "Make a mark ¼ inch down from the forward (top) end of the motor mount tube.",
-            "Slide the forward centering ring — the one with the eyebolt hole — down to that mark.",
-            "Mark all the way around the tube at both edges of the ring."
-          ],
-          "images": [
-            {
-              "file": "s06-1.webp",
-              "cap": "Marking around the tube at the edge of the forward ring."
-            },
-            {
-              "file": "s06-2.webp",
-              "cap": "Both reference lines marked on the tube."
-            }
-          ]
-        },
-        {
-          "n": 5,
-          "slide": 7,
-          "title": "Move the rings clear",
-          "body": [
-            "Take the forward centering ring back off the tube.",
-            "Slide the aft centering ring to about the middle of the tube so it is out of the way."
-          ],
-          "images": [
-            {
-              "file": "s07-1.webp",
-              "cap": "Aft ring parked mid-tube, forward ring removed."
-            }
-          ]
-        },
-        {
-          "n": 6,
-          "slide": 8,
-          "title": "Epoxy the motor retainer and aft centering ring",
-          "epoxy": "5-minute epoxy",
-          "body": [
-            "Spread epoxy on the tube from the aft end up to the mark you made in step 3.",
-            "Slide the motor retainer on, then slide the aft centering ring down until it touches the retainer.",
-            "Check that the ring is square to the tube before the epoxy grabs."
-          ],
-          "notes": [
-            {
-              "type": "warn",
-              "text": "Do not get any epoxy inside the motor mount tube. If you do, wipe it out immediately with alcohol — a cured ridge inside the tube will keep the motor from seating."
-            },
-            {
-              "type": "warn",
-              "text": "Keep epoxy off the retainer threads."
-            }
-          ],
-          "images": [
-            {
-              "file": "s08-1.webp",
-              "cap": "Epoxy spread between the aft end and the mark."
-            },
-            {
-              "file": "s08-2.webp",
-              "cap": "Retainer and aft ring slid into place against each other."
-            },
-            {
-              "file": "s08-3.webp",
-              "cap": "Assembled aft end — retainer, then centering ring."
-            }
-          ]
-        },
-        {
-          "n": 7,
-          "slide": 9,
-          "title": "Epoxy the forward centering ring",
-          "epoxy": "5-minute epoxy",
-          "body": [
-            "Run a band of epoxy all the way around the tube between the two forward marks.",
-            "Slide the forward centering ring down onto that band."
-          ],
-          "notes": [
-            {
-              "type": "warn",
-              "text": "Get the ring perpendicular to the tube and hold it there. A cocked ring means the motor mount will not go into the body tube straight, and the whole rocket flies crooked."
-            }
-          ],
-          "images": [
-            {
-              "file": "s09-1.webp",
-              "cap": "Epoxy band applied between the two marks."
-            },
-            {
-              "file": "s09-2.webp",
-              "cap": "Ring square to the tube.",
-              "tag": "ok"
-            },
-            {
-              "file": "s09-3.webp",
-              "cap": "Ring cocked off-square — fix this before it cures.",
-              "tag": "no"
-            }
-          ]
-        },
-        {
-          "n": 8,
-          "slide": 10,
-          "title": "Let the motor mount cure",
-          "body": [
-            "Stand the assembly up with the retainer end pointing up and leave it alone until the epoxy is hard."
-          ],
-          "notes": [
-            {
-              "type": "tip",
-              "text": "Standing it retainer-up lets gravity keep the rings seated instead of sagging."
-            }
-          ],
-          "images": [
-            {
-              "file": "s10-1.webp",
-              "cap": "Motor mount standing on the forward ring while it cures."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "rail-buttons",
-      "name": "Rail Buttons",
-      "blurb": "These go on the body tube, not the motor mount. Do them now — once the motor mount is glued inside, you cannot reach the forward hole.",
-      "steps": [
-        {
-          "n": 9,
           "slide": 11,
           "title": "Install the forward rail button",
           "body": [
@@ -311,7 +114,7 @@
           ]
         },
         {
-          "n": 10,
+          "n": 2,
           "slide": 12,
           "title": "Install the aft rail button",
           "body": [
@@ -354,6 +157,203 @@
             {
               "file": "s12a-5.webp",
               "cap": "5 — Snug is good. Do not crack the button."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motor-mount",
+      "name": "Motor Mount",
+      "blurb": "Build the motor mount as its own subassembly. It has to be square and fully cured before it goes anywhere near the body tube.",
+      "steps": [
+        {
+          "n": 3,
+          "slide": 3,
+          "title": "Sand the motor mount tube",
+          "body": [
+            "The cut ends of the motor mount tube usually have some fuzzy excess cardboard. Sand those smooth.",
+            "Sand the whole outside of the tube to knock off the shiny coating."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "That glossy coating is what epoxy fails to stick to. Dull the entire surface the centering rings will sit on."
+            }
+          ],
+          "images": [
+            {
+              "file": "s03-1.webp",
+              "cap": "Cut end before sanding — note the loose cardboard fibers."
+            },
+            {
+              "file": "s03-2.webp",
+              "cap": "Same end cleaned up."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "slide": 4,
+          "title": "Test fit the centering rings",
+          "body": [
+            "Slide each centering ring onto the motor mount tube. They should go on, but they should not be loose.",
+            "If a ring will not start, sand the inside diameter a little at a time and try again."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "A tight fit is what you want. Sand the ring, not the tube — you already sized the tube in step 3."
+            }
+          ],
+          "images": [
+            {
+              "file": "s04-1.webp",
+              "cap": "Centering ring dry-fit on the motor mount tube."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "slide": 5,
+          "title": "Mark the aft end",
+          "body": [
+            "Set the threaded end of the motor retainer onto the aft end of the motor mount tube.",
+            "Slide the aft centering ring down until it touches the retainer.",
+            "Mark all the way around the tube at the forward edge of the ring."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "That line is the forward edge of your epoxy zone for step 8. Everything aft of it gets glue."
+            }
+          ],
+          "images": [
+            {
+              "file": "s05-1.webp",
+              "cap": "Motor retainer on the tube with the aft ring pushed up against it."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "slide": 6,
+          "title": "Mark the forward end",
+          "body": [
+            "Make a mark ¼ inch down from the forward (top) end of the motor mount tube.",
+            "Slide the forward centering ring — the one with the eyebolt hole — down to that mark.",
+            "Mark all the way around the tube at both edges of the ring."
+          ],
+          "images": [
+            {
+              "file": "s06-1.webp",
+              "cap": "Marking around the tube at the edge of the forward ring."
+            },
+            {
+              "file": "s06-2.webp",
+              "cap": "Both reference lines marked on the tube."
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "slide": 7,
+          "title": "Move the rings clear",
+          "body": [
+            "Take the forward centering ring back off the tube.",
+            "Slide the aft centering ring to about the middle of the tube so it is out of the way."
+          ],
+          "images": [
+            {
+              "file": "s07-1.webp",
+              "cap": "Aft ring parked mid-tube, forward ring removed."
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "slide": 8,
+          "title": "Epoxy the motor retainer and aft centering ring",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Spread epoxy on the tube from the aft end up to the mark you made in step 5.",
+            "Slide the motor retainer on, then slide the aft centering ring down until it touches the retainer.",
+            "Check that the ring is square to the tube before the epoxy grabs."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Do not get any epoxy inside the motor mount tube. If you do, wipe it out immediately with alcohol — a cured ridge inside the tube will keep the motor from seating."
+            },
+            {
+              "type": "warn",
+              "text": "Keep epoxy off the retainer threads."
+            }
+          ],
+          "images": [
+            {
+              "file": "s08-1.webp",
+              "cap": "Epoxy spread between the aft end and the mark."
+            },
+            {
+              "file": "s08-2.webp",
+              "cap": "Retainer and aft ring slid into place against each other."
+            },
+            {
+              "file": "s08-3.webp",
+              "cap": "Assembled aft end — retainer, then centering ring."
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "slide": 9,
+          "title": "Epoxy the forward centering ring",
+          "epoxy": "5-minute epoxy",
+          "body": [
+            "Run a band of epoxy all the way around the tube between the two forward marks.",
+            "Slide the forward centering ring down onto that band."
+          ],
+          "notes": [
+            {
+              "type": "warn",
+              "text": "Get the ring perpendicular to the tube and hold it there. A cocked ring means the motor mount will not go into the body tube straight, and the whole rocket flies crooked."
+            }
+          ],
+          "images": [
+            {
+              "file": "s09-1.webp",
+              "cap": "Epoxy band applied between the two marks."
+            },
+            {
+              "file": "s09-2.webp",
+              "cap": "Ring square to the tube.",
+              "tag": "ok"
+            },
+            {
+              "file": "s09-3.webp",
+              "cap": "Ring cocked off-square — fix this before it cures.",
+              "tag": "no"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "slide": 10,
+          "title": "Let the motor mount cure",
+          "body": [
+            "Stand the assembly up with the retainer end pointing up and leave it alone until the epoxy is hard."
+          ],
+          "notes": [
+            {
+              "type": "tip",
+              "text": "Standing it retainer-up lets gravity keep the rings seated instead of sagging."
+            }
+          ],
+          "images": [
+            {
+              "file": "s10-1.webp",
+              "cap": "Motor mount standing on the forward ring while it cures."
             }
           ]
         }

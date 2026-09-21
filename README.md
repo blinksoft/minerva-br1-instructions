@@ -59,7 +59,7 @@ that never change.
 
 * The current kit's body tube is **white**. Some photos show an older kraft-brown
   tube; parts and steps are identical.
-* Steps 9 and 10 (the rail buttons) use panels rendered from the original slides
+* Steps 1 and 2 (the rail buttons) use panels rendered from the original slides
   rather than the bare photos, so the arrows, orange callouts and numbered badges
   showing *where* the glue goes survive the conversion. Regenerating them needs the
   source .pptx; the finished WebP files are committed.
