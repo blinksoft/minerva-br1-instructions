@@ -12,7 +12,7 @@ index.html               generated — do not edit by hand
 build.py                 regenerates index.html from content/steps.json
 content/steps.json       all text: parts, tools, steps, callouts, captions  <- edit this
 content/images.json      image dimensions (generated when photos were extracted)
-assets/img/              build photos (WebP) + program emblem
+assets/img/              build photos (WebP), program emblem, qr.svg (QR code to the Pages URL, shown in the hero)
 files/BR-1.ork           the program's OpenRocket model, linked from the last step
 assets/css/style.css     styles, including print and dark mode
 assets/js/app.js         progress checkboxes, theme toggle, photo lightbox

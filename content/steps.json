@@ -5,7 +5,8 @@
     "block": "Block 0",
     "title": "Minerva BR-1 Assembly Instructions",
     "subtitle": "Block 0 build guide — Georgia Wing High Power Rocketry, Civil Air Patrol",
-    "source": "Converted from the Block 0 instruction deck. Steps follow the same order as the briefing."
+    "source": "Converted from the Block 0 instruction deck. Steps follow the same order as the briefing.",
+    "url": "https://blinksoft.github.io/minerva-br1-instructions/"
   },
   "intro": {
     "heading": "Before you start",
@@ -16,7 +17,8 @@
       "Your body tube is white. Some photos in this guide show an older kraft-brown tube — the parts and steps are the same."
     ],
     "safety": [
-      "Wear eye protection when sanding and when mixing epoxy.",
+      "Epoxy is a skin sensitizer. Every exposure raises the odds of a permanent allergic reaction, so wear nitrile gloves whenever you mix, spread or clean up epoxy. Never wipe it off skin with solvent; wash with soap and water.",
+      "Wear eye protection when sanding, when mixing epoxy, and whenever you use superglue. Superglue can spatter, and it bonds to the eye instantly.",
       "Work in a ventilated area. Epoxy and superglue fumes build up fast in a closed room.",
       "Superglue bonds skin instantly. Keep acetone or debonder nearby, and never put your finger behind a hole you are about to glue into unless the step tells you to.",
       "No motors, igniters, or black powder anywhere near the build table."
@@ -38,6 +40,8 @@
     "10 ft nylon cord"
   ],
   "tools": [
+    "Nitrile gloves",
+    "Safety glasses",
     "2 × 7/16 wrenches",
     "Phillips screwdriver",
     "Scissors or wire cutters",

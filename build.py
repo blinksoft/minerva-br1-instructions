@@ -149,15 +149,22 @@ page = f"""<!doctype html>
 <main class="wrap" id="top">
 
   <div class="hero">
-    <img class="logo" src="assets/img/logo.svg" alt="Georgia Wing High Power Rocketry emblem">
-    <p class="eyebrow">{e(meta['program'])}</p>
-    <h1>{e(meta['kit'])} {e(meta['block'])}<br>Assembly Instructions</h1>
-    <p class="lede">{e(meta['subtitle'])}</p>
-    <div class="metastrip">
-      <span class="chip">{total} steps</span>
-      <span class="chip">{len(D['stages'])} stages</span>
-      <span class="chip">Progress saves on this device</span>
+    <div class="hero-text">
+      <img class="logo" src="assets/img/logo.svg" alt="Georgia Wing High Power Rocketry emblem">
+      <p class="eyebrow">{e(meta['program'])}</p>
+      <h1>{e(meta['kit'])} {e(meta['block'])}<br>Assembly Instructions</h1>
+      <p class="lede">{e(meta['subtitle'])}</p>
+      <div class="metastrip">
+        <span class="chip">{total} steps</span>
+        <span class="chip">{len(D['stages'])} stages</span>
+        <span class="chip">Progress saves on this device</span>
+      </div>
     </div>
+    <a class="qr" href="{e(meta['url'])}" title="Open this guide on your phone">
+      <img src="assets/img/qr.svg" width="180" height="180" alt="QR code linking to this guide">
+      <span class="qr-label">Scan to follow along on your phone</span>
+      <span class="qr-url">{e(meta['url'].replace('https://','').rstrip('/'))}</span>
+    </a>
   </div>
 
   <section id="start">
