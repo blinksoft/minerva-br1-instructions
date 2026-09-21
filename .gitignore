@@ -7,3 +7,4 @@ Thumbs.db
 curriculum/video/out/
 .env
 .venv/
+__pycache__/
