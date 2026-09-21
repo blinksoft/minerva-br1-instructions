@@ -72,7 +72,11 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"; echo "Nothing changed."; exit 0
           fi
           git commit -m "Render and publish segment videos (automated)"
-          git push origin main
+          # another push may have landed meanwhile; rebase our single commit onto it and retry
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && break
+            sleep 10
+          done
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       # Pushes made with the workflow token do not trigger other workflows, so start the Pages deploy.

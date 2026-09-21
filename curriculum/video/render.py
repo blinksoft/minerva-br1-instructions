@@ -542,7 +542,6 @@ def build(seg, script_only=False, force=False):
         if c["type"] != "pause":
             narration_for(sdir, work, n, c["say"], ff)
     fp = fingerprint(sdir)
-    upload_kit(seg, meta, cues, sdir, outdir)
     sha_path = os.path.join(outdir, f"{seg}.sha")
     out_mp4 = os.path.join(outdir, f"{seg}.mp4")
     if not force and os.path.exists(out_mp4) and os.path.exists(sha_path) and open(sha_path).read().strip() == fp:
