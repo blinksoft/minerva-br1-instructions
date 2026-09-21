@@ -75,7 +75,7 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 | S3 | Center of gravity | Josh | | | |
 | S4 | Center of pressure | Nichalia | | | |
 | S5 | Stability margin and the swing test | Josh | | | |
-| S6 | How a motor is measured | Nichalia | QH2Fx01EW4c | videos/S06.mp4 | published 2026-09-21 |
+| S6 | How a motor is measured | Nichalia | DU7hl1mqEZw | videos/S06.mp4 | published 2026-09-21 |
 | S7 | Reading the motor code | Josh | | | |
 | S8 | Thrust curves and the delay | Nichalia | | | |
 | S9 | Motor sizes, types and safety | Josh | | | |
