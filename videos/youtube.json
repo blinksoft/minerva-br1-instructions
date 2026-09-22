@@ -54,7 +54,7 @@
       "url": "https://youtu.be/eR_gO5_ybDc",
       "publishedAt": "2026-09-22T05:36:43+00:00",
       "previousVideoId": "SxHvgvVJ-f4",
-      "thumbnail": false,
+      "thumbnail": true,
       "privacyStatus": "unlisted"
     },
     "S05": {
@@ -99,7 +99,7 @@
       "publishedAt": "2026-09-22T05:31:52+00:00",
       "previousVideoId": null,
       "privacyStatus": "unlisted",
-      "thumbnail": false
+      "thumbnail": true
     },
     "S10": {
       "videoId": "g4YKIFKWCks",
@@ -110,7 +110,7 @@
       "publishedAt": "2026-09-22T05:31:56+00:00",
       "previousVideoId": null,
       "privacyStatus": "unlisted",
-      "thumbnail": false
+      "thumbnail": true
     },
     "S11": {
       "videoId": "yvPDSQfPAOY",
@@ -121,7 +121,7 @@
       "publishedAt": "2026-09-22T05:32:00+00:00",
       "previousVideoId": null,
       "privacyStatus": "unlisted",
-      "thumbnail": false
+      "thumbnail": true
     },
     "S12": {
       "videoId": "xcXoR-tNCdA",
@@ -132,7 +132,7 @@
       "publishedAt": "2026-09-22T05:32:03+00:00",
       "previousVideoId": null,
       "privacyStatus": "unlisted",
-      "thumbnail": false
+      "thumbnail": true
     }
   }
 }
