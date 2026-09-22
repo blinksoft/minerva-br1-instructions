@@ -75,7 +75,7 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 | S2 | NAR, Tripoli and certification | Nichalia | | | |
 | S3 | Center of gravity | Josh | | | |
 | S4 | Center of pressure | Nichalia | | | |
-| S5 | Stability margin and the swing test | Josh | | | |
+| S5 | Stability margin | Josh | | | |
 | S6 | How a motor is measured | Nichalia | Dk7ehuakwdI | videos/S06.mp4 | published 2026-09-21 |
 | S7 | Reading the motor code | Josh | | | |
 | S8 | Thrust curves and the delay | Nichalia | | | |
