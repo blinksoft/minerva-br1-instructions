@@ -1,0 +1,43 @@
+# S08 — Thrust curves and the delay: narration script
+
+Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
+Leave a beat of silence at the start and end of each. Re-run render.py and the slides
+re-time themselves to your voice.
+
+**01** `voice/01.wav`
+
+Segment eight. Thrust curves and the delay. By the end of this you will be able to read a thrust curve, point to total impulse, peak thrust and burn time on it, and explain what a wrong delay looks like on the field.
+
+**02** `voice/02.wav`
+
+Every motor code has a picture behind it. This is the thrust curve of the G74 most of you will fly, from thrustcurve.org. Thrust, the push in Newtons, goes up the side. Time runs along the bottom. The area under the line is total impulse, Segment six's number: about eighty-three Newton-seconds. The height is thrust. It peaks just over ninety Newtons, and averages seventy-four across the burn, the number in the code. Where the line drops to zero is burnout, just after one second.
+
+**03** `voice/03.wav`
+
+Now put an H next to it. The orange curve is the H128, a motor some of you will certify on. Bigger area: one hundred and seventy-three Newton-seconds, about twice the G74. Taller line: one hundred and twenty-eight Newtons average. And it burns a little longer. One step up the letter ladder, drawn.
+
+**04** `voice/04.wav`
+
+Shape matters too. Here is another G, the G40, in orange. It pushes hardest in its first instant, then fades for over two seconds. The G74 climbs to about ninety Newtons, holds it for a second, and stops. A motor that spikes at the start is built to get a heavy rocket moving on the rail. A flat one is a steady push. Same letter, different shape, different job.
+
+**05** `voice/05.wav`
+
+Now the flight. OpenRocket's simulation of the BR-1 you are building, on the G74W-6 most of you will fly. At burnout, just over one second in, the motor stops. The rocket does not. It is doing about one hundred and fifty miles an hour, sixty-eight meters per second, and coasts upward, slowing the whole way. Five and a half seconds later it runs out of climb. That top is apogee, about seven hundred feet, two hundred and ten meters up, at six point eight seconds: the highest point and the slowest. That is where you want the parachute out. One more number from that first second. The G74 shoves the BR-1 up at about eight g, eight times the pull of gravity. The H, thirteen g. Astronauts on a Saturn V felt about four. Nobody rides a rocket that pulls thirteen.
+
+**06** `voice/06.wav`
+
+The delay is a timer in the motor. It starts at burnout and fires the charge that pushes the chute out. Same flight, now as speed. Too short, the green line at two seconds, and the chute opens with the rocket still doing about eighty-five miles an hour, thirty-eight meters per second. Shredded chute, zippered tube. Too long, and the rocket is past apogee, nose down and gaining speed when the chute opens. Same result, or worse. The right delay is the coast time, burnout to apogee.
+
+**07 — pause card, no narration.** The card reads: _Same rocket, same G motor, but a 12 second delay instead of 6. Where is the rocket pointing when the chute comes out?_
+
+**08** `voice/08.wav`
+
+Nose down and speeding up. It passed apogee six seconds ago. The chute opens into a fast, falling rocket: a shredded chute, or a zippered tube. Now stretch that. Six seconds late is bad. Six seconds early is bad the other way. The same BR-1 on an H135 coasts eight seconds, on the G74 five and a half. Rocket and motor together set the coast, so the delay must match both.
+
+**09** `voice/09.wav`
+
+How do you find the coast time? OpenRocket flies the rocket and prints the best delay. For the BR-1 on the G74 it prints five point seven seconds. The closest you can buy is six, so the program flies the G74W-6 from Segment seven, and the ejection lands just past the top. The green line is where a twelve second delay would fire: more than six seconds past apogee. Segment twelve shows where OpenRocket prints it.
+
+**10** `voice/10.wav`
+
+The one thing to remember. On a thrust curve the area is the letter and the height is the thrust. And the delay must match the coast, burnout to apogee.

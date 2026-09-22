@@ -49,6 +49,9 @@ jobs:
       - name: Install
         run: pip install -r curriculum/video/requirements.txt
 
+      - name: Lint the cue files against STYLE.md
+        run: python3 curriculum/video/lint.py
+
       - name: Render changed segments
         env:
           ELEVEN_LABS_API_KEY: ${{ secrets.ELEVEN_LABS_API_KEY }}

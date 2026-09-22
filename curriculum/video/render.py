@@ -5,8 +5,11 @@
     python3 render.py all            # every SNN folder; unchanged segments are skipped
     python3 render.py S06 --force    # rebuild even if nothing changed
     python3 render.py S06 --script   # only regenerate S06/script.md for recording
+    python3 render.py S06 --slides   # draw the slides to S06/slides/ only: no narration, no video, no cost
 
-Each cue in SNN/cues.json is one slide plus one line of narration. Narration audio is looked up in
+Each cue in SNN/cues.json is one slide plus one line of narration. A segment may add slide types of
+its own in SNN/slides.py (a `register(render)` function that adds to render.SLIDES). Shared data the
+slides draw from (the BR-1's OpenRocket results, the motors' thrust curves) lives in shared/. Narration audio is looked up in
 this order: SNN/voice/NN.wav (a real person reading script.md), then SNN/narration/NN-<hash>.mp3
 (synthesized earlier and committed), and only if neither exists is the TTS engine called. The hash
 is of the spoken text plus the voice, so a cue is synthesized once per wording and never again.
@@ -239,6 +242,52 @@ def slide_photo(c, m):
     return im
 
 
+def slide_clip(c, m):
+    """A screen-recording clip. The still is the clip's first frame on the plate; the video build
+    overlays the moving clip on the same plate (see encode_clip). Cue keys: "src" (path under the
+    segment folder), "heading", optional "crop": [x, y, w, h] in source pixels, optional "fit":
+    "hold" (default: the last frame holds if the narration runs longer, the tail is cut if shorter)
+    or "stretch" (the clip is slowed or sped so it ends with the narration)."""
+    im, d = canvas()
+    heading(d, c["heading"], y=56, size=56)
+    footer(d, im, m["footer"])
+    src = os.path.join(c.get("_dir", ""), c["src"])
+    frame = first_frame(src, c.get("crop"))
+    x, y, w, h = clip_placement(frame.size)
+    im.paste(frame.resize((w, h), Image.LANCZOS), (x, y))
+    d.rectangle((x - 2, y - 2, x + w + 1, y + h + 1), outline=LINE, width=2)
+    return im
+
+
+CLIP_BOX = (96, 140, W - 192, 860)      # where the clip sits on the plate, under the heading
+
+
+def clip_placement(size):
+    bx, by, bw, bh = CLIP_BOX
+    sw, sh = size
+    s = min(bw / sw, bh / sh)
+    w, h = int(sw * s) // 2 * 2, int(sh * s) // 2 * 2
+    return bx + (bw - w) // 2, by + (bh - h) // 2, w, h
+
+
+def first_frame(src, crop=None):
+    import tempfile
+    ff = ffmpeg()
+    tmp = tempfile.NamedTemporaryFile(suffix=".png", delete=False).name
+    vf = [f"crop={crop[2]}:{crop[3]}:{crop[0]}:{crop[1]}"] if crop else ["null"]
+    run(ff, "-y", "-v", "error", "-i", src, "-vf", ",".join(vf), "-frames:v", "1", tmp)
+    im = Image.open(tmp).convert("RGB"); im.load(); os.remove(tmp)
+    return im
+
+
+def media_seconds(ff, path):
+    out = subprocess.run([ff, "-i", path], capture_output=True, text=True).stderr
+    mt = re.search(r"Duration: (\d+):(\d+):(\d+\.?\d*)", out)
+    if not mt:
+        sys.exit(f"cannot read duration of {path}")
+    return int(mt.group(1)) * 3600 + int(mt.group(2)) * 60 + float(mt.group(3))
+
+
 def slide_curves(c, m):
     """Real thrust curves from thrustcurve.org data, on shared axes, area under each filled."""
     im, d = canvas()
@@ -253,16 +302,18 @@ def slide_curves(c, m):
     X = lambda t: x0 + t / tmax * pw
     Y = lambda f: y0 + ph - f / fmax * ph
     # axes and light gridlines
-    for k in range(0, int(fmax) + 1, 20):
+    fs, ts_ = int(max(20, nice_step(fmax))), nice_step(tmax)
+    for k in range(0, int(fmax) + 1, fs):
         d.line((x0, Y(k), x0 + pw, Y(k)), fill="#22262f", width=2)
         d.text((x0 - 70, Y(k) - 16), f"{k}", font=font("Regular", 26), fill=INK3)
-    for k in range(0, int(tmax) + 1, 2):
-        d.text((X(k) - 10, y0 + ph + 12), f"{k}", font=font("Regular", 26), fill=INK3)
+    k = 0
+    while k <= tmax:
+        d.text((X(k) - 10, y0 + ph + 12), f"{k:g}", font=font("Regular", 26), fill=INK3); k += ts_
     d.line((x0, y0 + ph, x0 + pw, y0 + ph), fill=INK3, width=4)
     d.line((x0, y0, x0, y0 + ph), fill=INK3, width=4)
     d.text((x0 + pw - 170, y0 + ph + 46), "time, seconds", font=font("SemiBold", 28), fill=INK3)
     d.text((x0 + 12, y0 - 40), "thrust, Newtons", font=font("SemiBold", 28), fill=INK3)
-    colors = [ACCENT, WARN]
+    colors = [ACCENT, WARN, OK]
     overlay = Image.new("RGBA", im.size, (0, 0, 0, 0)); od = ImageDraw.Draw(overlay)
     for mm, col in zip(motors, colors):
         pts = [(X(0), Y(0))] + [(X(t), Y(f)) for t, f in mm["samples"]] + [(X(mm["samples"][-1][0]), Y(0))]
@@ -319,6 +370,254 @@ def slide_ladder(c, m):
     return im
 
 
+def nice_step(span, target=8):
+    for s in (0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 5000):
+        if span / s <= target:
+            return s
+    return 10000
+
+
+def shared(name):
+    return json.load(open(os.path.join(HERE, "shared", name), encoding="utf-8"))
+
+
+def geometry():
+    try:
+        return shared("br1-sim.json")["geometry"]
+    except (OSError, KeyError):
+        return {"noseLengthM": 0.2032, "bodyLengthM": 0.9398, "bodyRadiusM": 0.041656, "finRootM": 0.09,
+                "finTipM": 0.06, "finHeightM": 0.09, "finSweepM": 0.015, "finOffsetFromBottomM": 0.02,
+                "motorMountLengthM": 0.1905, "totalLengthM": 1.143}
+
+
+def draw_rocket(d, x0, ya, scale, g, fins=True, motor=False):
+    """The BR-1 in side view, nose at x0 pointing left, to scale. Returns (x_nose_tip, x_tail)."""
+    r = g["bodyRadiusM"] * scale
+    nl, bl = g["noseLengthM"] * scale, g["bodyLengthM"] * scale
+    xn, xb, xt = x0, x0 + nl, x0 + nl + bl
+    if fins:
+        root, tip, h, sw = (g[k] * scale for k in ("finRootM", "finTipM", "finHeightM", "finSweepM"))
+        xr = xt - g["finOffsetFromBottomM"] * scale - root
+        for sgn in (-1, 1):
+            d.polygon([(xr, ya + sgn * r), (xr + sw, ya + sgn * (r + h)), (xr + sw + tip, ya + sgn * (r + h)),
+                       (xr + root, ya + sgn * r)], fill="#b9b5ab", outline=INK3)
+    d.rectangle((xb, ya - r, xt, ya + r), fill="#d9d7d1", outline=INK3, width=3)
+    d.pieslice((xn, ya - r, xn + 2 * nl, ya + r), 90, 270, fill="#ececec", outline=INK3, width=3)
+    if motor:
+        ml, mr = g["motorMountLengthM"] * scale, 0.0145 * scale
+        d.rectangle((xt - ml, ya - mr, xt + 4, ya + mr), fill=WARN)
+    for fx in (0.35, 0.92):
+        x = xb + bl * fx
+        d.rectangle((x - 6, ya + r, x + 6, ya + r + 14), fill=INK3)
+    return xn, xt
+
+
+MARK_COLORS = {"accent": ACCENT, "warn": WARN, "ok": OK, "ink": INK, "dim": INK3}
+
+
+def slide_rocket(c, m):
+    """The BR-1 side view with labelled points along it. Markers: [{"label": "CG", "x": 0.70 (metres
+    from the nose tip) or "frac": 0.6, "color": accent|warn|ok, "below": true, "sub": "small text"}].
+    Optional "fins": false, "motor": true, "ruler": {"from": m, "to": m, "label": "1.4 calibers"}."""
+    im, d = canvas()
+    heading(d, c["heading"])
+    g = geometry()
+    scale = (W - 400) / g["totalLengthM"]
+    ya = 520
+    xn, xt = draw_rocket(d, 200, ya, scale, g, fins=c.get("fins", True), motor=c.get("motor", False))
+    xm = lambda mk: xn + (mk["x"] if "x" in mk else mk.get("frac", 0.5) * g["totalLengthM"]) * scale
+    for mk in c.get("markers", []):
+        x = xm(mk); col = MARK_COLORS.get(mk.get("color", "accent"), mk.get("color", ACCENT)); rr = 22
+        d.ellipse((x - rr, ya - rr, x + rr, ya + rr), fill=col, outline=BG, width=4)
+        f = font("ExtraBold", 40); tw = d.textlength(mk["label"], font=f)
+        if mk.get("below"):
+            d.line((x, ya + rr, x, ya + 140), fill=col, width=4)
+            d.text((x - tw / 2, ya + 150), mk["label"], font=f, fill=col)
+            if mk.get("sub"):
+                sf = font("Regular", 30); sw = d.textlength(mk["sub"], font=sf)
+                d.text((x - sw / 2, ya + 205), mk["sub"], font=sf, fill=INK2)
+        else:
+            d.line((x, ya - rr, x, ya - 140), fill=col, width=4)
+            d.text((x - tw / 2, ya - 200), mk["label"], font=f, fill=col)
+            if mk.get("sub"):
+                sf = font("Regular", 30); sw = d.textlength(mk["sub"], font=sf)
+                d.text((x - sw / 2, ya - 245), mk["sub"], font=sf, fill=INK2)
+    if c.get("ruler"):
+        ru = c["ruler"]; xa, xb2 = xn + ru["from"] * scale, xn + ru["to"] * scale; yr = ya + 275
+        d.line((xa, yr, xb2, yr), fill=INK, width=4)
+        for x in (xa, xb2):
+            d.line((x, yr - 14, x, yr + 14), fill=INK, width=4)
+        f = font("SemiBold", 34); tw = d.textlength(ru["label"], font=f)
+        d.text(((xa + xb2) / 2 - tw / 2, yr + 20), ru["label"], font=f, fill=INK)
+    if c.get("caption"):        # one line; keep it under about 60 characters
+        text_block(d, (96, 850), c["caption"], font("SemiBold", 44), INK, W - 192)
+    if c.get("note"):
+        text_block(d, (96, H - 145), c["note"], font("Regular", 34), INK2, W - 192)
+    footer(d, im, m["footer"])
+    return im
+
+
+def slide_table(c, m):
+    """Heading, column titles, rows of cells. Optional "widths" (relative), "highlight" (row indexes),
+    "size" (cell font size, default 40), "rowHeight" (default 78), "note"."""
+    im, d = canvas()
+    y = heading(d, c["heading"]) + 10
+    cols, rows = c["columns"], c["rows"]
+    widths = c.get("widths") or [1] * len(cols)
+    avail = W - 192; xs = [96]
+    for w in widths:
+        xs.append(xs[-1] + avail * w / sum(widths))
+    hf, cf = font("SemiBold", 30), font("Regular", c.get("size", 40))
+    for i, col in enumerate(cols):
+        d.text((xs[i] + 16, y), col, font=hf, fill=ACCENT)
+    y += 52; d.line((96, y, W - 96, y), fill=LINE, width=3); y += 16
+    hi = set(c.get("highlight", [])); rh = c.get("rowHeight", 78)
+    for ri, row in enumerate(rows):
+        if ri in hi:
+            d.rounded_rectangle((96, y - 10, W - 96, y + rh - 20), 10, fill=CARD, outline=ACCENT, width=2)
+        for i, cell in enumerate(row):
+            text_block(d, (xs[i] + 16, y), str(cell), cf, INK if (not hi or ri in hi) else INK2,
+                       xs[i + 1] - xs[i] - 32, gap=1.1)
+        y += rh
+    if c.get("note"):
+        text_block(d, (96, H - 190), c["note"], font("Regular", 34), INK2, W - 192)
+    footer(d, im, m["footer"])
+    return im
+
+
+def slide_figure(c, m):
+    """One large image (a diagram or photo from the segment folder) with an optional heading, caption
+    and credit."""
+    im, d = canvas()
+    y = heading(d, c["heading"]) if c.get("heading") else 96
+    img = Image.open(os.path.join(c.get("_dir", ""), c["image"])).convert("RGB")
+    box_w = W - 192
+    box_h = H - y - (270 if c.get("caption") else 150)
+    img.thumbnail((box_w, box_h))
+    px, py = 96 + (box_w - img.width) // 2, y + 10
+    mask = Image.new("L", img.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, img.width - 1, img.height - 1), 28, fill=255)
+    im.paste(img, (px, py), mask)
+    if c.get("caption"):
+        text_block(d, (96, py + img.height + 28), c["caption"], font("SemiBold", 40), INK, W - 192)
+    if c.get("credit"):
+        d.text((96, H - 118), c["credit"], font=font("Regular", 22), fill=INK3)
+    footer(d, im, m["footer"])
+    return im
+
+
+CODE_COLORS = [ACCENT, WARN, OK, "#c48be0", INK2]
+
+
+def slide_code(c, m):
+    """A motor designation broken into its parts. "parts": [{"text": "G", "label": "impulse class",
+    "sub": "the letter ladder"}, ...]; a part without a label is drawn dim (the dash, say)."""
+    im, d = canvas()
+    heading(d, c["heading"])
+    parts = c["parts"]; f = font("ExtraBold", 230); yb = 270
+    x = (W - sum(d.textlength(p["text"], font=f) for p in parts)) / 2
+    placed, k = [], 0
+    for p in parts:
+        tw = d.textlength(p["text"], font=f)
+        col = CODE_COLORS[k % len(CODE_COLORS)] if p.get("label") else INK3
+        d.text((x, yb), p["text"], font=f, fill=col)
+        if p.get("label"):
+            placed.append((x + tw / 2, col, p)); k += 1
+        x += tw
+    slot = (W - 192) / max(len(placed), 1)
+    for i, (cx, col, p) in enumerate(placed):
+        lx = 96 + slot * i + slot / 2
+        d.ellipse((cx - 9, yb + 284, cx + 9, yb + 302), fill=col)
+        d.line((cx, yb + 293, lx, 690), fill=col, width=4)
+        lf = font("ExtraBold", 40); tw = d.textlength(p["label"], font=lf)
+        d.text((lx - tw / 2, 705), p["label"], font=lf, fill=col)
+        if p.get("sub"):
+            text_block(d, (lx - slot / 2 + 20, 762), p["sub"], font("Regular", 32), INK2, slot - 40, align="center")
+    if c.get("note"):
+        text_block(d, (96, H - 190), c["note"], font("Regular", 34), INK2, W - 192)
+    footer(d, im, m["footer"])
+    return im
+
+
+FT, MPH, IN = 3.28084, 2.23694, 39.3701          # metres to feet, m/s to mph, metres to inches
+US_UNITS = {"altitudeM": (FT, "altitude, feet"), "lateralM": (FT, "distance from the pad, feet"),
+            "speedMs": (MPH, "speed, miles per hour"), "accelMs2": (FT, "acceleration, ft/s²"),
+            "cgM": (IN, "CG, inches from the nose tip"), "cpM": (IN, "CP, inches from the nose tip"),
+            "marginCal": (1.0, "stability margin, calibers"), "stabilityCal": (1.0, "stability, calibers"),
+            "thrustN": (1.0, "thrust, Newtons"), "massKg": (35.274, "mass, ounces")}
+EVENT_NAMES = {"launchrod": "off the rail", "burnout": "burnout", "ejectioncharge": "ejection",
+               "apogee": "apogee", "groundhit": "landing"}
+
+
+def slide_flight(c, m):
+    """A line from the BR-1's stored OpenRocket flight (shared/br1-sim.json): "y" is a series key
+    (altitudeM, speedMs, massKg, cgM, cpM, stabilityCal, thrustN), default altitudeM. "sim" picks the
+    simulation (default 0). "tmax" clips time. "events" lists which flight events to dot and label.
+    "mark": {"t": 14.1, "label": "..."} draws one extra vertical line. "summary": false hides the
+    numbers column. "ymin" sets the axis floor (default 0), for a series like marginCal that never nears zero."""
+    im, d = canvas()
+    heading(d, c["heading"])
+    if c.get("caption"):
+        text_block(d, (96, 222), c["caption"], font("SemiBold", 36), INK2, W - 192)
+    sim = shared("br1-sim.json")["simulations"][c.get("sim", 0)]
+    key = c.get("y", "altitudeM")
+    apogee = next((e["time"] for e in sim["events"] if e["type"] == "apogee"), 10)
+    tmax = c.get("tmax") or apogee * 1.6
+    # US units on screen, the way the program's OpenRocket is set: feet, miles per hour, calibers
+    conv, ylabel = US_UNITS.get(key, (1.0, key))
+    pts = [(r["t"], r[key] * conv) for r in sim["series"] if r["t"] <= tmax and r.get(key) is not None]
+    ymin = c.get("ymin", min(0, min(v for _, v in pts))); ymax = max(v for _, v in pts) * 1.12 or 1   # "ymin" lifts the axis floor
+    x0, y0, pw, ph = 190, 380, 1300, 470
+    X = lambda t: x0 + t / tmax * pw
+    Y = lambda v: y0 + ph - (v - ymin) / (ymax - ymin) * ph
+    ys, ts = nice_step(ymax - ymin), nice_step(tmax)
+    k = ymin
+    while k <= ymax:
+        d.line((x0, Y(k), x0 + pw, Y(k)), fill="#22262f", width=2)
+        d.text((x0 - 90, Y(k) - 16), f"{k:g}", font=font("Regular", 26), fill=INK3); k += ys
+    k = 0
+    while k <= tmax:
+        d.text((X(k) - 10, y0 + ph + 12), f"{k:g}", font=font("Regular", 26), fill=INK3); k += ts
+    d.line((x0, Y(0), x0 + pw, Y(0)), fill=INK3, width=4)
+    d.line((x0, y0, x0, y0 + ph), fill=INK3, width=4)
+    d.text((x0 + pw - 170, y0 + ph + 46), "time, seconds", font=font("SemiBold", 28), fill=INK3)
+    d.text((x0 + 12, y0 - 40), c.get("ylabel", ylabel), font=font("SemiBold", 28), fill=INK3)
+    d.line([(X(t), Y(v)) for t, v in pts], fill=ACCENT, width=6, joint="curve")
+    val = lambda t: min(pts, key=lambda p: abs(p[0] - t))[1]
+    placed = []      # (x, y) of labels already drawn, to stagger near-coincident events
+    for e in sim["events"]:
+        if e["type"] in c.get("events", ["burnout", "apogee", "ejectioncharge"]) and e["time"] <= tmax:
+            x, y = X(e["time"]), Y(val(e["time"]))
+            d.ellipse((x - 12, y - 12, x + 12, y + 12), fill=WARN, outline=BG, width=3)
+            lab = f"{EVENT_NAMES.get(e['type'], e['type'])}  {e['time']:.1f} s"
+            lf = font("SemiBold", 30); tw = d.textlength(lab, font=lf)
+            ly = y - 48
+            while any(abs(px - x) < tw + 30 and abs(py - ly) < 40 for px, py in placed):
+                ly += 44           # slide the label down until it is clear
+            lx = min(x + 18, x0 + pw - tw)
+            d.text((lx, ly), lab, font=lf, fill=WARN); placed.append((lx, ly))
+    if c.get("mark"):
+        mk = c["mark"]; x = X(mk["t"])
+        for yy in range(int(y0), int(y0 + ph), 24):
+            d.line((x, yy, x, yy + 12), fill=OK, width=4)
+        lf = font("SemiBold", 30); tw = d.textlength(mk["label"], font=lf)
+        lx = x + 14 if x + 14 + tw <= x0 + pw else x - 14 - tw
+        d.text((lx, y0 + ph - 60), mk["label"], font=lf, fill=OK)
+    if c.get("summary", True):
+        s = sim["summary"]; lx, ly = x0 + pw + 40, y0
+        for lab, v in (("apogee", f"{s['maxaltitude'] * FT:,.0f} ft ({s['maxaltitude']:.0f} m)"), ("top speed", f"{s['maxvelocity'] * MPH:.0f} mph ({s['maxvelocity']:.0f} m/s)"),
+                       ("off the rail", f"{s['launchrodvelocity'] * FT:.0f} ft/s ({s['launchrodvelocity']:.1f} m/s)"), ("to apogee", f"{s['timetoapogee']:.1f} s"),
+                       ("best delay", f"{s['optimumdelay']:.1f} s")):
+            d.text((lx, ly), lab, font=font("Regular", 28), fill=INK2)
+            d.text((lx, ly + 34), v, font=font("ExtraBold", 32), fill=INK); ly += 96
+        mname = sim['motor'].replace('HP-', '')
+        d.text((lx, ly + 10), f"OpenRocket, BR-1 on {'an' if mname[0] in 'AEFHILMNOSX' else 'a'} {mname}", font=font("Regular", 24), fill=INK3)
+    if c.get("note"):
+        d.text((96, H - 165), c["note"], font=font("ExtraBold", 42), fill=INK)
+    footer(d, im, m["footer"])
+    return im
+
+
 def slide_compare(c, m):
     im, d = canvas()
     heading(d, c["heading"])
@@ -342,7 +641,21 @@ def slide_compare(c, m):
 
 
 SLIDES = {"title": slide_title, "text": slide_text, "close": slide_close, "answer": slide_answer,
-          "photo": slide_photo, "curves": slide_curves, "ladder": slide_ladder, "compare": slide_compare}
+          "photo": slide_photo, "curves": slide_curves, "ladder": slide_ladder, "compare": slide_compare,
+          "rocket": slide_rocket, "table": slide_table, "figure": slide_figure, "code": slide_code,
+          "flight": slide_flight, "clip": slide_clip}
+BASE_SLIDES = dict(SLIDES)
+
+
+def load_plugin(sdir):
+    """Reset to the built-in slide types, then let SNN/slides.py add its own."""
+    SLIDES.clear(); SLIDES.update(BASE_SLIDES)
+    p = os.path.join(sdir, "slides.py")
+    if os.path.exists(p):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("slides_" + os.path.basename(sdir), p)
+        mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        mod.register(sys.modules[__name__])
 
 
 # ---------------------------------------------------------------- audio
@@ -352,16 +665,25 @@ def wav_seconds(path):
         return w.getnframes() / w.getframerate()
 
 
-# Spellings the placeholder voice gets wrong. Applied to the TTS input only; slide text and the
-# human reading script keep the real spelling.
+# Spellings the voices get wrong. Applied to the TTS input only; slide text and the human reading
+# script keep the real spelling. Whole tokens only, longest first. A segment adds its own with
+# "say_fixes": [["from", "to"], ...] in its cues.json meta; those are applied first.
 SAY_FIXES = [("Alpha III", "Alpha Three"), ("BR-1", "B R one"), ("N·s", "Newton-seconds"),
-             ("G74W", "G seventy-four W"), ("G12ST", "G twelve S T"), ("A8", "A eight"), ("G74", "G seventy-four"),
-             ("G12", "G twelve")]
+             ("H128W-14", "H one twenty-eight W, fourteen"), ("H115DM-14", "H one fifteen D M, fourteen"),
+             ("H135W-8", "H one thirty-five W, eight"), ("G74W-6", "G seventy-four W, six"), ("A8-3", "A eight, three"),
+             ("G74W", "G seventy-four W"), ("G12ST", "G twelve S T"), ("G40W", "G forty W"), ("H128W", "H one twenty-eight W"),
+             ("H115DM", "H one fifteen D M"), ("H135W", "H one thirty-five W"), ("H180W", "H one eighty W"),
+             ("A8", "A eight"), ("G74", "G seventy-four"), ("G12", "G twelve"), ("G40", "G forty"),
+             ("H128", "H one twenty-eight"), ("H115", "H one fifteen"), ("H135", "H one thirty-five"), ("H180", "H one eighty"),
+             ("APCP", "A P C P"), ("NFPA", "N F P A"), ("RSO", "R S O"), ("LCO", "L C O"), ("NAR", "N A R"),
+             ("FAA", "F A A"), ("CG", "C G"), ("CP", "C P"), ("L1", "Level one"), ("L2", "Level two"), ("L3", "Level three"),
+             (".ork", "dot ork"), ("BR-1.ork", "B R one dot ork")]
+_meta_fixes = []
 
 
 def speakable(text):
-    for a, b in SAY_FIXES:
-        text = text.replace(a, b)
+    for a, b in list(_meta_fixes) + SAY_FIXES:
+        text = re.sub(r"(?<![A-Za-z0-9])" + re.escape(a) + r"(?![A-Za-z0-9])", b, text)
     return text
 
 
@@ -386,16 +708,18 @@ def tts_eleven(text, out, ff):
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_44100_128",
         data=body, headers={"xi-api-key": key, "Content-Type": "application/json"})
-    for attempt in range(4):
+    for attempt in range(6):
         try:
-            mp3 = urllib.request.urlopen(req, timeout=120).read()
+            mp3 = urllib.request.urlopen(req, timeout=60).read()
             break
         except urllib.error.HTTPError as e:
             sys.exit(f"ElevenLabs error {e.code}: {e.read()[:300]}")
         except (urllib.error.URLError, TimeoutError, OSError) as e:
-            if attempt == 3:
-                sys.exit(f"ElevenLabs unreachable after 4 tries: {e}")
-            import time; time.sleep(5 * (attempt + 1))
+            # TLS handshakes time out now and then on some networks; a retry almost always goes through
+            if attempt == 5:
+                sys.exit(f"ElevenLabs unreachable after 6 tries: {e}")
+            print(f"  ElevenLabs: {e}; retrying", file=sys.stderr)
+            import time; time.sleep(3 * (attempt + 1))
     tmp = out + ".mp3"
     open(tmp, "wb").write(mp3)
     run(ff, "-y", "-v", "error", "-i", tmp, "-ar", "44100", "-ac", "1", out)
@@ -429,10 +753,12 @@ def chime(ff, out):
 def fingerprint(sdir):
     h = hashlib.sha1()
     files = [os.path.join(sdir, "cues.json"), os.path.abspath(__file__)]
-    for sub in ("assets", "narration", "voice"):
-        d = os.path.join(sdir, sub)
+    if os.path.exists(os.path.join(sdir, "slides.py")):
+        files.append(os.path.join(sdir, "slides.py"))
+    for d in (os.path.join(sdir, "assets"), os.path.join(sdir, "narration"), os.path.join(sdir, "voice"),
+              os.path.join(HERE, "shared")):
         if os.path.isdir(d):
-            files += sorted(os.path.join(d, f) for f in os.listdir(d))
+            files += sorted(os.path.join(d, f) for f in os.listdir(d) if os.path.isfile(os.path.join(d, f)))
     for f in files:
         h.update(os.path.relpath(f, ROOT).encode()); h.update(open(f, "rb").read())
     return h.hexdigest()
@@ -506,14 +832,16 @@ def upload_kit(seg, meta, cues, sdir, outdir):
 
 # ---------------------------------------------------------------- build
 
-def build(seg, script_only=False, force=False):
+def build(seg, script_only=False, force=False, slides_only=False):
     sdir = os.path.join(HERE, seg)
     spec = json.load(open(os.path.join(sdir, "cues.json"), encoding="utf-8"))
     meta = spec["meta"]
     cues = spec["cues"]
-    global _meta_voice, _seg_number
+    global _meta_voice, _seg_number, _meta_fixes
     _meta_voice = meta.get("voice")
+    _meta_fixes = [tuple(x) for x in meta.get("say_fixes", [])]
     _seg_number = int(re.sub(r"\D", "", seg) or 0)
+    load_plugin(sdir)
     work = os.path.join(HERE, "out", "work", seg)
     outdir = VIDEOS
     os.makedirs(work, exist_ok=True); os.makedirs(outdir, exist_ok=True)
@@ -533,6 +861,25 @@ def build(seg, script_only=False, force=False):
     open(os.path.join(sdir, "script.md"), "w", encoding="utf-8").write("\n".join(lines))
     if script_only:
         print("wrote", os.path.join(sdir, "script.md")); return
+
+    if slides_only:
+        slides = os.path.join(sdir, "slides")
+        if os.path.isdir(slides):
+            for f in os.listdir(slides):
+                os.remove(os.path.join(slides, f))
+        os.makedirs(slides, exist_ok=True)
+        n = 0
+        for c in cues:
+            n += 1
+            if c["type"] == "pause":
+                slide_pause(c, meta, 5).save(os.path.join(slides, f"{n:02d}-pause.png")); continue
+            c["_dir"] = sdir
+            SLIDES[c["type"]](c, meta).save(os.path.join(slides, f"{n:02d}-{c['type']}.png"))
+        words = sum(len(c.get("say", "").split()) for c in cues)
+        longest = max((len(c.get("say", "").split()) for c in cues), default=0)
+        print(f"{seg}: {n} slides written to {os.path.relpath(slides, ROOT)}; {words} narration words "
+              f"(about {words / 150 + 5 / 60 + 0.7 * n / 60:.1f} min), longest cue {longest} words")
+        return
 
     ff = ffmpeg()
     # make sure every cue's narration exists (synthesizes only what is missing), then fingerprint
@@ -577,7 +924,11 @@ def build(seg, script_only=False, force=False):
         aud = narration_for(sdir, work, n, c["say"], ff)
         dur = max(float(c.get("min", 0)), wav_seconds(aud) + PAD_AFTER)
         seg_mp4 = os.path.join(work, f"{n:02d}.mp4")
-        encode(ff, png, aud, dur, seg_mp4); segs.append(seg_mp4)
+        if c["type"] == "clip":
+            encode_clip(ff, png, os.path.join(sdir, c["src"]), aud, dur, seg_mp4, c)
+        else:
+            encode(ff, png, aud, dur, seg_mp4)
+        segs.append(seg_mp4)
         srt.append((t, t + dur, c["say"])); t += dur
 
     lst = os.path.join(work, "concat.txt")
@@ -595,6 +946,31 @@ def encode(ff, png, aud, dur, out):
         "-i", aud,
         "-af", "apad,aresample=48000", "-ac", "2",
         "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-tune", "stillimage", "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
+        "-t", f"{dur:.3f}", "-r", str(FPS), out)
+
+
+def encode_clip(ff, plate, src, aud, dur, out, c):
+    """Overlay a screen-recording clip on its plate for exactly dur seconds. The narration sets the
+    length: with fit "hold" (default) the clip's last frame stays up when the narration runs longer
+    and the clip's tail is dropped when it runs shorter; "stretch" retimes the clip to end with the
+    narration. The clip's own audio is not used."""
+    crop = c.get("crop")
+    frame = first_frame(src, crop)
+    x, y, w, h = clip_placement(frame.size)
+    clip_len = media_seconds(ff, src)
+    vf = [f"crop={crop[2]}:{crop[3]}:{crop[0]}:{crop[1]}"] if crop else []
+    if c.get("fit") == "stretch" and clip_len > 0:
+        vf.append(f"setpts=PTS*{dur / clip_len:.5f}")
+    vf += [f"fps={FPS}", f"scale={w}:{h}:flags=lanczos"]
+    graph = f"[1:v]{','.join(vf)}[v];[0:v][v]overlay={x}:{y}:eof_action=repeat:format=auto[out]"
+    run(ff, "-y", "-v", "error",
+        "-loop", "1", "-framerate", str(FPS), "-i", plate,
+        "-i", src,
+        "-i", aud,
+        "-filter_complex", graph, "-map", "[out]", "-map", "2:a",
+        "-af", "apad,aresample=48000", "-ac", "2",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
         "-t", f"{dur:.3f}", "-r", str(FPS), out)
 
@@ -619,4 +995,4 @@ if __name__ == "__main__":
     if args[0] == "all":
         targets = sorted(d for d in os.listdir(HERE) if re.fullmatch(r"S\d+", d) and os.path.exists(os.path.join(HERE, d, "cues.json")))
     for seg in targets:
-        build(seg, script_only="--script" in sys.argv, force="--force" in sys.argv)
+        build(seg, script_only="--script" in sys.argv, force="--force" in sys.argv, slides_only="--slides" in sys.argv)

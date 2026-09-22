@@ -52,7 +52,7 @@ On resume the video answers: Less. Propellant is mass at the very back. As it bu
 ## Check before filming
 - The exact G and H motors the program flies this season, present in OpenRocket's motor database.
 - BR-1.ork mass overrides updated from a real weighed rocket, so the on-camera numbers are believable.
-- The program's stability margin target for an L1 flight, if it differs from the general 1 to 2 calibers.
+- The program's stability margin target for an L1 flight, if it differs from the series' 1 to 3 calibers.
 
 ## Sources to replace
 "Interpreting OpenRocket simulation results" (youtu.be/543Gnd63saM) and "Running a simulation in

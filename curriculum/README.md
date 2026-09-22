@@ -108,4 +108,4 @@ what to do at a pause card, and what to skip if the day runs late.
 See production.md for the recording format, the pause and answer cards, hosting, and how the guide page
 will embed the videos later. video/README.md covers the generated videos: slides, placeholder narration,
 pause card and captions are built from one cue file per segment, and a recorded voice drops in afterward
-without re-editing. S6 is built this way as the first example.
+without re-editing. All twelve segments are built this way; STYLE.md in that folder is the voice contract and REVIEW.md the walk-through sheet.

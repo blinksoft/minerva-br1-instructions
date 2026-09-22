@@ -1,0 +1,47 @@
+# S04 — Center of pressure: narration script
+
+Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
+Leave a beat of silence at the start and end of each. Re-run render.py and the slides
+re-time themselves to your voice.
+
+**01** `voice/01.wav`
+
+Segment four. Center of pressure. By the end of this you will be able to explain what the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft.
+
+**02** `voice/02.wav`
+
+A rocket never flies perfectly straight. A gust tips it a little sideways. Now the air is pushing on the side of everything. On the nose, on the tube, on the fins. All those small pushes add up to one push at one point. That point is the center of pressure, CP. On the BR-1 you are building right now, OpenRocket puts it thirty-three and three quarter inches, eighty-six centimeters back from the tip of the nose. Most of the way to the fins.
+
+**03** `voice/03.wav`
+
+Where the CP sits depends on shape, not weight. A big fin catches a lot of air, so a rocket with big fins has its CP back near the fins. A rocket with tiny fins has its CP further forward. Now notice what is not on that list. Slide a motor in. Add weight to the nose. The CP does not move at all. The outline has not changed, so the air pushes on it the same way. Weight moves the center of gravity, the CG you met in Segment three. Shape moves the CP.
+
+**04** `voice/04.wav`
+
+So which parts push? Not all of them equally. At the small angles a rocket really flies at, the nose cone makes a little sideways force. The body tube, long as it is, makes almost none. A smooth cylinder at a slight angle barely pushes back on the air. The fins make most of it. That is why the BR-1's CP sits back near the fins and not in the middle of the tube. Hold that thought.
+
+**05 — pause card, no narration.** The card reads: _If I took the fins off this rocket, which way would the CP move?_
+
+**06** `voice/06.wav`
+
+Forward. The fins are most of the sideways push, and they sit at the back. Take them away and what is left is the nose cone's small push, so the CP jumps up near the nose. Now stretch that. Glue bigger fins on instead, and the CP slides the other way, toward the tail. Every change to the outline moves the CP. Nothing you do to the weight does.
+
+**07** `voice/07.wav`
+
+Here it is on the BR-1. Same nose, same tube, no fins. OpenRocket now puts the CP up near the nose cone, because the nose is the only part left that pushes. A rocket like that has nothing holding its nose forward. Put the fins back and the CP drops all the way back to thirty-three and three quarters inches.
+
+**08** `voice/08.wav`
+
+OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part of the rocket produces, nose, tube and fins, and where that force acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws on the rocket, and you will see it on screen in Segment ten. If you want the math, the links are in this video's description.
+
+**09** `voice/09.wav`
+
+Here is that math done by hand for the BR-1. The nose gets a number and a point. The tube gets nothing. The fins get the big formula, with the root, tip, span and sweep you will be filleting this afternoon. Add them up and the CP lands at thirty-three point six inches. OpenRocket says thirty-three and three quarters. Same answer. The difference is that OpenRocket does it in a blink, every time you change a part, and it also handles the things this page leaves out. That is why the program uses it.
+
+**10** `voice/10.wav`
+
+One last thing. Look where the fins are on the BR-1, and on the Alpha III you built this morning. Right at the back, on both. That is not decoration. Fins are at the back for one reason. To drag the CP aft, toward the tail. Why aft is where you want it is the next segment.
+
+**11** `voice/11.wav`
+
+The one thing to remember. The center of pressure is where all the air's pushes add up to one. Shape sets it, and fins at the back drag it aft.

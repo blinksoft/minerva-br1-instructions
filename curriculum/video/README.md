@@ -113,10 +113,53 @@ instructor pauses when it appears, takes answers, and presses play. The cue afte
 
 ## Adding a segment
 
-Copy `S06/cues.json` to `S07/cues.json`, change `meta` and the cue list, run the renderer. Slide types
-available: `title`, `text`, `photo` (image from the segment folder, with optional badge and credit), `curves` (real thrust curves from a thrustcurve.org data file in the segment folder), `ladder`, `compare`, `pause`, `answer`, `close`. New
-slide types are one function each in render.py; keep them to the same palette so the twelve videos
-look like one series.
+Copy `S06/cues.json` to `S07/cues.json`, change `meta` and the cue list, and draw the slides for free
+with `render.py S07 --slides` until they look right (it also prints the narration word count). Then
+run the full render. STYLE.md is the voice contract every segment follows.
+
+Slide types, each one function in render.py (the docstring lists its fields):
+
+| type | what it draws |
+|---|---|
+| `title` | opening card: eyebrow, title, subtitle, logo |
+| `text` | heading, up to three bullet lines, a note |
+| `photo` | text left, a photo from the segment folder right, optional badge and credit |
+| `figure` | one large image (diagram or photo) with caption and credit |
+| `table` | heading, column titles, rows; optional widths, highlight, note |
+| `code` | a motor designation split into coloured parts with labels |
+| `rocket` | the BR-1 in side view to scale, with labelled markers (CG, CP), an optional ruler, fins on or off, motor in or out |
+| `curves` | real thrust curves from a thrustcurve.org data file, area under each filled |
+| `flight` | a line from the BR-1's stored OpenRocket flight: altitude, speed, mass, CG, CP or stability against time, events marked |
+| `ladder` | the A to O impulse ladder, `reveal` low or all, optional highlight |
+| `compare` | one square against sixty-four (S06's A8 against G74) |
+| `clip` | a screen-recording clip (`src` under the segment folder, optional `crop` [x, y, w, h]) under a heading; the narration sets the length: `fit` "hold" (default) keeps the last frame up or cuts the tail, "stretch" retimes the clip to end with the narration |
+| `pause` | the five-second countdown card; `question` only |
+| `answer` | the answer card |
+| `close` | the one-thing-to-remember card |
+
+Screen-recording clips: the raw OBS takes live in `recordings/` (git-ignored); `SNN/assets/clips.json`
+names the second ranges each clip is cut from and `python3 shared/cut_clips.py SNN` writes the clips into
+`SNN/assets/`, which the repo keeps. A `clip` cue's narration sets its length; the footage is stretched or
+held to fit, so a take only needs a few seconds of the right thing on screen (see S11/RECORDING.md).
+
+A segment that needs a slide type nobody else does adds `SNN/slides.py` with a
+`register(render)` function that puts its drawing function into `render.SLIDES`; it can use every
+helper and colour in render.py, and it is part of the segment's fingerprint. Keep new slides to the
+same palette so the twelve videos look like one series.
+
+`shared/` holds data every segment may draw from, and is part of every segment's fingerprint:
+`br1-sim.json` (the BR-1's geometry, masses and stored OpenRocket flight results, extracted by
+`extract_ork.py` from `files/BR-1.ork`; its `design` block is what the OpenRocket design window shows for each
+motor configuration, with the CP taken at zero angle of attack and Mach 0.3, and that is the CP and stability
+the videos quote; the flight series' own first CP sample sits at an angle of attack in the wind and reads low) and `thrustcurves.json` (certified curves for the program's
+motors, fetched once by `fetch_thrustcurves.py`). A `curves` cue can point at
+`../shared/thrustcurves.json`.
+
+`lint.py` checks every cue file against STYLE.md (shape, length, banned words, spellings) and is
+the first thing to run after editing one; CI runs it before rendering.
+
+Words a voice misreads: `SAY_FIXES` in render.py covers the series-wide ones (CG, CP, RSO, NAR, the
+program's motor codes). A segment adds its own with `"say_fixes": [["from", "to"]]` in `meta`.
 
 ## Publishing to YouTube
 

@@ -1,0 +1,146 @@
+{
+ "meta": {
+  "title": "Motor sizes, types and safety",
+  "eyebrow": "Segment 9  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "Name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules.",
+  "credits": [
+   "Photo: Georgia Wing High Power Rocketry",
+   "Motor dimensions: thrustcurve.org (public domain motor data files)"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "rocket motors",
+   "APCP",
+   "black powder",
+   "range safety"
+  ],
+  "say_fixes": []
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "Motor sizes, types and safety",
+   "sub": "Diameter is the fit. Two propellants. Three rules.",
+   "say": "Segment nine. Motor sizes, types and safety. By the end of this you will be able to name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules."
+  },
+  {
+   "type": "figure",
+   "heading": "Diameter is the fit",
+   "image": "assets/diameters.png",
+   "caption": "Seven standard sizes, drawn to scale. The BR-1's mount is the blue one.",
+   "say": "Start with size. Motors come in standard diameters, and the diameter is the fit. A motor either slides into the mount or it does not. Eighteen millimeters is the motor in the Alpha III you built this morning. Then twenty-four, twenty-nine, thirty-eight, fifty-four, seventy-five and ninety-eight. The BR-1 you are building right now takes the third one. Twenty-nine millimeters."
+  },
+  {
+   "type": "photo",
+   "heading": "One tube, two flights",
+   "image": "assets/motor-mount.webp",
+   "badge": "29 mm",
+   "caption": "Your motor mount. Every 29 mm motor from a G to a small H fits it.",
+   "lines": [
+    "G74W: 3 5/8 in (93 mm) long, 3.1 oz (87 g)",
+    "H135W: 8 1/2 in (216 mm) long, 7.5 oz (212 g)",
+    "Same tube, same retainer"
+   ],
+   "credit": "Photo: Georgia Wing High Power Rocketry",
+   "say": "This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 most of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight."
+  },
+  {
+   "type": "table",
+   "heading": "Two kinds of propellant",
+   "columns": [
+    "",
+    "Black powder",
+    "Composite  ·  APCP"
+   ],
+   "widths": [
+    1.0,
+    1.5,
+    1.5
+   ],
+   "rows": [
+    [
+     "Case",
+     "paper",
+     "plastic or fiberglass"
+    ],
+    [
+     "Sizes",
+     "up to about D or E",
+     "D all the way to O"
+    ],
+    [
+     "Energy per ounce",
+     "less",
+     "much more"
+    ],
+    [
+     "Cost",
+     "cheap and simple",
+     "more per motor"
+    ],
+    [
+     "On the table today",
+     "Alpha III's A8",
+     "BR-1's G74 and H"
+    ]
+   ],
+   "highlight": [
+    4
+   ],
+   "note": "APCP is the same family of propellant the Space Shuttle boosters burned.",
+   "say": "Now what is inside. Two kinds of propellant. Black powder motors are the small paper-cased ones, like the A8 in the Alpha III. Cheap, simple, and they top out around a D or an E. Composite motors use ammonium perchlorate composite propellant, APCP for short, the same family the Space Shuttle boosters burned. Much more energy per ounce, plastic or fiberglass cases, and sizes from D all the way to O. Every motor the BR-1 flies is composite. A spent case tells you which. Paper is black powder. Plastic is composite."
+  },
+  {
+   "type": "text",
+   "heading": "Single use or reload",
+   "lines": [
+    "Single use: fly it once, throw it away",
+    "Reload: a metal case you own, plus a kit",
+    "The BR-1's G and H motors: AeroTech DMS, 29 mm single use"
+   ],
+   "note": "Assembling a reload is a skill in itself, and a separate lesson.",
+   "say": "One more split. A single-use motor is used once and thrown away. A reloadable motor is a metal casing you own, plus a reload kit: propellant grains, a liner, a nozzle and a delay, assembled before each flight. Once you own the case, reloads are cheaper per flight, and assembling one is a skill in itself. Every motor the program flies, the G74 and whichever H arrives for launch day, is an AeroTech DMS, a twenty-nine millimeter single-use motor. Nothing to assemble. Motor in the tube, retainer on, done."
+  },
+  {
+   "type": "text",
+   "heading": "The rules on this bench",
+   "lines": [
+    "Motors stay in the range box until launch day",
+    "No motor, igniter or black powder on a build table",
+    "Stored cool, dry, in their packaging"
+   ],
+   "note": "The range box is closed today. It stays closed.",
+   "say": "Now the rules, and there are three. One. Motors stay in the range box until launch day. Two. No motor, igniter or black powder on a build table, ever. Three. Motors are stored cool, dry and in their packaging. That is the whole list. The range box is closed today, and it stays closed. The reason is in the next card."
+  },
+  {
+   "type": "pause",
+   "question": "On the high power pads the igniter goes in last, at the pad. At our low power table the RSO wants the igniter and plug in before you walk up. Why the difference?"
+  },
+  {
+   "type": "answer",
+   "text": "The igniter is the only thing that can start the motor. A G or H has enough energy that the range takes no chances. Low power igniters are small and the rack turns over fast. Either way: do what your RSO says.",
+   "say": "The igniter. An installed igniter is the only thing that can start the motor. On a G or an H there is enough energy that the range takes no chances, and you are leaning over the rail to install it. Low power igniters are small, and the pads are a shared rack that has to turn over fast, so the RSO checks the rocket at the table and takes the trade. Either way, do what your RSO says. Notice what both rules share. You do not decide when the igniter goes in. The RSO does."
+  },
+  {
+   "type": "text",
+   "heading": "A motor cannot tell the difference",
+   "lines": [
+    "Launch pad or classroom: the motor does not know",
+    "Every rule here was learned the hard way",
+    "Next: why simulate before you fly"
+   ],
+   "note": "That closes the motor segments. Segment 10 moves to the computer.",
+   "say": "Why so strict. A motor cannot tell the difference between a launch pad and a classroom. It only knows whether the igniter fired. Every rule here exists because someone learned it the hard way. That closes the motor segments. From Segment six to this one, you can read a motor's size, its code, its curve, and now its rules. The next segment moves to the computer, and asks why you simulate a flight before you fly it."
+  },
+  {
+   "type": "close",
+   "text": "Motors stay in the range box until launch day. Never on a build table.",
+   "say": "The one thing to remember. Motors stay in the range box until launch day, and never on a build table."
+  }
+ ]
+}

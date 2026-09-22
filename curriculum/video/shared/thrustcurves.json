@@ -1,0 +1,898 @@
+{
+ "source": "thrustcurve.org API, RASP data files, public domain per the site's license field",
+ "fetched": "2026-09-21",
+ "motors": [
+  {
+   "designation": "A8",
+   "commonName": "A8",
+   "manufacturer": "Estes Industries",
+   "url": "https://www.thrustcurve.org/motors/Estes Industries/A8/",
+   "impulseClass": "A",
+   "diameterMm": 18,
+   "lengthMm": 70,
+   "totalWeightG": 16.3,
+   "propWeightG": 3.3,
+   "delays": "0,3,5",
+   "certOrg": "National Association of Rocketry",
+   "type": "SU",
+   "avgThrustN": 3.18,
+   "maxThrustN": 9.73,
+   "totImpulseNs": 2.5,
+   "burnTimeS": 0.73,
+   "propInfo": "black powder",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.041,
+     0.512
+    ],
+    [
+     0.084,
+     2.115
+    ],
+    [
+     0.127,
+     4.358
+    ],
+    [
+     0.166,
+     6.794
+    ],
+    [
+     0.192,
+     8.588
+    ],
+    [
+     0.206,
+     9.294
+    ],
+    [
+     0.226,
+     9.73
+    ],
+    [
+     0.236,
+     8.845
+    ],
+    [
+     0.247,
+     7.179
+    ],
+    [
+     0.261,
+     5.063
+    ],
+    [
+     0.277,
+     3.717
+    ],
+    [
+     0.306,
+     3.205
+    ],
+    [
+     0.351,
+     2.884
+    ],
+    [
+     0.405,
+     2.499
+    ],
+    [
+     0.467,
+     2.371
+    ],
+    [
+     0.532,
+     2.307
+    ],
+    [
+     0.589,
+     2.371
+    ],
+    [
+     0.632,
+     2.371
+    ],
+    [
+     0.652,
+     2.243
+    ],
+    [
+     0.668,
+     1.794
+    ],
+    [
+     0.684,
+     1.153
+    ],
+    [
+     0.703,
+     0.448
+    ],
+    [
+     0.73,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "G12ST",
+   "commonName": "G12",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/G12ST/",
+   "impulseClass": "G",
+   "diameterMm": 29,
+   "lengthMm": 156,
+   "totalWeightG": 150.29999999999998,
+   "propWeightG": 82,
+   "delays": "P",
+   "certOrg": "Tripoli Rocketry Association, Inc.",
+   "type": "SU",
+   "avgThrustN": 11.31,
+   "maxThrustN": 30.88,
+   "totImpulseNs": 143.97,
+   "burnTimeS": 12.7,
+   "propInfo": "Super Thunder",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.042,
+     33.827
+    ],
+    [
+     0.104,
+     30.173
+    ],
+    [
+     0.23,
+     28.009
+    ],
+    [
+     0.543,
+     22.326
+    ],
+    [
+     0.836,
+     16.102
+    ],
+    [
+     1.024,
+     12.448
+    ],
+    [
+     1.379,
+     10.96
+    ],
+    [
+     2.006,
+     10.148
+    ],
+    [
+     4.054,
+     9.742
+    ],
+    [
+     6.269,
+     10.148
+    ],
+    [
+     6.415,
+     10.148
+    ],
+    [
+     6.582,
+     10.148
+    ],
+    [
+     11.973,
+     9.742
+    ],
+    [
+     12.475,
+     9.742
+    ],
+    [
+     12.663,
+     9.607
+    ],
+    [
+     12.83,
+     9.066
+    ],
+    [
+     12.913,
+     7.713
+    ],
+    [
+     12.934,
+     5.412
+    ],
+    [
+     13.018,
+     2.03
+    ],
+    [
+     13.06,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "G40W",
+   "commonName": "G40",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/G40W/",
+   "impulseClass": "G",
+   "diameterMm": 29,
+   "lengthMm": 124,
+   "totalWeightG": 123,
+   "propWeightG": 53.8,
+   "delays": "4,6,7,8,10",
+   "certOrg": "National Association of Rocketry",
+   "type": "SU",
+   "avgThrustN": 40.88,
+   "maxThrustN": 84.51,
+   "totImpulseNs": 97.14,
+   "burnTimeS": 2.38,
+   "propInfo": "White Lightning",
+   "dataSource": "user",
+   "samples": [
+    [
+     0.024,
+     74.325
+    ],
+    [
+     0.057,
+     67.005
+    ],
+    [
+     0.252,
+     65.879
+    ],
+    [
+     0.5,
+     63.063
+    ],
+    [
+     0.765,
+     60.248
+    ],
+    [
+     1,
+     54.054
+    ],
+    [
+     1.25,
+     47.298
+    ],
+    [
+     1.502,
+     36.599
+    ],
+    [
+     1.751,
+     25.338
+    ],
+    [
+     1.999,
+     12.951
+    ],
+    [
+     2.121,
+     3.941
+    ],
+    [
+     2.3,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "G74W",
+   "commonName": "G74",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/G74W/",
+   "impulseClass": "G",
+   "diameterMm": 29,
+   "lengthMm": 93,
+   "totalWeightG": 87,
+   "propWeightG": 39.300000000000004,
+   "delays": "6,8",
+   "certOrg": "National Association of Rocketry",
+   "type": "SU",
+   "avgThrustN": 74,
+   "maxThrustN": 95,
+   "totImpulseNs": 82.75,
+   "burnTimeS": 1.1,
+   "propInfo": "White Lightning",
+   "dataSource": "mfr",
+   "samples": [
+    [
+     0.023,
+     6.551
+    ],
+    [
+     0.05,
+     21.838
+    ],
+    [
+     0.088,
+     44.852
+    ],
+    [
+     0.124,
+     67.362
+    ],
+    [
+     0.135,
+     71.561
+    ],
+    [
+     0.148,
+     74.417
+    ],
+    [
+     0.197,
+     80.128
+    ],
+    [
+     0.248,
+     85
+    ],
+    [
+     0.298,
+     87.52
+    ],
+    [
+     0.397,
+     89.704
+    ],
+    [
+     0.499,
+     91.215
+    ],
+    [
+     0.6,
+     90.375
+    ],
+    [
+     0.699,
+     90.375
+    ],
+    [
+     0.751,
+     89.536
+    ],
+    [
+     0.8,
+     87.856
+    ],
+    [
+     0.9,
+     84.496
+    ],
+    [
+     0.954,
+     82.144
+    ],
+    [
+     0.971,
+     81.808
+    ],
+    [
+     0.987,
+     79.96
+    ],
+    [
+     1.002,
+     76.433
+    ],
+    [
+     1.023,
+     67.194
+    ],
+    [
+     1.065,
+     44.516
+    ],
+    [
+     1.094,
+     22.174
+    ],
+    [
+     1.107,
+     15.287
+    ],
+    [
+     1.126,
+     6.887
+    ],
+    [
+     1.138,
+     3.36
+    ],
+    [
+     1.157,
+     1.344
+    ],
+    [
+     1.18,
+     0.168
+    ],
+    [
+     1.192,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "HP-H115DM",
+   "commonName": "H115",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/HP-H115DM/",
+   "impulseClass": "H",
+   "diameterMm": 29,
+   "lengthMm": 203,
+   "totalWeightG": 205,
+   "propWeightG": 113,
+   "delays": "6,8,10,12,14",
+   "certOrg": "Tripoli Rocketry Association, Inc.",
+   "type": "SU",
+   "avgThrustN": 115,
+   "maxThrustN": 126,
+   "totImpulseNs": 172,
+   "burnTimeS": 1.5,
+   "propInfo": "Dark Matter",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.014,
+     89.265
+    ],
+    [
+     0.024,
+     130.742
+    ],
+    [
+     0.036,
+     108.2
+    ],
+    [
+     0.048,
+     101.588
+    ],
+    [
+     0.081,
+     111.206
+    ],
+    [
+     0.202,
+     121.124
+    ],
+    [
+     0.405,
+     123.228
+    ],
+    [
+     0.598,
+     123.829
+    ],
+    [
+     0.8,
+     123.528
+    ],
+    [
+     1.002,
+     122.326
+    ],
+    [
+     1.2,
+     114.211
+    ],
+    [
+     1.269,
+     111.807
+    ],
+    [
+     1.293,
+     111.506
+    ],
+    [
+     1.35,
+     119.32
+    ],
+    [
+     1.367,
+     117.818
+    ],
+    [
+     1.393,
+     111.807
+    ],
+    [
+     1.429,
+     88.964
+    ],
+    [
+     1.467,
+     67.024
+    ],
+    [
+     1.524,
+     44.182
+    ],
+    [
+     1.562,
+     22.842
+    ],
+    [
+     1.583,
+     13.224
+    ],
+    [
+     1.6,
+     6.913
+    ],
+    [
+     1.626,
+     3.306
+    ],
+    [
+     1.662,
+     1.202
+    ],
+    [
+     1.693,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "H128W",
+   "commonName": "H128",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/H128W/",
+   "impulseClass": "H",
+   "diameterMm": 29,
+   "lengthMm": 194,
+   "totalWeightG": 206,
+   "propWeightG": 94.2,
+   "delays": "4,6,8,10",
+   "certOrg": "Tripoli Rocketry Association, Inc.",
+   "type": "reload",
+   "avgThrustN": 128,
+   "maxThrustN": 168.7,
+   "totImpulseNs": 172.9,
+   "burnTimeS": 1.27,
+   "propInfo": "White Lightning",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.024,
+     102.423
+    ],
+    [
+     0.074,
+     175.203
+    ],
+    [
+     0.125,
+     181.379
+    ],
+    [
+     0.176,
+     179.281
+    ],
+    [
+     0.226,
+     181.423
+    ],
+    [
+     0.277,
+     186.074
+    ],
+    [
+     0.328,
+     190.483
+    ],
+    [
+     0.378,
+     189.509
+    ],
+    [
+     0.429,
+     186.162
+    ],
+    [
+     0.48,
+     184.114
+    ],
+    [
+     0.53,
+     180.3
+    ],
+    [
+     0.581,
+     174.144
+    ],
+    [
+     0.632,
+     172.019
+    ],
+    [
+     0.683,
+     169.36
+    ],
+    [
+     0.734,
+     166.017
+    ],
+    [
+     0.784,
+     161.882
+    ],
+    [
+     0.835,
+     157.331
+    ],
+    [
+     0.886,
+     153.073
+    ],
+    [
+     0.936,
+     151.985
+    ],
+    [
+     0.988,
+     139.902
+    ],
+    [
+     1.039,
+     87.865
+    ],
+    [
+     1.089,
+     40.857
+    ],
+    [
+     1.14,
+     14.328
+    ],
+    [
+     1.191,
+     4.33
+    ],
+    [
+     1.242,
+     1.55
+    ],
+    [
+     1.293,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "HP-H135W",
+   "commonName": "H135",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/HP-H135W/",
+   "impulseClass": "H",
+   "diameterMm": 29,
+   "lengthMm": 216,
+   "totalWeightG": 212,
+   "propWeightG": 82,
+   "delays": "6,8,10,12,14",
+   "certOrg": "Tripoli Rocketry Association, Inc.",
+   "type": "SU",
+   "avgThrustN": 115.86,
+   "maxThrustN": 159.88,
+   "totImpulseNs": 225.84,
+   "burnTimeS": 1.95,
+   "propInfo": "White Lightning",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.014,
+     159.806
+    ],
+    [
+     0.045,
+     110.931
+    ],
+    [
+     0.104,
+     144.43
+    ],
+    [
+     0.131,
+     135.643
+    ],
+    [
+     0.252,
+     154.315
+    ],
+    [
+     0.293,
+     130.701
+    ],
+    [
+     0.387,
+     149.921
+    ],
+    [
+     1.005,
+     140.037
+    ],
+    [
+     1.261,
+     119.168
+    ],
+    [
+     1.297,
+     142.233
+    ],
+    [
+     1.324,
+     109.833
+    ],
+    [
+     1.387,
+     120.267
+    ],
+    [
+     1.518,
+     110.382
+    ],
+    [
+     1.595,
+     80.727
+    ],
+    [
+     1.685,
+     60.408
+    ],
+    [
+     1.797,
+     33.499
+    ],
+    [
+     1.896,
+     14.278
+    ],
+    [
+     2.072,
+     0
+    ]
+   ]
+  },
+  {
+   "designation": "H180W",
+   "commonName": "H180",
+   "manufacturer": "AeroTech",
+   "url": "https://www.thrustcurve.org/motors/AeroTech/H180W/",
+   "impulseClass": "H",
+   "diameterMm": 29,
+   "lengthMm": 238,
+   "totalWeightG": 252,
+   "propWeightG": 123.9,
+   "delays": "4,6,8,10",
+   "certOrg": "Tripoli Rocketry Association, Inc.",
+   "type": "reload",
+   "avgThrustN": 180,
+   "maxThrustN": 228.5,
+   "totImpulseNs": 217.7,
+   "burnTimeS": 1.3,
+   "propInfo": "White Lightning",
+   "dataSource": "cert",
+   "samples": [
+    [
+     0.024,
+     149.374
+    ],
+    [
+     0.075,
+     222.273
+    ],
+    [
+     0.127,
+     222.339
+    ],
+    [
+     0.178,
+     227.835
+    ],
+    [
+     0.229,
+     234.963
+    ],
+    [
+     0.281,
+     238.162
+    ],
+    [
+     0.333,
+     240.252
+    ],
+    [
+     0.384,
+     243.126
+    ],
+    [
+     0.435,
+     240.757
+    ],
+    [
+     0.487,
+     240.724
+    ],
+    [
+     0.539,
+     236.311
+    ],
+    [
+     0.59,
+     236.799
+    ],
+    [
+     0.642,
+     234.897
+    ],
+    [
+     0.694,
+     232.763
+    ],
+    [
+     0.745,
+     229.198
+    ],
+    [
+     0.796,
+     228.816
+    ],
+    [
+     0.848,
+     231.906
+    ],
+    [
+     0.899,
+     225.853
+    ],
+    [
+     0.95,
+     188.285
+    ],
+    [
+     1.002,
+     134.679
+    ],
+    [
+     1.054,
+     78.94
+    ],
+    [
+     1.105,
+     34.557
+    ],
+    [
+     1.156,
+     15.482
+    ],
+    [
+     1.208,
+     7.279
+    ],
+    [
+     1.26,
+     3.585
+    ],
+    [
+     1.313,
+     0
+    ]
+   ]
+  }
+ ]
+}
