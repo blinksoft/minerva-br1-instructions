@@ -30,26 +30,15 @@ press play. The video gives the answer. That is the whole job; no props, no setu
    Pick the delay closest to that. For the BR-1 on a G74 the program uses a 6 second delay; in S12 you will
    see why.
 
-## Demo, filmed
-- Screen: thrustcurve.org, G74 and H128 pages side by side.
-- Whiteboard arc of the flight with burnout, apogee and ejection marked.
-- Optional prop: a chute that has been shredded by an early ejection, if the program has one.
-
 ## Pause point
 After beat 4. The card reads: "Same rocket, same G motor, but a 12 second delay instead of 6. Where is the rocket pointing when the chute comes out?"
 
 On resume the video answers: Nose down and speeding up. It passed apogee six seconds ago. The chute opens into a fast, falling rocket: shredded chute or a zippered tube.
 
 ## Shot list
-- Screen capture: thrustcurve.org, zoom to the curve, cursor tracing the area, then the peak, then the
-  burn time.
-- Second curve alongside the first.
-- Bench camera or drawn overlay: the flight arc.
-- Screen capture insert: OpenRocket's motor selection dialog with its thrust curve preview.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - The delay the program actually flies on the G74 and on the H, and the OpenRocket optimum delay for each.
 - thrustcurve.org layout at recording time; describe what is on screen, not where the buttons were.
 

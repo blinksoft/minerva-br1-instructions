@@ -206,9 +206,17 @@ def slide_pause(c, m, n):
 
 
 def slide_answer(c, m):
+    """The answer card. "text" alone is one big statement; with "lines" the text is a short lead and
+    each line is a bullet, for answers that are a list."""
     im, d = canvas()
     d.text((96, 110), "ANSWER", font=font("ExtraBold", 40), fill=OK)
-    text_block(d, (96, 220), c["text"], font("ExtraBold", 80), INK, W - 192, gap=1.12)
+    if c.get("lines"):
+        y = text_block(d, (96, 210), c["text"], font("ExtraBold", 72), INK, W - 192, gap=1.12) + 36
+        for ln in c["lines"]:
+            d.rounded_rectangle((96, y + 20, 118, y + 42), 6, fill=OK)
+            y = text_block(d, (150, y), ln, font("SemiBold", 54), INK, W - 300) + 26
+    else:
+        text_block(d, (96, 220), c["text"], font("ExtraBold", 80), INK, W - 192, gap=1.12)
     footer(d, im, m["footer"])
     return im
 
@@ -449,10 +457,19 @@ def slide_rocket(c, m):
             d.line((x, yr - 14, x, yr + 14), fill=INK, width=4)
         f = font("SemiBold", 34); tw = d.textlength(ru["label"], font=f)
         d.text(((xa + xb2) / 2 - tw / 2, yr + 20), ru["label"], font=f, fill=INK)
-    if c.get("caption"):        # one line; keep it under about 60 characters
-        text_block(d, (96, 850), c["caption"], font("SemiBold", 44), INK, W - 192)
+    # caption and note stack up from the footer, so a wrapped line never runs into the next block
+    bottom = H - 118
     if c.get("note"):
-        text_block(d, (96, H - 145), c["note"], font("Regular", 34), INK2, W - 192)
+        f = font("Regular", 34)
+        nh = len(wrap(d, c["note"], f, W - 192)) * int(f.size * 1.25)
+        text_block(d, (96, bottom - nh), c["note"], f, INK2, W - 192)
+        bottom -= nh + 14
+    if c.get("caption"):
+        f = font("SemiBold", 44)
+        if len(wrap(d, c["caption"], f, W - 192)) > 1:
+            f = font("SemiBold", 40)
+        ch = len(wrap(d, c["caption"], f, W - 192)) * int(f.size * 1.25)
+        text_block(d, (96, min(850, bottom - ch)), c["caption"], f, INK, W - 192)
     footer(d, im, m["footer"])
     return im
 
@@ -675,7 +692,7 @@ SAY_FIXES = [("Alpha III", "Alpha Three"), ("BR-1", "B R one"), ("N·s", "Newton
              ("H115DM", "H one fifteen D M"), ("H135W", "H one thirty-five W"), ("H180W", "H one eighty W"),
              ("A8", "A eight"), ("G74", "G seventy-four"), ("G12", "G twelve"), ("G40", "G forty"),
              ("H128", "H one twenty-eight"), ("H115", "H one fifteen"), ("H135", "H one thirty-five"), ("H180", "H one eighty"),
-             ("APCP", "A P C P"), ("NFPA", "N F P A"), ("RSO", "R S O"), ("LCO", "L C O"), ("NAR", "N A R"),
+             ("APCP", "A P C P"), ("NFPA", "N F P A"), ("RSO", "R S O"), ("LCO", "L C O"), ("NAR", "nar"),
              ("FAA", "F A A"), ("CG", "C G"), ("CP", "C P"), ("L1", "Level one"), ("L2", "Level two"), ("L3", "Level three"),
              (".ork", "dot ork"), ("BR-1.ork", "B R one dot ork")]
 _meta_fixes = []

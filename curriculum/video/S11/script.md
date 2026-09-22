@@ -36,7 +36,7 @@ Now the step most people skip. OpenRocket works out each part's mass from its ma
 
 **09** `voice/09.wav`
 
-Now open the program's file, BR-1.ork, next to yours. Same tree, same order, every number tuned to the kit on your table. With the G74 most of you fly loaded, the CG sits at twenty-six inches, sixty-six centimeters and the CP at thirty-three and three quarters. That gap is two and a half calibers, the stability margin from Segment five. Your from-scratch build teaches you what the file means. The program's file is what you fly. What the two dots do when the motor comes out is the next segment.
+Now open the program's file, BR-1.ork, next to yours. Same tree, same order, every number tuned to the kit on your table. With the G74 some of you fly loaded, the CG sits at twenty-six inches, sixty-six centimeters and the CP at thirty-three and three quarters. That gap is two and a half calibers, the stability margin from Segment five. Your from-scratch build teaches you what the file means. The program's file is what you fly. What the two dots do when the motor comes out is the next segment.
 
 **10** `voice/10.wav`
 

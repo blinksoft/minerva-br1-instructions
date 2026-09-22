@@ -30,26 +30,15 @@ press play. The video gives the answer. That is the whole job; no props, no setu
    Junior L1 and adult L1 candidates, on this same airframe, as the certification attempt. Certification
    is about the flyer, not the rocket, and this rocket is enough.
 
-## Demo, filmed
-- A NAR or Tripoli membership card and a Level 1 certification card if an instructor has one.
-- A copy of the NAR High Power Safety Code, one page.
-- The launch waiver notice from a recent club launch, if available.
-
 ## Pause point
 After beat 2. The card reads: "What does the RSO look for on a rocket before letting it fly?"
 
 On resume the video answers: Stability with the motor loaded, motor held in, recovery harness anchored, chute packed and protected, no igniter installed, a certified motor matched to the rocket, and a build that will take the flight.
 
 ## Shot list
-- Bench camera on the cards and the safety code page.
-- Speaker on camera for the certification ladder, with a simple hand-drawn ladder card: L1 H–I, L2 J–L,
-  L3 M–O.
-- B-roll if available: a club launch pad row, an RSO table. Otherwise stills from the program's own
-  launches.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - NAR Junior L1 age range and supervision requirement, current rules.
 - Tripoli Mentoring Program minimum age and what motors juniors may fly.
 - Level 2 exam still required; Level 3 process (NAR L3CC, Tripoli TAP).

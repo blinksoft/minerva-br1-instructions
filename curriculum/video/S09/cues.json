@@ -25,7 +25,7 @@
   {
    "type": "title",
    "title": "Motor sizes, types and safety",
-   "sub": "Diameter is the fit. Two propellants. Three rules.",
+   "sub": "Diameter is the fit  ·  Two propellants  ·  Three rules",
    "say": "Segment nine. Motor sizes, types and safety. By the end of this you will be able to name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules."
   },
   {
@@ -47,7 +47,7 @@
     "Same tube, same retainer"
    ],
    "credit": "Photo: Georgia Wing High Power Rocketry",
-   "say": "This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 most of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight."
+   "say": "This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 some of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight."
   },
   {
    "type": "table",
@@ -123,8 +123,13 @@
   },
   {
    "type": "answer",
-   "text": "The igniter is the only thing that can start the motor. A G or H has enough energy that the range takes no chances. Low power igniters are small and the rack turns over fast. Either way: do what your RSO says.",
-   "say": "The igniter. An installed igniter is the only thing that can start the motor. On a G or an H there is enough energy that the range takes no chances, and you are leaning over the rail to install it. Low power igniters are small, and the pads are a shared rack that has to turn over fast, so the RSO checks the rocket at the table and takes the trade. Either way, do what your RSO says. Notice what both rules share. You do not decide when the igniter goes in. The RSO does."
+   "text": "Do what your RSO says.",
+   "say": "The igniter. An installed igniter is the only thing that can start the motor. On a G or an H there is enough energy that the range takes no chances, and you are leaning over the rail to install it. Low power igniters are small, and the pads are a shared rack that has to turn over fast, so the RSO checks the rocket at the table and takes the trade. Either way, do what your RSO says. Notice what both rules share. You do not decide when the igniter goes in. The RSO does.",
+   "lines": [
+    "The igniter is the only thing that can start the motor",
+    "A G or H has enough energy that the range takes no chances",
+    "Low power igniters are small and the rack turns over fast"
+   ]
   },
   {
    "type": "text",

@@ -60,7 +60,7 @@
    "heading": "Add the G74: the CG moves aft",
    "src": "assets/03-add-g74.mp4",
    "fit": "stretch",
-   "say": "Now add the motor most of you will fly. Motors and configuration, new configuration, G74W-6. The CG slides aft to twenty-six inches, sixty-six centimeters, as the string showed in Segment three. The CP stays put. The margin drops to two and a half calibers. On the pad, this is the least stable the rocket will ever be."
+   "say": "Now add the motor some of you will fly. Motors and configuration, new configuration, G74W-6. The CG slides aft to twenty-six inches, sixty-six centimeters, as the string showed in Segment three. The CP stays put. The margin drops to two and a half calibers. On the pad, this is the least stable the rocket will ever be."
   },
   {
    "type": "pause",
@@ -68,8 +68,13 @@
   },
   {
    "type": "answer",
-   "text": "Less. Propellant is mass at the very back. As it burns off the CG moves forward, away from the CP, and the margin grows through the burn.",
-   "say": "Less. Propellant is mass at the very back. As it burns off, the CG moves forward, away from the CP, and the margin grows through the burn. Put numbers on it. The G74 carries one point four ounces, thirty-nine grams of propellant, gone by burnout at one point two seconds. The CG moves forward to twenty-five and a quarter inches, sixty-four centimeters, and the margin climbs from two and a half calibers to two point seven."
+   "text": "Less.",
+   "say": "Less. Propellant is mass at the very back. As it burns off, the CG moves forward, away from the CP, and the margin grows through the burn. Put numbers on it. The G74 carries one point four ounces, thirty-nine grams of propellant, gone by burnout at one point two seconds. The CG moves forward to twenty-five and a quarter inches, sixty-four centimeters, and the margin climbs from two and a half calibers to two point seven.",
+   "lines": [
+    "Propellant is mass at the very back",
+    "As it burns off, the CG moves forward, away from the CP",
+    "The margin grows through the burn"
+   ]
   },
   {
    "type": "flight",
@@ -83,7 +88,7 @@
     "burnout"
    ],
    "caption": "OpenRocket, BR-1 on a G74W-6: stability margin for the first two seconds.",
-   "note": "2.5 on the pad. 2.7 at burnout. Then flat.",
+   "note": "2.5 on the pad  ·  2.7 at burnout  ·  Then flat",
    "say": "Here is OpenRocket's plot of the margin for the first two seconds. Two and a half on the pad, two point seven at burnout, then flat. After burnout the mass and the shape are fixed, so the margin holds until the parachute comes out.",
    "ymin": 1
   },

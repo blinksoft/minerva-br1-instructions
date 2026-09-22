@@ -29,12 +29,8 @@ press play. The video gives the answer. That is the whole job; no props, no setu
 5. **Wind and angle.** Change the launch rod angle and the wind speed and run again. Watch the landing
    distance. This is the homework in step 28: play with these until you know how far you might have to
    walk.
-6. **Close the loop.** Bench camera: the finished BR-1 with a spent G casing loaded, balanced on a
-   finger. Compare the balance point to the CG the sim shows. If they match, the model is honest. Go fly.
-
-## Demo, filmed
-- Screen: BR-1.ork, motor database populated with the G and H the program uses.
-- A finished BR-1 and a spent G casing for the closing shot.
+6. **Close the loop.** Before the BR-1 flies: motor loaded, balanced on a finger, and the balance
+   point compared with the CG the sim shows. If they match, the model is honest. Go fly.
 
 ## Pause point
 After beat 2. The card reads: "On the pad with the motor loaded, is this rocket more stable or less stable than it will be at burnout? Why?"
@@ -42,16 +38,12 @@ After beat 2. The card reads: "On the pad with the motor loaded, is this rocket 
 On resume the video answers: Less. Propellant is mass at the very back. As it burns off the CG moves forward, away from the CP, and the margin grows through the burn.
 
 ## Shot list
-- Screen capture: stability readout before and after each motor, held long enough to read.
-- Simulation results table zoomed, cursor on each of the four numbers as they are read.
-- Rod angle and wind change, rerun, landing distance.
-- Bench camera closing shot: rocket balanced on a finger next to the screen showing the CG.
+- The video is the segment: slides, pause card, answer card and the OpenRocket screen recordings cut
+  from the program's own takes (see curriculum/video/S11/RECORDING.md).
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - The exact G and H motors the program flies this season, present in OpenRocket's motor database.
-- BR-1.ork mass overrides updated from a real weighed rocket, so the on-camera numbers are believable.
+- BR-1.ork mass overrides updated from a real weighed rocket, so the on-screen numbers are believable.
 - The program's stability margin target for an L1 flight, if it differs from the series' 1 to 3 calibers.
 
 ## Sources to replace

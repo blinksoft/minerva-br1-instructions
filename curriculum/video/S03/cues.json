@@ -1,122 +1,126 @@
 {
-  "meta": {
-    "title": "Center of gravity",
-    "eyebrow": "Segment 3  ·  While the epoxy cures",
-    "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
-    "description": "Find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when weight is added.",
-    "credits": [
-      "BR-1 geometry and masses: the program's OpenRocket file, BR-1.ork (design by Michael Bright)"
-    ],
-    "tags": [
-      "rocketry",
-      "model rockets",
-      "high power rocketry",
-      "Civil Air Patrol",
-      "Georgia Wing",
-      "center of gravity",
-      "rocket stability",
-      "balance point",
-      "OpenRocket"
-    ],
-    "say_fixes": []
+ "meta": {
+  "title": "Center of gravity",
+  "eyebrow": "Segment 3  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "Find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when weight is added.",
+  "credits": [
+   "BR-1 geometry and masses: the program's OpenRocket file, BR-1.ork (design by Michael Bright)"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "center of gravity",
+   "rocket stability",
+   "balance point",
+   "OpenRocket"
+  ],
+  "say_fixes": []
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "Center of gravity",
+   "sub": "The balance point, how to find it, and which way it moves.",
+   "say": "Segment three. Center of gravity. By the end of this you will be able to find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when you add weight."
   },
-  "cues": [
+  {
+   "type": "figure",
+   "heading": "Every object has a balance point",
+   "image": "assets/pencil-on-finger.png",
+   "caption": "Center of gravity, CG: the one point where all the weight seems to act.",
+   "say": "Start with a pencil. Resting across one finger, it stays level at just one point. That point is the center of gravity, CG. All the weight of the pencil acts as if it were at that point. Every object has one, including the BR-1 in front of you. And a rocket in the air spins around its CG, the way a thrown stick spins around its middle. So before a rocket flies, you want to know where that point is."
+  },
+  {
+   "type": "figure",
+   "heading": "Find it on a rocket",
+   "image": "assets/string-loop.png",
+   "caption": "Finger or string, the rocket balances at the same point. Mark it with tape.",
+   "say": "A rocket is the same. An Alpha III resting across a finger settles level at one point. That point is its CG, and a bit of tape marks it. Hung from a loop of string, it hangs level from the same tape mark. Same point, two ways to find it. Both work on the BR-1, which is nearly four feet long, a hundred and fourteen centimeters. At the field, a finger is all it takes."
+  },
+  {
+   "type": "rocket",
+   "heading": "Your BR-1, no motor",
+   "motor": false,
+   "markers": [
     {
-      "type": "title",
-      "title": "Center of gravity",
-      "sub": "The balance point, how to find it, and which way it moves.",
-      "say": "Segment three. Center of gravity. By the end of this you will be able to find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when you add weight."
-    },
-    {
-      "type": "figure",
-      "heading": "Every object has a balance point",
-      "image": "assets/pencil-on-finger.png",
-      "caption": "Center of gravity, CG: the one point where all the weight seems to act.",
-      "say": "Start with a pencil. Resting across one finger, it stays level at just one point. That point is the center of gravity, CG. All the weight of the pencil acts as if it were at that point. Every object has one, including the BR-1 in front of you. And a rocket in the air spins around its CG, the way a thrown stick spins around its middle. So before a rocket flies, you want to know where that point is."
-    },
-    {
-      "type": "figure",
-      "heading": "Find it on a rocket",
-      "image": "assets/string-loop.png",
-      "caption": "Finger or string, the rocket balances at the same point. Mark it with tape.",
-      "say": "A rocket is the same. An Alpha III resting across a finger settles level at one point. That point is its CG, and a bit of tape marks it. Hung from a loop of string, it hangs level from the same tape mark. Same point, two ways to find it. Both work on the BR-1, which is nearly four feet long, a hundred and fourteen centimeters. At the field, a finger is all it takes."
-    },
-    {
-      "type": "rocket",
-      "heading": "Your BR-1, no motor",
-      "motor": false,
-      "markers": [
-        {
-          "label": "CG",
-          "x": 0.627,
-          "sub": "24 3/4 in (63 cm) from the nose tip"
-        }
-      ],
-      "caption": "Empty, the BR-1 weighs about 2 lb 2 oz (958 g) and balances a little aft of the middle.",
-      "note": "Numbers from the program's OpenRocket file. You will check them with a string.",
-      "say": "Here is the BR-1 you are building, drawn to scale. Empty, with no motor in it, it weighs a little over two pounds, just under a kilogram. Its balance point is twenty-four and three quarter inches, sixty-three centimeters from the tip of the nose cone. Right there, it balances on a finger."
-    },
-    {
-      "type": "pause",
-      "question": "I am about to slide a motor into the tail. Which way will the balance point move?"
-    },
-    {
-      "type": "answer",
-      "text": "Toward the tail. Weight goes in, the CG moves toward it. That is why the BR-1's nose cone is weighted: 5.3 oz (150 g) to 8.5 oz (240 g).",
-      "say": "Toward the tail. Weight goes in, and the CG moves toward it. The motor is heavy and it sits at the very back, so the balance point slides back to meet it. Now stretch that. The same rule runs in reverse. Add weight to the nose and the CG moves forward. The program did exactly that on this rocket. The bare nose cone weighs about five ounces, one hundred and fifty grams. The program adds weight inside it to bring it to eight and a half, and the CG moves forward. Why forward is the safe direction is Segment five. For now: the CG moves toward whatever you add."
-    },
-    {
-      "type": "rocket",
-      "heading": "Motor in: the CG moves aft",
-      "motor": true,
-      "markers": [
-        {
-          "label": "CG, no motor",
-          "x": 0.627,
-          "color": "dim",
-          "below": true,
-          "sub": "24 3/4 in (63 cm)"
-        },
-        {
-          "label": "CG, motor in",
-          "x": 0.699,
-          "sub": "27 1/2 in (70 cm)"
-        }
-      ],
-      "ruler": {
-        "from": 0.627,
-        "to": 0.699,
-        "label": "2 7/8 in (7 cm)"
-      },
-      "note": "An H135W weighs 7.5 oz (212 g); a G74W 3.1 oz (87 g) and lands the CG at 26 in (66 cm). Loaded with the H, the BR-1 is 2 lb 9 oz (1,170 g).",
-      "say": "Here it is on the BR-1. The orange bar at the tail is an H motor, the one some of you will certify on. It weighs about seven and a half ounces, two hundred and twelve grams, almost a fifth of the whole rocket, and it sits in the last eight inches, twenty centimeters, of the tube. Load it and the balance point moves back two and seven eighths inches, seven centimeters, to twenty-seven and a half inches, seventy centimeters from the nose tip. A G74 is lighter, about three ounces, eighty-seven grams, so it moves the CG back an inch and three eighths, three and a half centimeters, to twenty-six."
-    },
-    {
-      "type": "text",
-      "heading": "Why the CG matters",
-      "lines": [
-        "A rocket in the air spins around its CG",
-        "CG against one other point: straight, or tumble",
-        "It moves every time you change the rocket"
-      ],
-      "note": "That other point is the center of pressure. That is the next segment.",
-      "say": "Why care? Because a rocket in the air spins around its CG. Where the CG sits compared to one other point on the rocket decides whether it flies straight or tumbles. That other point is the center of pressure, and that is the next segment. For now, hold on to three things. The CG is real. You can find it in ten seconds with a finger. And it changes every time you change the rocket."
-    },
-    {
-      "type": "text",
-      "heading": "Before your BR-1 flies",
-      "lines": [
-        "Load the motor, balance it on a finger, mark the CG",
-        "Compare with OpenRocket's number",
-        "They disagree: Segment 10 says which to trust"
-      ],
-      "note": "The comparison is Segment 12. The finger is the truth. The sim is the prediction.",
-      "say": "One last thing. Before your BR-1 ever flies, you will load the motor, balance it across a finger and mark its CG. Then you compare that mark with the number OpenRocket predicts. That is Segment twelve. And if the two disagree, Segment ten says which one to believe."
-    },
-    {
-      "type": "close",
-      "text": "The CG is the balance point. Weight goes in, the CG moves toward it.",
-      "say": "The one thing to remember. The CG is the balance point, and you can find it with a finger. Weight goes in, the CG moves toward it."
+     "label": "CG",
+     "x": 0.627,
+     "sub": "24 3/4 in (63 cm) from the nose tip"
     }
-  ]
+   ],
+   "caption": "Empty, the BR-1 weighs about 2 lb 2 oz (958 g) and balances a little aft of the middle.",
+   "note": "Numbers from the program's OpenRocket file. You will check them with a string.",
+   "say": "Here is the BR-1 you are building, drawn to scale. Empty, with no motor in it, it weighs a little over two pounds, just under a kilogram. Its balance point is twenty-four and three quarter inches, sixty-three centimeters from the tip of the nose cone. Right there, it balances on a finger."
+  },
+  {
+   "type": "pause",
+   "question": "I am about to slide a motor into the tail. Which way will the balance point move?"
+  },
+  {
+   "type": "answer",
+   "text": "Toward the tail.",
+   "say": "Toward the tail. Weight goes in, and the CG moves toward it. The motor is heavy and it sits at the very back, so the balance point slides back to meet it. Now stretch that. The same rule runs in reverse. Add weight to the nose and the CG moves forward. The program did exactly that on this rocket. The bare nose cone weighs about five ounces, one hundred and fifty grams. The program adds weight inside it to bring it to eight and a half, and the CG moves forward. Why forward is the safe direction is Segment five. For now: the CG moves toward whatever you add.",
+   "lines": [
+    "Weight goes in, the CG moves toward it",
+    "That is why the BR-1's nose cone is weighted: 5.3 oz (150 g) up to 8.5 oz (240 g)"
+   ]
+  },
+  {
+   "type": "rocket",
+   "heading": "Motor in: the CG moves aft",
+   "motor": true,
+   "markers": [
+    {
+     "label": "CG, no motor",
+     "x": 0.627,
+     "color": "dim",
+     "below": true,
+     "sub": "24 3/4 in (63 cm)"
+    },
+    {
+     "label": "CG, motor in",
+     "x": 0.699,
+     "sub": "27 1/2 in (70 cm)"
+    }
+   ],
+   "ruler": {
+    "from": 0.627,
+    "to": 0.699,
+    "label": "2 7/8 in (7 cm)"
+   },
+   "note": "An H135W weighs 7.5 oz (212 g); a G74W 3.1 oz (87 g) and lands the CG at 26 in (66 cm). Loaded with the H, the BR-1 is 2 lb 9 oz (1,170 g).",
+   "say": "Here it is on the BR-1. The orange bar at the tail is an H motor, the one some of you will certify on. It weighs about seven and a half ounces, two hundred and twelve grams, almost a fifth of the whole rocket, and it sits in the last eight inches, twenty centimeters, of the tube. Load it and the balance point moves back two and seven eighths inches, seven centimeters, to twenty-seven and a half inches, seventy centimeters from the nose tip. A G74 is lighter, about three ounces, eighty-seven grams, so it moves the CG back an inch and three eighths, three and a half centimeters, to twenty-six."
+  },
+  {
+   "type": "text",
+   "heading": "Why the CG matters",
+   "lines": [
+    "A rocket in the air spins around its CG",
+    "CG against one other point: straight, or tumble",
+    "It moves every time you change the rocket"
+   ],
+   "note": "That other point is the center of pressure. That is the next segment.",
+   "say": "Why care? Because a rocket in the air spins around its CG. Where the CG sits compared to one other point on the rocket decides whether it flies straight or tumbles. That other point is the center of pressure, and that is the next segment. For now, hold on to three things. The CG is real. You can find it in ten seconds with a finger. And it changes every time you change the rocket."
+  },
+  {
+   "type": "text",
+   "heading": "Before your BR-1 flies",
+   "lines": [
+    "Load the motor, balance it on a finger, mark the CG",
+    "Compare with OpenRocket's number",
+    "They disagree: Segment 10 says which to trust"
+   ],
+   "note": "The comparison is Segment 12  ·  The finger is the truth  ·  The sim is the prediction",
+   "say": "One last thing. Before your BR-1 ever flies, you will load the motor, balance it across a finger and mark its CG. Then you compare that mark with the number OpenRocket predicts. That is Segment twelve. And if the two disagree, Segment ten says which one to believe."
+  },
+  {
+   "type": "close",
+   "text": "The CG is the balance point. Weight goes in, the CG moves toward it.",
+   "say": "The one thing to remember. The CG is the balance point, and you can find it with a finger. Weight goes in, the CG moves toward it."
+  }
+ ]
 }

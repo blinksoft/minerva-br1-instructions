@@ -29,21 +29,15 @@ press play. The video gives the answer. That is the whole job; no props, no setu
 5. **The trick.** Fins are at the back for one reason: to drag the CP aft. Next segment: why aft is where
    we want it.
 
-## Demo, filmed
-- The BR-1 side view with the CP marked, fins on; the same with the fins removed (drawn, or OpenRocket with the
-  fin set deleted).
-- A finished BR-1 for reference.
-
 ## Pause point
 After beat 3. The card reads: "If I took the fins off this rocket, which way would the CP move?"
 
 On resume the video answers: Forward. The fins are most of the push and they are at the back; take them away and what is left adds up near the nose.
 
 ## Shot list
-- Screen capture or drawn: the BR-1 with the CP dot, fins on; then fins deleted, the dot jumps forward.
-- Pause card and answer card as full-screen title cards, see production.md.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-## Check before filming
+## Check before showing
 - Nothing regulatory. If a fins-off CP number is quoted, read it from OpenRocket with the fin set deleted.
 
 ## Sources to replace

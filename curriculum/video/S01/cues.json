@@ -1,183 +1,187 @@
 {
-  "meta": {
-    "title": "What is high power rocketry?",
-    "eyebrow": "Segment 1  ·  While the epoxy cures",
-    "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
-    "description": "What makes a rocket high power instead of a model rocket, and which of the two rockets on the table is which.",
-    "credits": [
-      "Motor data: thrustcurve.org (public domain motor data files)",
-      "BR-1 liftoff mass: the program's OpenRocket file, BR-1.ork",
-      "Photo: Georgia Wing High Power Rocketry"
-    ],
-    "tags": [
-      "rocketry",
-      "model rockets",
-      "high power rocketry",
-      "Civil Air Patrol",
-      "Georgia Wing",
-      "NFPA 1127",
-      "FAA waiver",
-      "Level 1 certification",
-      "rocket motors"
-    ]
-  },
-  "cues": [
-    {
-      "type": "title",
-      "title": "What is high power rocketry?",
-      "sub": "Four lines. Cross any one and the rocket is high power.",
-      "say": "Segment one. What is high power rocketry? By the end of this you will be able to say what makes a rocket high power instead of a model rocket, and point to which of the two rockets on the table is which."
-    },
-    {
-      "type": "text",
-      "heading": "Two rockets, same parts",
-      "lines": [
-        "Tube, nose, fins, motor, parachute",
-        "One is a model rocket, one is high power",
-        "The difference: the motor and the weight"
-      ],
-      "note": "Not the size of the airframe.",
-      "say": "Two rockets on the table. The Alpha III you are gluing right now, and a finished BR-1. Same idea. A tube, a nose, fins, a motor and a parachute. One is a model rocket, the other is high power. The difference is not the size of the airframe. It is the motor, and the weight."
-    },
-    {
-      "type": "table",
-      "heading": "The four lines",
-      "columns": [
-        "What is measured",
-        "Model rocket",
-        "High power"
-      ],
-      "widths": [
-        2.2,
-        1,
-        1
-      ],
-      "rows": [
-        [
-          "Total impulse, all motors together",
-          "up to 160 N·s",
-          "more than 160 N·s"
-        ],
-        [
-          "Average thrust, any one motor",
-          "up to 80 N",
-          "more than 80 N"
-        ],
-        [
-          "Propellant, all motors together",
-          "up to 4.4 oz (125 g)",
-          "more than 4.4 oz (125 g)"
-        ],
-        [
-          "Rocket at liftoff, motors in",
-          "up to 3.3 lb (1,500 g)",
-          "more than 3.3 lb (1,500 g)"
-        ]
-      ],
-      "size": 38,
-      "rowHeight": 84,
-      "note": "Cross any one line and the rocket is high power.",
-      "say": "Here are the lines. A rocket is high power if any one of these is true. The motors together have more than one hundred and sixty Newton-seconds of total impulse. Total impulse is a motor's whole push added up, and Newton-seconds is its unit. Segment six explains both. Any one motor averages more than eighty Newtons of thrust. The propellant weighs more than four point four ounces, one hundred and twenty-five grams. Or the rocket weighs more than three point three pounds, fifteen hundred grams at liftoff. Cross any one line and you are high power."
-    },
-    {
-      "type": "table",
-      "heading": "Three motors from the table",
-      "columns": [
-        "Motor",
-        "Flies in",
-        "Total impulse",
-        "Average thrust",
-        "Propellant"
-      ],
-      "widths": [
-        1.1,
-        1.6,
-        1.1,
-        1.1,
-        1
-      ],
-      "rows": [
-        [
-          "A8-3",
-          "Alpha III, this morning",
-          "2.5 N·s",
-          "3 N",
-          "0.1 oz (3 g)"
-        ],
-        [
-          "G74W-6",
-          "BR-1, most of you",
-          "83 N·s",
-          "74 N",
-          "1.4 oz (39 g)"
-        ],
-        [
-          "H135W-8",
-          "BR-1, Level 1 flyers",
-          "226 N·s",
-          "116 N",
-          "2.9 oz (82 g)"
-        ]
-      ],
-      "size": 40,
-      "rowHeight": 84,
-      "note": "The lines: 160 N·s  ·  80 N  ·  4.4 oz (125 g)  ·  3.3 lb (1,500 g) at liftoff.",
-      "say": "Now the three motors. The A8 in your Alpha III: two and a half Newton-seconds, three Newtons on average, a tenth of an ounce of propellant, three grams. The G74 most of you will fly in your BR-1: eighty-three Newton-seconds, seventy-four Newtons, one point four ounces, thirty-nine grams. An H for certification, the H135 for example: two hundred and twenty-six Newton-seconds, one hundred and sixteen Newtons, two point nine ounces, eighty-two grams. Hold those three against the four lines."
-    },
-    {
-      "type": "pause",
-      "question": "Which of these three motors makes a rocket high power?"
-    },
-    {
-      "type": "answer",
-      "text": "Only the H. A G is the biggest motor you can fly and still be a model rocket. The H crosses the 160 N·s line.",
-      "say": "Only the H. A G is the biggest motor you can fly and still be flying a model rocket. The H crosses the one hundred and sixty Newton-second line. It crosses a second line too. Its average thrust is over eighty Newtons. Its propellant is under the line, and the BR-1 lifts off at about two pounds nine ounces, one thousand one hundred and seventy grams, under three point three pounds, fifteen hundred grams. Two lines out of four. One would have been enough."
-    },
-    {
-      "type": "photo",
-      "heading": "Why the line matters",
-      "image": "assets/fin-through-the-wall.jpg",
-      "badge": "Built to take an H",
-      "caption": "Above the line, the FAA cares.",
-      "lines": [
-        "The launch needs a waiver",
-        "The field is bigger, the flyer is certified",
-        "The rocket is built to take it"
-      ],
-      "credit": "Photo: Georgia Wing High Power Rocketry",
-      "say": "Why does the line matter? Above it, the FAA cares. The launch needs a waiver, permission to use the airspace. The field has to be bigger. The flyer has to be certified, and that is Segment two. And the rocket has to be built to take it. That is why the BR-1's fins go through the wall and sit on the motor mount, and why a threaded retainer holds the motor. The Alpha III's fins are one molded plastic piece that slides on, and a clip holds its motor."
-    },
-    {
-      "type": "rocket",
-      "heading": "Same build, two worlds",
-      "motor": true,
-      "markers": [
-        {
-          "label": "G74 or H",
-          "x": 0.975,
-          "color": "ok",
-          "sub": "same 29 mm mount"
-        }
-      ],
-      "caption": "On a G74: a model rocket. On an H: high power, and a Level 1 rocket.",
-      "note": "The only thing that changed is the motor.",
-      "say": "So where does the BR-1 sit? It depends on the motor. On a G74 it flies under the model rocket safety code, and anyone in this room can fly it. Put an H in the same twenty-nine millimeter mount and it is high power. That is why it works as a Level one certification rocket. Same build, two worlds."
-    },
-    {
-      "type": "text",
-      "heading": "What today is",
-      "lines": [
-        "Everyone builds the same rocket",
-        "Most first flights: a G74W-6",
-        "Level 1 attempts: an H, first flight"
-      ],
-      "note": "Build it like it is going to carry an H. It might be yours that does.",
-      "say": "Here is what today is. You are all building the same rocket. On its first flight, most of you will fly it on a G74. Those going for a certification will fly it on an H as their Level one attempt. Same airframe. So build it like it is going to carry an H. It might be yours that does."
-    },
-    {
-      "type": "close",
-      "text": "High power is the motor and the weight, not the size of the airframe. A G keeps the BR-1 a model rocket. An H makes it high power.",
-      "say": "The one thing to remember. High power is about the motor and the weight, not the size of the airframe. A G keeps the BR-1 a model rocket. An H makes it high power."
-    }
+ "meta": {
+  "title": "What is high power rocketry?",
+  "eyebrow": "Segment 1  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "What makes a rocket high power instead of a model rocket, and which of the two rockets on the table is which.",
+  "credits": [
+   "Motor data: thrustcurve.org (public domain motor data files)",
+   "BR-1 liftoff mass: the program's OpenRocket file, BR-1.ork",
+   "Photo: Georgia Wing High Power Rocketry"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "NFPA 1127",
+   "FAA waiver",
+   "Level 1 certification",
+   "rocket motors"
   ]
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "What is high power rocketry?",
+   "sub": "Four lines. Cross any one and the rocket is high power.",
+   "say": "Segment one. What is high power rocketry? By the end of this you will be able to say what makes a rocket high power instead of a model rocket, and point to which of the two rockets on the table is which."
+  },
+  {
+   "type": "text",
+   "heading": "Two rockets, same parts",
+   "lines": [
+    "Tube, nose, fins, motor, parachute",
+    "One is a model rocket, one is high power",
+    "The difference: the motor and the weight"
+   ],
+   "note": "Not the size of the airframe.",
+   "say": "Two rockets on the table. The Alpha III you are gluing right now, and a finished BR-1. Same idea. A tube, a nose, fins, a motor and a parachute. One is a model rocket, the other is high power. The difference is not the size of the airframe. It is the motor, and the weight."
+  },
+  {
+   "type": "table",
+   "heading": "The four lines",
+   "columns": [
+    "What is measured",
+    "Model rocket",
+    "High power"
+   ],
+   "widths": [
+    2.2,
+    1,
+    1
+   ],
+   "rows": [
+    [
+     "Total impulse, all motors together",
+     "up to 160 N·s",
+     "more than 160 N·s"
+    ],
+    [
+     "Average thrust, any one motor",
+     "up to 80 N",
+     "more than 80 N"
+    ],
+    [
+     "Propellant, all motors together",
+     "up to 4.4 oz (125 g)",
+     "more than 4.4 oz (125 g)"
+    ],
+    [
+     "Rocket at liftoff, motors in",
+     "up to 3.3 lb (1,500 g)",
+     "more than 3.3 lb (1,500 g)"
+    ]
+   ],
+   "size": 38,
+   "rowHeight": 84,
+   "note": "Cross any one line and the rocket is high power.",
+   "say": "Here are the lines. A rocket is high power if any one of these is true. The motors together have more than one hundred and sixty Newton-seconds of total impulse. Total impulse is a motor's whole push added up, and Newton-seconds is its unit. Segment six explains both. Any one motor averages more than eighty Newtons of thrust. The propellant weighs more than four point four ounces, one hundred and twenty-five grams. Or the rocket weighs more than three point three pounds, fifteen hundred grams at liftoff. Cross any one line and you are high power."
+  },
+  {
+   "type": "table",
+   "heading": "Three motors from the table",
+   "columns": [
+    "Motor",
+    "Flies in",
+    "Total impulse",
+    "Average thrust",
+    "Propellant"
+   ],
+   "widths": [
+    1.1,
+    1.6,
+    1.1,
+    1.1,
+    1
+   ],
+   "rows": [
+    [
+     "A8-3",
+     "Alpha III, this morning",
+     "2.5 N·s",
+     "3 N",
+     "0.1 oz (3 g)"
+    ],
+    [
+     "G74W-6",
+     "BR-1, some of you",
+     "83 N·s",
+     "74 N",
+     "1.4 oz (39 g)"
+    ],
+    [
+     "H135W-8",
+     "BR-1, Level 1 flyers",
+     "226 N·s",
+     "116 N",
+     "2.9 oz (82 g)"
+    ]
+   ],
+   "size": 40,
+   "rowHeight": 84,
+   "note": "The lines: 160 N·s  ·  80 N  ·  4.4 oz (125 g)  ·  3.3 lb (1,500 g) at liftoff.",
+   "say": "Now the three motors. The A8 in your Alpha III: two and a half Newton-seconds, three Newtons on average, a tenth of an ounce of propellant, three grams. The G74 some of you will fly in your BR-1: eighty-three Newton-seconds, seventy-four Newtons, one point four ounces, thirty-nine grams. An H for certification, the H135 for example: two hundred and twenty-six Newton-seconds, one hundred and sixteen Newtons, two point nine ounces, eighty-two grams. Hold those three against the four lines."
+  },
+  {
+   "type": "pause",
+   "question": "Which of these three motors makes a rocket high power?"
+  },
+  {
+   "type": "answer",
+   "text": "Only the H.",
+   "say": "Only the H. A G is the biggest motor you can fly and still be flying a model rocket. The H crosses the one hundred and sixty Newton-second line. It crosses a second line too. Its average thrust is over eighty Newtons. Its propellant is under the line, and the BR-1 lifts off at about two pounds nine ounces, one thousand one hundred and seventy grams, under three point three pounds, fifteen hundred grams. Two lines out of four. One would have been enough.",
+   "lines": [
+    "A G is the biggest motor you can fly and still be a model rocket",
+    "The H crosses the 160 N·s line"
+   ]
+  },
+  {
+   "type": "photo",
+   "heading": "Why the line matters",
+   "image": "assets/fin-through-the-wall.jpg",
+   "badge": "Built to take an H",
+   "caption": "Above the line, the FAA cares.",
+   "lines": [
+    "The launch needs a waiver",
+    "The field is bigger, the flyer is certified",
+    "The rocket is built to take it"
+   ],
+   "credit": "Photo: Georgia Wing High Power Rocketry",
+   "say": "Why does the line matter? Above it, the FAA cares. The launch needs a waiver, permission to use the airspace. The field has to be bigger. The flyer has to be certified, and that is Segment two. And the rocket has to be built to take it. That is why the BR-1's fins go through the wall and sit on the motor mount, and why a threaded retainer holds the motor. The Alpha III's fins are one molded plastic piece that slides on, and a clip holds its motor."
+  },
+  {
+   "type": "rocket",
+   "heading": "Same build, two worlds",
+   "motor": true,
+   "markers": [
+    {
+     "label": "G74 or H",
+     "x": 0.975,
+     "color": "ok",
+     "sub": "same 29 mm mount"
+    }
+   ],
+   "caption": "On a G74: a model rocket  ·  On an H: high power, a Level 1 rocket",
+   "note": "The only thing that changed is the motor.",
+   "say": "So where does the BR-1 sit? It depends on the motor. On a G74 it flies under the model rocket safety code, and anyone in this room can fly it. Put an H in the same twenty-nine millimeter mount and it is high power. That is why it works as a Level one certification rocket. Same build, two worlds."
+  },
+  {
+   "type": "text",
+   "heading": "What today is",
+   "lines": [
+    "Everyone builds the same rocket",
+    "Most first flights: a G74W-6",
+    "Level 1 attempts: an H, first flight"
+   ],
+   "note": "Build it like it is going to carry an H. It might be yours that does.",
+   "say": "Here is what today is. You are all building the same rocket. On its first flight, some of you will fly it on a G74. Those going for a certification will fly it on an H as their Level one attempt. Same airframe. So build it like it is going to carry an H. It might be yours that does."
+  },
+  {
+   "type": "close",
+   "text": "High power is the motor and the weight, not the size of the airframe. A G keeps the BR-1 a model rocket. An H makes it high power.",
+   "say": "The one thing to remember. High power is about the motor and the weight, not the size of the airframe. A G keeps the BR-1 a model rocket. An H makes it high power."
+  }
+ ]
 }

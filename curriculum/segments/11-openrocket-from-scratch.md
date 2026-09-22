@@ -30,23 +30,16 @@ press play. The video gives the answer. That is the whole job; no props, no setu
 6. **Now open the real one.** Open BR-1.ork alongside. Same parts, same tree, tuned to the actual kit.
    The from-scratch build was to teach you what the file means; the program's file is what you fly with.
 
-## Demo, filmed
-- Screen only. A blank OpenRocket and BR-1.ork ready to open.
-- Real fin, centering ring and nose cone on the bench for a one-shot cut to each as it is added.
-
 ## Pause point
 After beat 4. The card reads: "I added the fins and the red dot jumped toward the tail. Why the red one and not the blue one?"
 
 On resume the video answers: Fins are a lot of area and very little mass. Area moves the CP, the red dot. Mass moves the CG, the blue dot, and three thin plywood fins barely move it.
 
 ## Shot list
-- Screen capture, split into two recordings at the natural break after beat 3.
-- Cursor slow, every dialog left on screen long enough to read.
-- Short bench-camera inserts of the real parts as each is added.
+- The video is the segment: slides, pause card, answer card and the OpenRocket screen recordings cut
+  from the program's own takes (see curriculum/video/S11/RECORDING.md).
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - OpenRocket version; menu names and dialog layouts change between releases.
 - Actual BR-1 dimensions from BR-1.ork so the from-scratch build matches the real rocket.
 

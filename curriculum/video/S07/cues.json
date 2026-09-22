@@ -1,178 +1,183 @@
 {
-  "meta": {
-    "title": "Reading the motor code",
-    "eyebrow": "Segment 7  ·  While the epoxy cures",
-    "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
-    "description": "How to decode a motor designation like G74W-6 or H128W-14, and why average thrust, not just the letter, decides whether a motor is safe for a given rocket.",
-    "credits": [
-      "Motor data: thrustcurve.org (public domain motor data files)",
-      "Flight data: OpenRocket simulation of the BR-1 (files/BR-1.ork)",
-      "Photo: Georgia Wing High Power Rocketry"
-    ],
-    "tags": [
-      "rocketry",
-      "model rockets",
-      "high power rocketry",
-      "Civil Air Patrol",
-      "Georgia Wing",
-      "motor designation",
-      "average thrust",
-      "thrust to weight",
-      "ejection delay"
-    ],
-    "say_fixes": [
-      [
-        "H115-14",
-        "H one fifteen, fourteen"
-      ],
-      [
-        "DM",
-        "D M"
-      ],
-      [
-        "AeroTech",
-        "Aero Tech"
-      ]
-    ]
-  },
-  "cues": [
-    {
-      "type": "title",
-      "title": "Reading the motor code",
-      "sub": "G74W-6: four parts, and why the middle number matters most.",
-      "say": "Segment seven. Reading the motor code. By the end of this you will be able to decode a motor designation like G74W-6 or H128W-14, and say why average thrust, not just the letter, decides whether a motor is safe for a given rocket."
-    },
-    {
-      "type": "code",
-      "heading": "Four parts on every motor",
-      "parts": [
-        {
-          "text": "G",
-          "label": "impulse class",
-          "sub": "the letter ladder: 80 to 160 N·s"
-        },
-        {
-          "text": "74",
-          "label": "average thrust",
-          "sub": "Newtons of push while it burns"
-        },
-        {
-          "text": "W",
-          "label": "propellant",
-          "sub": "maker's code: White Lightning"
-        },
-        {
-          "text": "-"
-        },
-        {
-          "text": "6",
-          "label": "delay",
-          "sub": "seconds from burnout to ejection"
-        }
-      ],
-      "note": "The motor most of you will fly in the BR-1.",
-      "say": "Here is the motor most of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out."
-    },
-    {
-      "type": "table",
-      "heading": "Read a few",
-      "columns": [
-        "Code",
-        "Class",
-        "Average thrust",
-        "Propellant",
-        "Delay"
-      ],
-      "widths": [
-        1.5,
-        0.7,
-        1.3,
-        1.9,
-        0.8
-      ],
-      "rows": [
-        [
-          "A8-3",
-          "A",
-          "8 N",
-          "black powder",
-          "3 s"
-        ],
-        [
-          "G74W-6",
-          "G",
-          "74 N",
-          "W: White Lightning",
-          "6 s"
-        ],
-        [
-          "H128W-14",
-          "H",
-          "128 N",
-          "W: White Lightning",
-          "14 s"
-        ],
-        [
-          "H115DM-14",
-          "H",
-          "115 N",
-          "DM: Dark Matter",
-          "14 s"
-        ]
-      ],
-      "highlight": [
-        1
-      ],
-      "note": "Estes leaves the propellant letter off its black powder motors, so the Alpha III's A8-3 has three parts.",
-      "say": "Read a few more. A8-3. A class, eight Newtons average, three second delay. That is the motor in the Alpha III you built this morning. G74W-6, the BR-1's everyday motor. H128W-14. An H, one hundred and twenty-eight Newtons average, fourteen second delay. H115DM-14. Same idea. An H, one hundred and fifteen Newtons, fourteen seconds. Only the propellant code differs. DM is Dark Matter, another AeroTech recipe. Some of you will certify on an H like these. Try reading the last two out loud.",
-      "size": 44,
-      "rowHeight": 100
-    },
-    {
-      "type": "figure",
-      "heading": "Three to five times its weight",
-      "image": "assets/thrust-to-weight.png",
-      "caption": "Same letter. The G40 has more total push (97 N·s against 83) but half the average thrust.",
-      "say": "Now, why the middle number matters most. A rocket has to leave the rail fast enough for the fins to work, because fins only steer once air is moving past them. Two rules of thumb. Average thrust three to five times the rocket's weight, and about fifty feet per second, fifteen meters per second, off the rail. If the rail speed comes up short, a longer rail buys it, which is why the program flies six foot rails. Look at a G40 next to a G74. Same letter. The G40 even has more total push, ninety-seven Newton-seconds against eighty-three. But it pushes half as hard. On a heavy rocket it may crawl off the rail and go sideways."
-    },
-    {
-      "type": "pause",
-      "question": "Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?"
-    },
-    {
-      "type": "answer",
-      "text": "H class, 115 N average, 14 second delay. Three to one wants 31 N, five to one wants 51 N: the G40 is 4 to 1, marginal. The G74 is 7 to 1, plenty.",
-      "say": "H class, one hundred and fifteen Newtons average, fourteen second delay. Now the weight. Your BR-1 with no motor is two pounds two ounces, nine hundred and fifty-eight grams. Add a G74, three ounces, and it is about two pounds five, about a thousand and fifty grams. That weighs about ten Newtons. Three to one wants thirty-one, five to one wants fifty-one. The G40 at forty-one is four to one, in the gray zone. The G74 at seventy-four is seven to one, with room to spare. Now stretch that. With an H135 loaded, the rocket is about two pounds nine ounces, one thousand one hundred and seventy grams, eleven and a half Newtons. Five to one wants fifty-eight. An H115 gives ten to one. Plenty."
-    },
-    {
-      "type": "text",
-      "heading": "The delay: the last number",
-      "lines": [
-        "G74W: sold in 6 or 8 second delays",
-        "H motors: adjustable delay, drilled to 8 s on launch day",
-        "P means plugged: no ejection charge"
-      ],
-      "note": "What the delay does, and how OpenRocket picks it, is the next segment.",
-      "say": "The last number is the delay. After burnout the rocket keeps climbing, and the delay is how long the motor waits before it fires the ejection charge. The G74W is sold in six and eight second delays. The program's H motors have an adjustable delay. On launch day, during prep, it is drilled to eight seconds, the closest you can get to the eight point six OpenRocket recommends. A motor marked P is plugged. No ejection at all, because that flyer uses electronics. Which delay is right, and what happens when it is wrong, is the next segment."
-    },
-    {
-      "type": "photo",
-      "heading": "Every motor is certified",
-      "image": "assets/motor-mount-tail.jpg",
-      "badge": "29 mm",
-      "caption": "The label was measured on a test stand by NAR or Tripoli, then published.",
-      "lines": [
-        "A8, G40, G74: certified by NAR",
-        "H115, H128, H135: certified by Tripoli",
-        "Fly only certified motors, unaltered"
-      ],
-      "credit": "Photo: Georgia Wing High Power Rocketry",
-      "say": "One last thing. Every number on that label was measured. Before a motor can be sold for this, NAR or Tripoli fires it on a test stand, records the thrust curve, and publishes the results. The A8 and the G74W were certified by NAR. The H motors, by Tripoli. That is why the RSO can trust the label on the motor going into this mount, and why you fly only certified motors. Never homemade, never altered."
-    },
-    {
-      "type": "close",
-      "text": "The letter is the box. The number is the push. Read the whole code before you fly.",
-      "say": "The one thing to remember. The letter is the size of the box. The number is the push. Read the whole code before you fly."
-    }
+ "meta": {
+  "title": "Reading the motor code",
+  "eyebrow": "Segment 7  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "How to decode a motor designation like G74W-6 or H128W-14, and why average thrust, not just the letter, decides whether a motor is safe for a given rocket.",
+  "credits": [
+   "Motor data: thrustcurve.org (public domain motor data files)",
+   "Flight data: OpenRocket simulation of the BR-1 (files/BR-1.ork)",
+   "Photo: Georgia Wing High Power Rocketry"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "motor designation",
+   "average thrust",
+   "thrust to weight",
+   "ejection delay"
+  ],
+  "say_fixes": [
+   [
+    "H115-14",
+    "H one fifteen, fourteen"
+   ],
+   [
+    "DM",
+    "D M"
+   ],
+   [
+    "AeroTech",
+    "Aero Tech"
+   ]
   ]
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "Reading the motor code",
+   "sub": "G74W-6: four parts, and why the middle number matters most.",
+   "say": "Segment seven. Reading the motor code. By the end of this you will be able to decode a motor designation like G74W-6 or H128W-14, and say why average thrust, not just the letter, decides whether a motor is safe for a given rocket."
+  },
+  {
+   "type": "code",
+   "heading": "Four parts on every motor",
+   "parts": [
+    {
+     "text": "G",
+     "label": "impulse class",
+     "sub": "the letter ladder: 80 to 160 N·s"
+    },
+    {
+     "text": "74",
+     "label": "average thrust",
+     "sub": "Newtons of push while it burns"
+    },
+    {
+     "text": "W",
+     "label": "propellant",
+     "sub": "maker's code: White Lightning"
+    },
+    {
+     "text": "-"
+    },
+    {
+     "text": "6",
+     "label": "delay",
+     "sub": "seconds from burnout to ejection"
+    }
+   ],
+   "note": "The motor some of you will fly in the BR-1.",
+   "say": "Here is the motor some of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out."
+  },
+  {
+   "type": "table",
+   "heading": "Read a few",
+   "columns": [
+    "Code",
+    "Class",
+    "Average thrust",
+    "Propellant",
+    "Delay"
+   ],
+   "widths": [
+    1.5,
+    0.7,
+    1.3,
+    1.9,
+    0.8
+   ],
+   "rows": [
+    [
+     "A8-3",
+     "A",
+     "8 N",
+     "black powder",
+     "3 s"
+    ],
+    [
+     "G74W-6",
+     "G",
+     "74 N",
+     "W: White Lightning",
+     "6 s"
+    ],
+    [
+     "H128W-14",
+     "H",
+     "128 N",
+     "W: White Lightning",
+     "14 s"
+    ],
+    [
+     "H115DM-14",
+     "H",
+     "115 N",
+     "DM: Dark Matter",
+     "14 s"
+    ]
+   ],
+   "highlight": [
+    1
+   ],
+   "note": "Estes leaves the propellant letter off its black powder motors, so the Alpha III's A8-3 has three parts.",
+   "say": "Read a few more. A8-3. A class, eight Newtons average, three second delay. That is the motor in the Alpha III you built this morning. G74W-6, the BR-1's everyday motor. H128W-14. An H, one hundred and twenty-eight Newtons average, fourteen second delay. H115DM-14. Same idea. An H, one hundred and fifteen Newtons, fourteen seconds. Only the propellant code differs. DM is Dark Matter, another AeroTech recipe. Some of you will certify on an H like these. Try reading the last two out loud.",
+   "size": 44,
+   "rowHeight": 100
+  },
+  {
+   "type": "figure",
+   "heading": "Three to five times its weight",
+   "image": "assets/thrust-to-weight.png",
+   "caption": "Same letter. The G40 has more total push (97 N·s against 83) but half the average thrust.",
+   "say": "Now, why the middle number matters most. A rocket has to leave the rail fast enough for the fins to work, because fins only steer once air is moving past them. Two rules of thumb. Average thrust three to five times the rocket's weight, and about fifty feet per second, fifteen meters per second, off the rail. If the rail speed comes up short, a longer rail buys it, which is why the program flies six foot rails. Look at a G40 next to a G74. Same letter. The G40 even has more total push, ninety-seven Newton-seconds against eighty-three. But it pushes half as hard. On a heavy rocket it may crawl off the rail and go sideways."
+  },
+  {
+   "type": "pause",
+   "question": "Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?"
+  },
+  {
+   "type": "answer",
+   "text": "H class, 115 N average, 14 second delay.",
+   "say": "H class, one hundred and fifteen Newtons average, fourteen second delay. Now the weight. Your BR-1 with no motor is two pounds two ounces, nine hundred and fifty-eight grams. Add a G74, three ounces, and it is about two pounds five, about a thousand and fifty grams. That weighs about ten Newtons. Three to one wants thirty-one, five to one wants fifty-one. The G40 at forty-one is four to one, in the gray zone. The G74 at seventy-four is seven to one, with room to spare. Now stretch that. With an H135 loaded, the rocket is about two pounds nine ounces, one thousand one hundred and seventy grams, eleven and a half Newtons. Five to one wants fifty-eight. An H115 gives ten to one. Plenty.",
+   "lines": [
+    "3 to 1 wants 31 N, 5 to 1 wants 51 N",
+    "G40: 4 to 1, marginal",
+    "G74: 7 to 1, plenty"
+   ]
+  },
+  {
+   "type": "text",
+   "heading": "The delay: the last number",
+   "lines": [
+    "G74W: sold in 6 or 8 second delays",
+    "H motors: adjustable delay, drilled to 8 s on launch day",
+    "P means plugged: no ejection charge"
+   ],
+   "note": "What the delay does, and how OpenRocket picks it, is the next segment.",
+   "say": "The last number is the delay. After burnout the rocket keeps climbing, and the delay is how long the motor waits before it fires the ejection charge. The G74W is sold in six and eight second delays. The program's H motors have an adjustable delay. On launch day, during prep, it is drilled to eight seconds, the closest you can get to the eight point six OpenRocket recommends. A motor marked P is plugged. No ejection at all, because that flyer uses electronics. Which delay is right, and what happens when it is wrong, is the next segment."
+  },
+  {
+   "type": "photo",
+   "heading": "Every motor is certified",
+   "image": "assets/motor-mount-tail.jpg",
+   "badge": "29 mm",
+   "caption": "The label was measured on a test stand by NAR or Tripoli, then published.",
+   "lines": [
+    "A8, G40, G74: certified by NAR",
+    "H115, H128, H135: certified by Tripoli",
+    "Fly only certified motors, unaltered"
+   ],
+   "credit": "Photo: Georgia Wing High Power Rocketry",
+   "say": "One last thing. Every number on that label was measured. Before a motor can be sold for this, NAR or Tripoli fires it on a test stand, records the thrust curve, and publishes the results. The A8 and the G74W were certified by NAR. The H motors, by Tripoli. That is why the RSO can trust the label on the motor going into this mount, and why you fly only certified motors. Never homemade, never altered."
+  },
+  {
+   "type": "close",
+   "text": "The letter is the box. The number is the push. Read the whole code before you fly.",
+   "say": "The one thing to remember. The letter is the size of the box. The number is the push. Read the whole code before you fly."
+  }
+ ]
 }

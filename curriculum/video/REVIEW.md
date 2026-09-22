@@ -6,24 +6,24 @@ should confirm before it is shown (from each segment's CHECK.md). Watch the MP4,
 
 | # | Title | Voice | Length | Words | Video |
 |---|---|---|---|---|---|
-| S01 | What is high power rocketry? | Josh | 4:22 | 598 | `videos/S01.mp4` |
-| S02 | NAR, Tripoli and certification | Nichalia | 3:57 | 610 | `videos/S02.mp4` |
-| S03 | Center of gravity | Josh | 3:48 | 618 | `videos/S03.mp4` |
-| S04 | Center of pressure | Nichalia | 3:44 | 679 | `videos/S04.mp4` |
-| S05 | Stability margin and the swing test | Josh | 4:22 | 558 | `videos/S05.mp4` |
+| S01 | What is high power rocketry? | Josh | 4:15 | 598 | `videos/S01.mp4` |
+| S02 | NAR, Tripoli and certification | Nichalia | 4:00 | 610 | `videos/S02.mp4` |
+| S03 | Center of gravity | Josh | 4:03 | 618 | `videos/S03.mp4` |
+| S04 | Center of pressure | Nichalia | 4:09 | 679 | `videos/S04.mp4` |
+| S05 | Stability margin | Josh | 3:58 | 564 | `videos/S05.mp4` |
 | S06 | How a motor is measured | Nichalia | 3:22 | 545 | `videos/S06.mp4` |
-| S07 | Reading the motor code | Josh | 4:52 | 662 | `videos/S07.mp4` |
-| S08 | Thrust curves and the delay | Nichalia | 3:55 | 654 | `videos/S08.mp4` |
-| S09 | Motor sizes, types and safety | Josh | 4:29 | 613 | `videos/S09.mp4` |
-| S10 | Why simulate, and what tools exist | Nichalia | 3:53 | 655 | `videos/S10.mp4` |
-| S11 | Building a rocket from scratch in OpenRocket | Josh | 4:12 | 657 | `videos/S11.mp4` |
-| S12 | Stability with and without a motor | Nichalia | 4:03 | 658 | `videos/S12.mp4` |
+| S07 | Reading the motor code | Josh | 5:03 | 662 | `videos/S07.mp4` |
+| S08 | Thrust curves and the delay | Nichalia | 4:12 | 654 | `videos/S08.mp4` |
+| S09 | Motor sizes, types and safety | Josh | 4:34 | 620 | `videos/S09.mp4` |
+| S10 | Why simulate, and what tools exist | Nichalia | 4:11 | 655 | `videos/S10.mp4` |
+| S11 | Building a rocket from scratch in OpenRocket | Josh | 4:49 | 676 | `videos/S11.mp4` |
+| S12 | Stability with and without a motor | Nichalia | 4:30 | 672 | `videos/S12.mp4` |
 
 ## S01: What is high power rocketry?
 
 What makes a rocket high power instead of a model rocket, and which of the two rockets on the table is which.
 
-Voice Josh, 4:22, 598 words, 10 cues. Cue file `curriculum/video/S01/cues.json`.
+Voice Josh, 4:15, 598 words, 10 cues. Cue file `curriculum/video/S01/cues.json`.
 
 Slides:
 
@@ -32,7 +32,7 @@ Slides:
 3. table: The four lines
 4. table: Three motors from the table
 5. **pause**: _Which of these three motors makes a rocket high power?_
-6. answer: Only the H. A G is the biggest motor you can fly and still be a model rocket. The H crosses the 160 N·s line.
+6. answer: Only the H.
 7. photo: Why the line matters
 8. rocket: Same build, two worlds
 9. text: What today is
@@ -45,7 +45,7 @@ Confirm before showing:
 
 Name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one.
 
-Voice Nichalia, 3:57, 610 words, 9 cues. Cue file `curriculum/video/S02/cues.json`.
+Voice Nichalia, 4:00, 610 words, 9 cues. Cue file `curriculum/video/S02/cues.json`.
 
 Slides:
 
@@ -53,7 +53,7 @@ Slides:
 2. text: Two clubs, one rulebook
 3. text: Why the field has a boss
 4. **pause**: _What does the RSO look for on a rocket before letting it fly?_
-5. answer: Stable with the motor in. Motor held in. Harness anchored, chute packed and protected. No igniter. A certified motor that matches the rocket. A build that will take the flight.
+5. answer: Seven things.
 6. table: The certification ladder
 7. table: How old you have to be
 8. photo: What this rocket is for
@@ -69,7 +69,7 @@ Confirm before showing:
 
 Find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when weight is added.
 
-Voice Josh, 3:48, 618 words, 10 cues. Cue file `curriculum/video/S03/cues.json`.
+Voice Josh, 4:03, 618 words, 10 cues. Cue file `curriculum/video/S03/cues.json`.
 
 Slides:
 
@@ -78,7 +78,7 @@ Slides:
 3. figure: Find it on a rocket
 4. rocket: Your BR-1, no motor
 5. **pause**: _I am about to slide a motor into the tail. Which way will the balance point move?_
-6. answer: Toward the tail. Weight goes in, the CG moves toward it. That is why the BR-1's nose cone is weighted: 5.3 oz (150 g) to 8.5 oz (240 g).
+6. answer: Toward the tail.
 7. rocket: Motor in: the CG moves aft
 8. text: Why the CG matters
 9. text: Before your BR-1 flies
@@ -91,7 +91,7 @@ Confirm before showing:
 
 What the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft.
 
-Voice Nichalia, 3:44, 679 words, 11 cues. Cue file `curriculum/video/S04/cues.json`.
+Voice Nichalia, 4:09, 679 words, 11 cues. Cue file `curriculum/video/S04/cues.json`.
 
 Slides:
 
@@ -100,7 +100,7 @@ Slides:
 3. text: Shape sets the CP
 4. text: Where the push comes from
 5. **pause**: _If I took the fins off this rocket, which way would the CP move?_
-6. answer: Forward. The fins are most of the push, and they are at the back. Take them away and what is left adds up near the nose.
+6. answer: Forward.
 7. rocket: Fins off, the CP jumps forward
 8. text: What the software does
 9. figure: The math, done once by hand
@@ -113,28 +113,28 @@ Confirm before showing:
 - CP 33 3/4 in (86 cm) is the design-window value at zero angle of attack, Mach 0.3.
 - Slide 9 shows the classic Barrowman method solved on the BR-1 (33.6 in); references are in the video description.
 
-## S05: Stability margin and the swing test
+## S05: Stability margin
 
-The stability rule, CG ahead of CP by one to three calibers, what happens when it is broken either way, and how to run a swing test.
+The stability rule, CG ahead of CP by one to three calibers, what happens when it is broken either way, and how the program checks it before a flight.
 
-Voice Josh, 4:22, 558 words, 9 cues. Cue file `curriculum/video/S05/cues.json`.
+Voice Josh, 3:58, 564 words, 9 cues. Cue file `curriculum/video/S05/cues.json`.
 
 Slides:
 
-1. title: Stability margin and the swing test
+1. title: Stability margin
 2. rocket: Two dots, one rule
 3. rocket: Count the calibers
 4. **pause**: _This rocket has its CG one diameter ahead of its CP. I load a heavier motor. More stable or less?_
-5. answer: Less. The motor is mass at the back. The CG slides aft toward the CP and the margin shrinks. That is why you check the loaded rocket.
+5. answer: Less.
 6. photo: Too little: it tumbles
 7. photo: Too much: it weathercocks
-8. figure: The swing test
+8. text: How the program checks it
 9. close: CG ahead of CP by one to three calibers, with the motor loaded. Check it before you fly.
 
 Confirm before showing:
 
 - The stability rule is stated as one to three calibers (the BR-1 sits at 2.5 on a G74 and 2.0 on an H); under one is risky, well over three is a different problem. Same wording in the segment file.
-- Swing test: load the live motor; the spent-casing option was cut.
+- Swing test removed on 2026-09-22 at Tim's request (too many rockets damaged doing it). The check is OpenRocket plus the finger balance; cue 8 says so and the title is now "Stability margin".
 - Tumble photo is the U.S. Navy's Trident II test photo, credited "Photo: U.S. Navy". The weathercocking diagram is our own drawing (assets/draw_weathercock.py).
 - say_fixes keep the hyphenated weathervane/weathercocks until the first render is heard.
 
@@ -152,7 +152,7 @@ Slides:
 4. ladder: The letter ladder
 5. ladder: The letter ladder
 6. **pause**: _An F motor and a G motor: how many times more total push does the G have, at most?_
-7. answer: Two. At the top of each range, a G has twice the total impulse of an F. Every step on the ladder is a doubling.
+7. answer: Two.
 8. compare: Feel the gap
 9. text: The letter is the size of the box
 10. close: Total impulse is how hard, times how long, in Newton-seconds. Every letter doubles.
@@ -161,7 +161,7 @@ Slides:
 
 How to decode a motor designation like G74W-6 or H128W-14, and why average thrust, not just the letter, decides whether a motor is safe for a given rocket.
 
-Voice Josh, 4:52, 662 words, 9 cues. Cue file `curriculum/video/S07/cues.json`.
+Voice Josh, 5:03, 662 words, 9 cues. Cue file `curriculum/video/S07/cues.json`.
 
 Slides:
 
@@ -170,7 +170,7 @@ Slides:
 3. table: Read a few
 4. figure: Three to five times its weight
 5. **pause**: _Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?_
-6. answer: H class, 115 N average, 14 second delay. Three to one wants 31 N, five to one wants 51 N: the G40 is 4 to 1, marginal. The G74 is 7 to 1, plenty.
+6. answer: H class, 115 N average, 14 second delay.
 7. text: The delay: the last number
 8. photo: Every motor is certified
 9. close: The letter is the box. The number is the push. Read the whole code before you fly.
@@ -182,7 +182,7 @@ Confirm before showing:
 
 How to read a thrust curve, point to total impulse, peak thrust and burn time on it, and explain what a wrong delay looks like on the field.
 
-Voice Nichalia, 3:55, 654 words, 10 cues. Cue file `curriculum/video/S08/cues.json`.
+Voice Nichalia, 4:12, 654 words, 10 cues. Cue file `curriculum/video/S08/cues.json`.
 
 Slides:
 
@@ -193,7 +193,7 @@ Slides:
 5. flight: Burnout, coast, apogee
 6. flight: The delay decides the moment
 7. **pause**: _Same rocket, same G motor, but a 12 second delay instead of 6. Where is the rocket pointing when the chute comes out?_
-8. answer: Nose down and speeding up. It passed apogee six seconds ago. The chute opens into a fast, falling rocket: shredded chute or a zippered tube.
+8. answer: Nose down and speeding up.
 9. flight: How you find it
 10. close: On a thrust curve the area is the letter and the height is the thrust. The delay must match the coast.
 
@@ -209,7 +209,7 @@ Confirm before showing:
 
 Name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules.
 
-Voice Josh, 4:29, 613 words, 10 cues. Cue file `curriculum/video/S09/cues.json`.
+Voice Josh, 4:34, 620 words, 10 cues. Cue file `curriculum/video/S09/cues.json`.
 
 Slides:
 
@@ -220,19 +220,19 @@ Slides:
 5. text: Single use or reload
 6. text: The rules on this bench
 7. **pause**: _On the high power pads the igniter goes in last, at the pad. At our low power table the RSO wants the igniter and plug in before you walk up. Why the difference?_
-8. answer: The igniter is the only thing that can start the motor. A G or H has enough energy that the range takes no chances. Low power igniters are small and the rack turns over fast. Either way: do what your RSO says.
+8. answer: Do what your RSO says.
 9. text: A motor cannot tell the difference
 10. close: Motors stay in the range box until launch day. Never on a build table.
 
 Confirm before showing:
 
-- Which motors and reload systems, if any, the program actually uses. The video says the G74W and H135W in the program's flight file are 29 mm single-use (thrustcurves.json marks both, plus the H115DM, G12ST and G40W, as SU); the same file lists the H128W and H180W as reloads, so if the program flies either, the "nothing to assemble" line needs a caveat.
+- The program flies only AeroTech DMS (disposable) 29 mm motors: the G74W and whichever H is on hand
 
 ## S10: Why simulate, and what tools exist
 
 Why the program simulates before it flies, the two common tools, and how to recognize the CG and CP markers and the stability number in OpenRocket.
 
-Voice Nichalia, 3:53, 655 words, 10 cues. Cue file `curriculum/video/S10/cues.json`.
+Voice Nichalia, 4:11, 655 words, 10 cues. Cue file `curriculum/video/S10/cues.json`.
 
 Slides:
 
@@ -243,7 +243,7 @@ Slides:
 5. photo: Every part has a mass
 6. table: The parts list is the rocket
 7. **pause**: _The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?_
-8. answer: Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one.
+8. answer: Believe the rocket.
 9. text: Trust, but weigh
 10. close: Simulate before you fly. The sim is only as true as what you typed in.
 
@@ -251,27 +251,26 @@ Confirm before showing:
 
 - BR-1.ork now names the 20 g part "Motor Retainer" and carries a fin material; the parts table lists the retainer at 0.7 oz (20 g).
 - The answer's list of typical missing masses is now epoxy fillets, paint and the hydro-dip (the retainer is in the file).
-- Slides 4 and 5 are the program's own OpenRocket 24.12 screen capture (H115DM-8 configuration: 1.78 cal, CG 698 mm, CP 846 mm at M=0.3), which confirms the numbers the series quotes.
+- Slides 4 and 5 are frames from the 2026-09-21 screen recording of the real BR-1.ork (OpenRocket 24.12, inches): slide 4 the rocket view with the H115DM-8 loaded, 2.05 cal, CG 27.447 in, CP 33.913 in at M=0.3, matching the narration's 27 1/2 in, 33 3/4 in and 2.0; slide 5 the component tree.
 - Whole-rocket masses (2 lb 2 oz empty, 2 lb 9 oz with the H135W) accepted as close enough to a real weigh-in.
-- The screen capture on slides 4 and 5 predates the tube correction (80.3 mm) and the re-run: it shows CP 846 mm and 1.78 cal, while the narration now says 858 mm and 2.0. Re-capture the design view with the H135W-8 (or H115DM-8) configuration selected and it will match.
 
 ## S11: Building a rocket from scratch in OpenRocket
 
 How to start a new OpenRocket design, add the parts of a simple rocket in the right order, then open the program's BR-1 file and understand what you are looking at.
 
-Voice Josh, 4:12, 657 words, 10 cues. Cue file `curriculum/video/S11/cues.json`.
+Voice Josh, 4:49, 676 words, 10 cues. Cue file `curriculum/video/S11/cues.json`.
 
 Slides:
 
 1. title: Building a rocket from scratch in OpenRocket
-2. table: The rocket is a tree
-3. rocket: Nose to tail: the outside
-4. rocket: Inside the tube
-5. rocket: Fins: the CP jumps aft
+2. clip: The rocket is a tree
+3. clip: Nose to tail: the outside
+4. clip: Inside the tube
+5. clip: Fins: the CP jumps aft
 6. **pause**: _I added the fins and the red dot jumped toward the tail. Why the red one and not the blue one?_
-7. answer: Fins are a lot of area and very little mass. Area moves the CP, the red dot. Mass moves the CG, the blue dot, and three thin plywood fins barely move it.
-8. photo: Make the masses honest
-9. rocket: Now open the real one
+7. answer: Area.
+8. clip: Make the masses honest
+9. clip: Now open the real one
 10. close: A rocket is a tree of parts. Area moves the CP, mass moves the CG, and a scale beats a guess.
 
 Confirm before showing:
@@ -285,31 +284,33 @@ Confirm before showing:
 - Slide 9's CG 26 in, CP 33 3/4 in and 2.2 calibers are the file's design-window values for the G74W-6 configuration (design.configurations: 26 in, 33 3/4 in, 2.47 cal, 2 lb 5 oz); the narration says the G74 is loaded.
 - Slide 9's note and narration say the H reads 1.8 calibers: the H135W-8 configuration in the same design window (CG 27 1/2 in, CP 33 3/4 in, 1.99 cal, 2 lb 9 oz); the H115DM configuration has no stored stability figure, so it is not quoted.
 - Nose cone 8.5 oz and body tube 12.5 oz are the values in shared/br1-sim.json massesKg; the narration presents them as mass overrides from a scale, so confirm they were measured, not calculated.
-- Table slide lists the centering rings, parachute, shock cord, fin set and rail buttons as hanging off the body tube; confirm this matches the tree in BR-1.ork.
 - "OpenRocket draws the CP as a red dot and the CG as a blue dot" is the default view; confirm for the version used. The slides keep the series colours (CG blue accent, CP orange).
 - The `rocket` slide type always draws the rail-button stubs, and slide 4 shows the motor mount in orange before fins exist; the narration adds those parts in outline order, so the picture runs slightly ahead of the words on slides 3 and 4.
-- No OpenRocket screenshots are used; the segment's filmed demo (screen capture plus bench inserts of the real fin, ring and nose cone) is still to be shot, and this generated video stands in until then.
 - Departures from the outline, all to stay menu-agnostic: "File, New" became "start a new design and name it"; "right-click a part" became "put the real part on a scale, and override its mass"; "click OK" became "accept the dialog".
-- Kit photo on slide 8 is assets/img/s02-1.webp from the build guide, credited "Photo: Georgia Wing High Power Rocketry".
+- Nose cone shoulder in BR-1.ork is 78.7 mm diameter, 75 mm long, 2 mm wall; with the corrected 80.3 mm tube and 2.03 mm wall the tube's inside is 76.2 mm, so the shoulder in the file is oversize, and the recording shows 78.7 mm typed in. Fix it in BR-1.ork when convenient (it does not move the CP or CG enough to matter; nobody will read it off the clip).
+- Cues 2, 3, 4, 5, 8 and 9 are screen recordings from 2026-09-21 (see RECORDING.md). Cues 2 to 8 show the
+- Cue 5's narration ends "add the rail buttons"; the recording never adds them (the fin dialog is on screen).
+- Cue 2's narration was changed for the footage: the parts table is gone, the empty tree and the metric
+- Clips are sped up or slowed to end with their narration ("stretch": cues 2 to 5, about 1.2 to 1.5 times)
 
 ## S12: Stability with and without a motor
 
 Add a motor to the OpenRocket model, see what it does to CG and stability, run a simulation, and read apogee, rail-exit speed and the optimum delay.
 
-Voice Nichalia, 4:03, 658 words, 11 cues. Cue file `curriculum/video/S12/cues.json`.
+Voice Nichalia, 4:30, 672 words, 11 cues. Cue file `curriculum/video/S12/cues.json`.
 
 Slides:
 
 1. title: Stability with and without a motor
 2. rocket: Empty rocket first
-3. rocket: Add the G74: the CG moves aft
+3. clip: Add the G74: the CG moves aft
 4. **pause**: _On the pad with the motor loaded, is this rocket more stable or less stable than it will be at burnout? Why?_
-5. answer: Less. Propellant is mass at the very back. As it burns off the CG moves forward, away from the CP, and the margin grows through the burn.
+5. answer: Less.
 6. flight: Margin through the burn
-7. rocket: Add an H: further aft still
-8. flight: Run it: read four numbers
-9. flight: Wind and rail angle
-10. rocket: Close the loop
+7. clip: Add an H: further aft still
+8. clip: Run it: read four numbers
+9. clip: Wind and rail angle
+10. clip: Close the loop
 11. close: The pad is the least stable moment. Run the sim, read four numbers, then fly.
 
 Confirm before showing:
@@ -322,9 +323,10 @@ Confirm before showing:
 - The "Margin through the burn" plot is the margin against the design CP (`marginCal`, 2.47 on the pad to 2.69 at burnout). OpenRocket's own stability plot uses the in-flight CP and will look lower early on (about 1.7 leaving the rail on the G); the shape and the burnout value are the same.
 - G run four numbers and delay: apogee 705 ft at 6.8 s, top speed 153 mph, 54 ft/s off the 72 in rail, ejection at 7.2 s, optimum delay 5.6 s, all from the stored run 3 events and summary; narration rounds to "about two hundred and ten", "sixty-nine" and "twelve".
 - H run four numbers and delay: 2,150 ft at 10.4 s, 339 mph, 68 ft/s off the 72 in rail at 3 degrees, ejection at 10.1 s, optimum delay 8.5 s, from stored run 1; they appear in the run slide's caption, not as a second chart, to stay within eleven cues.
-- Landing distances: G 190 ft (rail straight up), H 400 ft (rail at 3 degrees) and 610 ft (rail straight up), all with 4 mph wind; no other wind speed is stored, so "change the wind and rerun" is left to homework step 28.
-- Wind beat: "leans into the wind going up, drifts downwind under the parachute" is inferred from the unsigned lateral-distance series of H run 2 (110 ft at apogee, back to 0 at 28 s, 610 ft at landing); confirm the file's wind direction supports that reading.
+- Cue 9 (wind and rail angle) is the recorded ground-track sequence on the real file's H run 1 (72 in rail at 3°,
 - "Spent casing balances at 25 1/4 in" uses the sim's burnout CG with the G (25 1/4 in, motor mass 1.7 oz); a real spent casing after ejection is a little lighter, so expect the balance point a touch further forward.
 - The H slide's note "Burnout: 2.3 calibers" is the H's `marginCal` at 2.1 s (2.9 oz of propellant gone, CG 26 1/2 in); narration does not read it aloud.
-- Departure: beat 5 shows the file's stored runs as a distance-from-pad chart (H run 2 plotted, H run 1 and the G run quoted), not a live rerun with a new wind speed.
 - Departure: beat 6, the bench camera shot of the rocket balanced on a finger, is not filmed; a rocket slide with the live-motor and spent-casing CG markers stands in.
+- Cues 3, 7, 8, 9 and 10 are screen recordings from 2026-09-21 (see S11/RECORDING.md). Cue 3 opens on the
+- Cue 2 (empty rocket) and cue 6 (margin plot) stay drawn: the recording never shows the real file with
+- Cue 9's narration changed for the footage and is re-narrated at the next render; every other cue is cached.

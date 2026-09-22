@@ -1,8 +1,7 @@
 # Generating segment videos
 
-Slides, narration, pause card and captions are built from one JSON file per segment. Nothing is filmed.
-Where a segment calls for a real shot (see each segment's "Demo, filmed" list), the generated video
-stands in until that shot exists.
+Slides, narration, pause card and captions are built from one JSON file per segment. Nothing is filmed
+and there are no demos; S11 and S12 play screen recordings of OpenRocket through the `clip` cue type.
 
 ```
 curriculum/video/
@@ -134,7 +133,7 @@ Slide types, each one function in render.py (the docstring lists its fields):
 | `compare` | one square against sixty-four (S06's A8 against G74) |
 | `clip` | a screen-recording clip (`src` under the segment folder, optional `crop` [x, y, w, h]) under a heading; the narration sets the length: `fit` "hold" (default) keeps the last frame up or cuts the tail, "stretch" retimes the clip to end with the narration |
 | `pause` | the five-second countdown card; `question` only |
-| `answer` | the answer card |
+| `answer` | the answer card: `text` is the short verdict, `lines` the reasons as bullets (every segment uses both) |
 | `close` | the one-thing-to-remember card |
 
 Screen-recording clips: the raw OBS takes live in `recordings/` (git-ignored); `SNN/assets/clips.json`

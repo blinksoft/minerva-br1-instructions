@@ -26,24 +26,15 @@ Optional: hold up the printed ladder during the pause.
 5. **The letter is the size of the box, not the whole story.** Two G motors can push very differently:
    one hard and short, one gentle and long. The next segment reads the rest of the code.
 
-## Demo, filmed
-- An apple.
-- A printed impulse ladder, A through O with the Newton-second limits.
-- The A8 and G74 casings from S1.
-
 ## Pause point
 After beat 3. The card reads: "An F motor and a G motor: how many times more total push does the G have, at most?"
 
 On resume the video answers: Two, at the top of each range. Each letter doubles. An A next to a G is six doublings, sixty-four times.
 
 ## Shot list
-- Bench camera. Apple in hand for the Newton line.
-- Cutaway on the printed ladder, held for a long beat.
-- The two casings side by side for the size gap.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - Impulse class boundaries (NFPA 1125 / NAR motor certification tables). Confirm the values on the
   printed ladder.
 

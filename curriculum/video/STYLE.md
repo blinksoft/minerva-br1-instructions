@@ -40,6 +40,7 @@ Assume they are smart and new. Explain, do not simplify away.
 - **Narrator says "you" and "the program".** Never "we" or "I" for the narrator. "The program flies a
   six second delay." "I" is fine inside a pause-card question ("I am about to slide a motor in").
 - **"Let's" at most once per segment. No stacked rhetorical questions.** One question, then answer it.
+- **Lists are lists.** An answer card is a short verdict in `text` and the reasons as `lines` bullets. A note or caption that holds parallel items separates them with "  ·  ", never a run of short sentences.
 - **No em dashes or semicolons in narration.** Use a period. On slides use a colon or "  ·  ".
 
 ## Shape of a segment
@@ -70,9 +71,9 @@ ten percent). No single cue over 120 words.
 - One `note` per slide at most, one sentence.
 - The same palette and fonts for all twelve. Use the slide types in `render.py`; if a segment truly
   needs a new one, put it in `SNN/slides.py` (see README) and keep it to the same palette and helpers.
-- Where the segment file asks for a filmed demo, draw the idea (diagram, real data, a real photo from
-  the build guide's `assets/img/`) rather than describing a video that does not exist. Never fake a
-  screenshot of software.
+- No demos and no instructions to handle a rocket. Draw the idea (diagram, real data, a real photo from
+  the build guide's `assets/img/`, or a screen recording for S11 and S12). Never fake a screenshot of
+  software.
 
 ## Spellings and terms
 

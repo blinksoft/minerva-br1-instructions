@@ -10,7 +10,7 @@ Segment seven. Reading the motor code. By the end of this you will be able to de
 
 **02** `voice/02.wav`
 
-Here is the motor most of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out.
+Here is the motor some of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out.
 
 **03** `voice/03.wav`
 

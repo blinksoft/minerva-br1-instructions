@@ -27,17 +27,17 @@ Forward. The fins are most of the sideways push, and they sit at the back. Take 
 Here it is on the BR-1. Same nose, same tube, no fins. OpenRocket now puts the CP up near the nose cone, because the nose is the only part left that pushes. A rocket like that has nothing holding its nose forward. Put the fins back and the CP drops all the way back to thirty-three and three quarters inches.
 
 8
-00:02:35,903 --> 00:03:03,353
-OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part of the rocket produces, nose, tube and fins, and where that force acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws on the rocket, and you will see it on screen in Segment ten. If you want the math, the links are in this video's description.
+00:02:35,903 --> 00:03:04,514
+OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part produces, nose, tube and fins, and where it acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws, and you will see it in Segment ten. Here is a brief example of the math. You can get the full details from the link in this video's description.
 
 9
-00:03:03,353 --> 00:03:37,582
+00:03:04,514 --> 00:03:38,743
 Here is that math done by hand for the BR-1. The nose gets a number and a point. The tube gets nothing. The fins get the big formula, with the root, tip, span and sweep you will be filleting this afternoon. Add them up and the CP lands at thirty-three point six inches. OpenRocket says thirty-three and three quarters. Same answer. The difference is that OpenRocket does it in a blink, every time you change a part, and it also handles the things this page leaves out. That is why the program uses it.
 
 10
-00:03:37,582 --> 00:03:59,180
+00:03:38,743 --> 00:04:00,341
 One last thing. Look where the fins are on the BR-1, and on the Alpha III you built this morning. Right at the back, on both. That is not decoration. Fins are at the back for one reason. To drag the CP aft, toward the tail. Why aft is where you want it is the next segment.
 
 11
-00:03:59,180 --> 00:04:08,193
+00:04:00,341 --> 00:04:09,354
 The one thing to remember. The center of pressure is where all the air's pushes add up to one. Shape sets it, and fins at the back drag it aft.

@@ -30,10 +30,6 @@ Optional: hold up one spent 29 mm casing during the pause.
 5. **Why.** A motor cannot tell the difference between a launch pad and a classroom. Every rule here exists
    because someone learned it the hard way.
 
-## Demo, filmed
-- Spent or empty casings: 18 mm black powder, 29 mm single-use G, 29 mm reloadable case with a used liner.
-- The program's range box, closed.
-
 ## Pause point
 After beat 4. The card reads: "On the high power pads the igniter goes in last, at the pad. At our low power
 table the RSO wants the igniter and plug in before you walk up. Why the difference?"
@@ -44,17 +40,12 @@ Low power igniters are small and the pads are a shared rack that has to turn ove
 the rocket at the table and takes the trade. Either way: do what your RSO says.
 
 ## Shot list
-- Bench camera. Casings lined up smallest to largest, with a ruler.
-- Cut-open spent black powder motor next to a composite grain photo or a spent liner.
-- The reloadable case opened to show liner, nozzle, closure.
-- Range box, closed, for the rules beat.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - The program's own motor handling and storage rules as written in its safety brief.
 - What the field's RSO currently wants for low power igniter installation; this is a local rule and can change.
-- Which motors and reload systems the program actually uses, so the props match.
+- Which motors the program actually uses: AeroTech DMS 29 mm only (G74W and whichever H is on hand).
 
 ## Sources to replace
 None. New material.

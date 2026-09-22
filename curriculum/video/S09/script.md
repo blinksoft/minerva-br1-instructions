@@ -14,7 +14,7 @@ Start with size. Motors come in standard diameters, and the diameter is the fit.
 
 **03** `voice/03.wav`
 
-This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 most of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight.
+This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 some of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight.
 
 **04** `voice/04.wav`
 

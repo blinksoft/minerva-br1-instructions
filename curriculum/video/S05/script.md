@@ -1,4 +1,4 @@
-# S05 — Stability margin and the swing test: narration script
+# S05 — Stability margin: narration script
 
 Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
 Leave a beat of silence at the start and end of each. Re-run render.py and the slides
@@ -6,7 +6,7 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment five. Stability margin and the swing test. By the end of this you will be able to state the stability rule, say what happens when it is broken in either direction, and run a swing test.
+Segment five. Stability margin. By the end of this you will be able to state the stability rule, say what happens when it is broken in either direction, and know how the program checks it before a flight.
 
 **02** `voice/02.wav`
 
@@ -32,7 +32,7 @@ Too much margin, and the rocket weathercocks. A very stable rocket turns hard in
 
 **08** `voice/08.wav`
 
-The swing test needs no computer. Load the motor. Find the balance point and tie a string there, at the CG. Go outside and swing it in a circle overhead. If the nose leads, steady, all the way round, the rocket is stable. If it flies sideways or backwards, do not launch it. Do this with the finished BR-1 before its first flight. In Segment twelve you will see OpenRocket work out the same number.
+So how do you check it. OpenRocket puts both dots on the BR-1 and reads the margin in calibers, with whichever motor you pick. Segment twelve shows that. Your part is the balance from Segment three. Load the motor, balance the finished rocket on a finger, and compare that point with the CG the sim shows. If they agree within an inch, the margin on screen is real. If they do not, the file needs fixing before the rocket flies.
 
 **09** `voice/09.wav`
 

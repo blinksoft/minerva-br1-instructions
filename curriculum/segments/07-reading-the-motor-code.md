@@ -32,26 +32,17 @@ press play. The video gives the answer. That is the whole job; no props, no setu
 5. **Every motor is certified.** The code on the label was measured on a test stand by NAR or Tripoli and
    published. That is why the RSO can trust the label and why you fly only certified motors.
 
-## Demo, filmed
-- Whiteboard or a large card with G74W-6 broken into its four parts, color-coded.
-- Motor labels or photos of labels: A8-3, G74W-6, an H.
-- A BR-1 with its mass written on a tag, for the thrust-to-weight arithmetic.
-
 ## Pause point
 After beat 3. The card reads: "Two parts. What does H115-14 mean? And this rocket weighs about 1.5 kilograms loaded, so about 15 Newtons of weight: is a G40 enough? Is a G74?"
 
 On resume the video answers: H class, 115 Newtons average, 14 second delay. Five to one wants 75 Newtons: the G40 fails, the G74 just makes it. Use the real BR-1 mass when filming.
 
 ## Shot list
-- Bench camera on the code card, one part revealed at a time.
-- Close-ups of the actual motor labels.
-- Speaker on camera for the thrust-to-weight arithmetic, written large on the card.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - Actual loaded mass of the BR-1 with a G74 and with an H, from OpenRocket or a scale, so the arithmetic
-  on camera is real.
+  on screen is real.
 - Current manufacturer propellant codes for the motors the program actually buys.
 - The 5:1 thrust-to-weight and rail-exit speed rules of thumb as the program teaches them.
 

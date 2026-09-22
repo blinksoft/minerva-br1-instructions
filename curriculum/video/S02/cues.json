@@ -1,144 +1,153 @@
 {
-  "meta": {
-    "title": "NAR, Tripoli and certification",
-    "eyebrow": "Segment 2  ·  While the epoxy cures",
-    "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
-    "description": "Name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one.",
-    "credits": [
-      "Photo: Georgia Wing High Power Rocketry"
-    ],
-    "tags": [
-      "rocketry",
-      "model rockets",
-      "high power rocketry",
-      "Civil Air Patrol",
-      "Georgia Wing",
-      "NAR",
-      "Tripoli",
-      "Level 1 certification",
-      "range safety officer"
-    ]
-  },
-  "cues": [
-    {
-      "type": "title",
-      "title": "NAR, Tripoli and certification",
-      "sub": "Two clubs, one rulebook, and the ladder you climb on this rocket.",
-      "say": "Segment two. NAR, Tripoli and certification. By the end of this you will be able to name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one."
-    },
-    {
-      "type": "text",
-      "heading": "Two clubs, one rulebook",
-      "lines": [
-        "NAR: National Association of Rocketry",
-        "Tripoli: Tripoli Rocketry Association",
-        "Both: safety code, insurance, certify flyers and motors"
-      ],
-      "note": "This program flies under NAR. Georgia has no Tripoli prefecture at present.",
-      "say": "Start with who is in charge. There are two national rocketry organizations. The National Association of Rocketry, NAR. And the Tripoli Rocketry Association, Tripoli. Both do the same four jobs. They write the safety code, the rulebook every launch follows. They insure launches. They certify flyers, which means they test you and sign you off. And they certify motors. Segment seven shows what that means on the label. A launch is run by a local chapter of one of them. NAR calls it a section, Tripoli a prefecture. This program flies under NAR. Georgia has no Tripoli prefecture right now."
-    },
-    {
-      "type": "text",
-      "heading": "Why the field has a boss",
-      "lines": [
-        "RSO: inspects every rocket, can say no",
-        "LCO: runs the pads and the countdown",
-        "FAA waiver: a column of airspace, for the day"
-      ],
-      "note": "Nobody freelances. Do what your RSO says.",
-      "say": "A launch field has a boss. The Range Safety Officer, the RSO, looks at every rocket before it flies. Yours, and the instructor's. The RSO can say no, and that is the end of it. The Launch Control Officer, the LCO, runs the pads and the countdown. Nobody presses the button except the LCO. And the air above the field is not free. A high power launch flies under an FAA waiver. The Federal Aviation Administration opens a column of airspace over the field for that day. Nobody freelances. Do what your RSO says."
-    },
-    {
-      "type": "pause",
-      "question": "What does the RSO look for on a rocket before letting it fly?"
-    },
-    {
-      "type": "answer",
-      "text": "Stable with the motor in. Motor held in. Harness anchored, chute packed and protected. No igniter. A certified motor that matches the rocket. A build that will take the flight.",
-      "say": "Seven things. Stability with the motor loaded, so it flies straight. The motor held in, so it cannot shoot out the back. The recovery harness anchored. The chute packed and protected from the ejection blast. No igniter installed. That goes in at the pad, last. A certified motor matched to the rocket. And a build that will take the flight. Now look at your bench. The threaded plastic part on the aft end of the motor tube is the motor retainer. That is item two on the RSO's list, and you built it today."
-    },
-    {
-      "type": "table",
-      "heading": "The certification ladder",
-      "columns": [
-        "Level",
-        "Motors",
-        "What it takes"
-      ],
-      "widths": [
-        1,
-        1,
-        3
-      ],
-      "size": 46,
-      "rowHeight": 120,
-      "rows": [
-        [
-          "Level 1",
-          "H and I",
-          "Fly one, recover it flyable, get it signed off"
-        ],
-        [
-          "Level 2",
-          "J, K and L",
-          "Same kind of flight, plus a written exam"
-        ],
-        [
-          "Level 3",
-          "M, N and O",
-          "Built under a committee, with documentation"
-        ]
-      ],
-      "note": "Each level proves you can handle the next size up safely.",
-      "say": "Motors come in letters, A up to O, and Segment six climbs that ladder. Up to G is a model rocket motor. H and above is high power, and that takes a certification. Level 1 is H and I. Fly a rocket on one, get it back in flyable condition, get it signed off. Level 2 is J, K and L. The same flight, plus a written exam on the rules and the physics. Level 3 is M, N and O. Built under the eye of a committee, with documentation. Each level proves you can handle the next size up."
-    },
-    {
-      "type": "table",
-      "heading": "How old you have to be",
-      "columns": [
-        "Age",
-        "What you can do"
-      ],
-      "widths": [
-        1,
-        4
-      ],
-      "size": 46,
-      "rowHeight": 120,
-      "rows": [
-        [
-          "12 and up",
-          "Tripoli Mentoring Program: fly with a certified mentor"
-        ],
-        [
-          "14 to 17",
-          "NAR Junior Level 1: certify, adult member supervising"
-        ],
-        [
-          "18 and up",
-          "Adult certification, Level 1 to Level 3"
-        ]
-      ],
-      "note": "Under 14 in this program: fly the BR-1 on a G and learn the rest.",
-      "say": "So when can you try? NAR has Junior Level 1. From fourteen to seventeen you can certify, with an adult member supervising you. Tripoli has a Mentoring Program. From twelve, a junior member can fly high power with a certified mentor. At eighteen you certify as an adult. In this program, if you are under fourteen, you fly the BR-1 on a G and learn everything else. When you turn fourteen, you already know the rocket."
-    },
-    {
-      "type": "photo",
-      "heading": "What this rocket is for",
-      "image": "assets/kit-laid-out.webp",
-      "caption": "One airframe, two first flights.",
-      "lines": [
-        "Not certifying: first flight on a G74",
-        "Level 1 candidates: an H (H115, H135, ...)",
-        "It certifies the flyer, not the rocket"
-      ],
-      "credit": "Photo: Georgia Wing High Power Rocketry",
-      "say": "That is what this rocket is for. Segment one drew the line: a G keeps it a model rocket, an H makes it high power. So a Level 1 attempt, Junior or adult, is this same airframe on an H, an H115 or an H135 for example, whichever the program can get that season. That first flight is the test. Certification is about the flyer, not the rocket. And this rocket is enough."
-    },
-    {
-      "type": "close",
-      "text": "Two clubs, one rulebook. Level 1 is an H or an I, flown and recovered on this rocket.",
-      "say": "The one thing to remember. Two clubs, one rulebook. And Level 1 is an H or an I motor, flown and recovered in one piece, on the rocket you are building right now."
-    }
+ "meta": {
+  "title": "NAR, Tripoli and certification",
+  "eyebrow": "Segment 2  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "Name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one.",
+  "credits": [
+   "Photo: Georgia Wing High Power Rocketry"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "NAR",
+   "Tripoli",
+   "Level 1 certification",
+   "range safety officer"
   ]
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "NAR, Tripoli and certification",
+   "sub": "Two clubs, one rulebook, and the ladder you climb on this rocket.",
+   "say": "Segment two. NAR, Tripoli and certification. By the end of this you will be able to name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one."
+  },
+  {
+   "type": "text",
+   "heading": "Two clubs, one rulebook",
+   "lines": [
+    "NAR: National Association of Rocketry",
+    "Tripoli: Tripoli Rocketry Association",
+    "Both: safety code, insurance, certify flyers and motors"
+   ],
+   "note": "This program flies under NAR. Georgia has no Tripoli prefecture at present.",
+   "say": "Start with who is in charge. There are two national rocketry organizations. The National Association of Rocketry, NAR. And the Tripoli Rocketry Association, Tripoli. Both do the same four jobs. They write the safety code, the rulebook every launch follows. They insure launches. They certify flyers, which means they test you and sign you off. And they certify motors. Segment seven shows what that means on the label. A launch is run by a local chapter of one of them. NAR calls it a section, Tripoli a prefecture. This program flies under NAR. Georgia has no Tripoli prefecture right now."
+  },
+  {
+   "type": "text",
+   "heading": "Why the field has a boss",
+   "lines": [
+    "RSO: inspects every rocket, can say no",
+    "LCO: runs the pads and the countdown",
+    "FAA waiver: a column of airspace, for the day"
+   ],
+   "note": "Nobody freelances. Do what your RSO says.",
+   "say": "A launch field has a boss. The Range Safety Officer, the RSO, looks at every rocket before it flies. Yours, and the instructor's. The RSO can say no, and that is the end of it. The Launch Control Officer, the LCO, runs the pads and the countdown. Nobody presses the button except the LCO. And the air above the field is not free. A high power launch flies under an FAA waiver. The Federal Aviation Administration opens a column of airspace over the field for that day. Nobody freelances. Do what your RSO says."
+  },
+  {
+   "type": "pause",
+   "question": "What does the RSO look for on a rocket before letting it fly?"
+  },
+  {
+   "type": "answer",
+   "text": "Seven things.",
+   "say": "Seven things. Stability with the motor loaded, so it flies straight. The motor held in, so it cannot shoot out the back. The recovery harness anchored. The chute packed and protected from the ejection blast. No igniter installed. That goes in at the pad, last. A certified motor matched to the rocket. And a build that will take the flight. Now look at your bench. The threaded plastic part on the aft end of the motor tube is the motor retainer. That is item two on the RSO's list, and you built it today.",
+   "lines": [
+    "Stable with the motor loaded",
+    "Motor held in",
+    "Recovery harness anchored",
+    "Chute packed and protected",
+    "No igniter until the pad",
+    "A certified motor matched to the rocket",
+    "A build that will take the flight"
+   ]
+  },
+  {
+   "type": "table",
+   "heading": "The certification ladder",
+   "columns": [
+    "Level",
+    "Motors",
+    "What it takes"
+   ],
+   "widths": [
+    1,
+    1,
+    3
+   ],
+   "size": 46,
+   "rowHeight": 120,
+   "rows": [
+    [
+     "Level 1",
+     "H and I",
+     "Fly one, recover it flyable, get it signed off"
+    ],
+    [
+     "Level 2",
+     "J, K and L",
+     "Same kind of flight, plus a written exam"
+    ],
+    [
+     "Level 3",
+     "M, N and O",
+     "Built under a committee, with documentation"
+    ]
+   ],
+   "note": "Each level proves you can handle the next size up safely.",
+   "say": "Motors come in letters, A up to O, and Segment six climbs that ladder. Up to G is a model rocket motor. H and above is high power, and that takes a certification. Level 1 is H and I. Fly a rocket on one, get it back in flyable condition, get it signed off. Level 2 is J, K and L. The same flight, plus a written exam on the rules and the physics. Level 3 is M, N and O. Built under the eye of a committee, with documentation. Each level proves you can handle the next size up."
+  },
+  {
+   "type": "table",
+   "heading": "How old you have to be",
+   "columns": [
+    "Age",
+    "What you can do"
+   ],
+   "widths": [
+    1,
+    4
+   ],
+   "size": 46,
+   "rowHeight": 120,
+   "rows": [
+    [
+     "12 and up",
+     "Tripoli Mentoring Program: fly with a certified mentor"
+    ],
+    [
+     "14 to 17",
+     "NAR Junior Level 1: certify, adult member supervising"
+    ],
+    [
+     "18 and up",
+     "Adult certification, Level 1 to Level 3"
+    ]
+   ],
+   "note": "Under 14 in this program: fly the BR-1 on a G and learn the rest.",
+   "say": "So when can you try? NAR has Junior Level 1. From fourteen to seventeen you can certify, with an adult member supervising you. Tripoli has a Mentoring Program. From twelve, a junior member can fly high power with a certified mentor. At eighteen you certify as an adult. In this program, if you are under fourteen, you fly the BR-1 on a G and learn everything else. When you turn fourteen, you already know the rocket."
+  },
+  {
+   "type": "photo",
+   "heading": "What this rocket is for",
+   "image": "assets/kit-laid-out.webp",
+   "caption": "One airframe, two first flights.",
+   "lines": [
+    "Not certifying: first flight on a G74",
+    "Level 1 candidates: an H (H115, H135, ...)",
+    "It certifies the flyer, not the rocket"
+   ],
+   "credit": "Photo: Georgia Wing High Power Rocketry",
+   "say": "That is what this rocket is for. Segment one drew the line: a G keeps it a model rocket, an H makes it high power. So a Level 1 attempt, Junior or adult, is this same airframe on an H, an H115 or an H135 for example, whichever the program can get that season. That first flight is the test. Certification is about the flyer, not the rocket. And this rocket is enough."
+  },
+  {
+   "type": "close",
+   "text": "Two clubs, one rulebook. Level 1 is an H or an I, flown and recovered on this rocket.",
+   "say": "The one thing to remember. Two clubs, one rulebook. And Level 1 is an H or an I motor, flown and recovered in one piece, on the rocket you are building right now."
+  }
+ ]
 }

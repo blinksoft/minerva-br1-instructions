@@ -1,8 +1,8 @@
 # While the epoxy cures — build-day curriculum
 
 Short teaching segments, 3 to 5 minutes each, that fill the epoxy waits during the Minerva BR-1 build.
-Each segment stands alone, is tied to a cure slot in the build, and is written as a script outline plus a
-shot list so it can be recorded as the program's own video instead of relying on YouTube links.
+Each segment stands alone, is tied to a cure slot in the build, and is written as a script outline that
+the program's own generated video follows instead of relying on YouTube links.
 
 The build steps referred to here are the numbered steps in the assembly guide
 (https://blinksoft.github.io/minerva-br1-instructions/).
@@ -49,7 +49,7 @@ aft-joint wait becomes a spare.
 | S2 | segments/02-nar-tripoli-certification.md | NAR, Tripoli and certification | Step 8 wait |
 | S3 | segments/03-center-of-gravity.md | Center of gravity | Step 9 wait |
 | S4 | segments/04-center-of-pressure.md | Center of pressure | Step 10 cure |
-| S5 | segments/05-stability-margin-swing-test.md | Stability margin and the swing test | Step 10 cure |
+| S5 | segments/05-stability-margin.md | Stability margin | Step 10 cure |
 | S6 | segments/06-how-a-motor-is-measured.md | How a motor is measured | Step 12 wait |
 | S7 | segments/07-reading-the-motor-code.md | Reading the motor code | Before lunch while the install sets, or the step 20 wait |
 | S8 | segments/08-thrust-curves-and-delay.md | Thrust curves and the delay | First fin wait |
@@ -61,10 +61,10 @@ aft-joint wait becomes a spare.
 The four topic areas map to segments like this: high power and NAR (S1, S2), stability (S3–S5), motors
 (S6–S9), OpenRocket (S10–S12).
 
-## The rule: the video carries the demo
+## The rule: the video carries the lesson
 
-A cure wait is five minutes and the video is three to five. There is no time to trace a cardboard cutout,
-find a box fan or open OpenRocket in the room. Every demo is filmed. In the room a segment is: press
+A cure wait is five minutes and the video is three to five. There is no time for props, demos or opening
+OpenRocket in the room, and nothing is done to a rocket during the wait. In the room a segment is: press
 play, pause when the card says to, take a few answers, press play. Even the question is in the video, so
 every instructor delivers the same material the same way. run-sheet.md is the one-page version of the day
 for whoever is leading.
@@ -79,13 +79,13 @@ on the guide page without rewriting:
 3. **Live on the day** — what the instructor does in the room. Always short.
 4. **Script outline** — four to six beats of about a minute each, for the video. Not a word-for-word
    script; the person recording should talk it in their own voice.
-5. **Demo, filmed** — what appears on camera. This is the part that would eat the cure wait if done live.
-6. **Pause point** — the one question built into the video as a pause card, where it sits in the
+5. **Pause point** — the one question built into the video as a pause card, where it sits in the
    script, and the answer the video gives on resume. The instructor pauses, takes answers, presses play.
-7. **Shot list** — what to film and how (camera over the bench, or screen capture).
-8. **Check before filming** — facts to verify against the current NAR / Tripoli / FAA rules the week you
-   record, because these change. Nothing in a segment should be stated on camera until it is checked.
-9. **Sources to replace** — the YouTube clip this segment replaces, if any.
+6. **Shot list** — one line: the video is slides, a pause card and an answer card (S11 and S12 add
+   screen recordings of OpenRocket).
+7. **Check before showing** — facts to verify against the current NAR / Tripoli / FAA rules before the
+   day, because these change. Nothing in a segment should be shown until it is checked.
+8. **Sources to replace** — the YouTube clip this segment replaces, if any.
 
 ## Buffer material
 

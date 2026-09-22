@@ -14,7 +14,7 @@ Open BR-1.ork with no motor configuration selected. Blue dot, CG. Red dot, CP. T
 
 **03** `voice/03.wav`
 
-Now add the motor most of you will fly. Motors and configuration, new configuration, G74W-6. The CG slides aft to twenty-six inches, sixty-six centimeters, as the string showed in Segment three. The CP stays put. The margin drops to two and a half calibers. On the pad, this is the least stable the rocket will ever be.
+Now add the motor some of you will fly. Motors and configuration, new configuration, G74W-6. The CG slides aft to twenty-six inches, sixty-six centimeters, as the string showed in Segment three. The CP stays put. The margin drops to two and a half calibers. On the pad, this is the least stable the rocket will ever be.
 
 **04 — pause card, no narration.** The card reads: _On the pad with the motor loaded, is this rocket more stable or less stable than it will be at burnout? Why?_
 

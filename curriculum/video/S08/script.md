@@ -10,7 +10,7 @@ Segment eight. Thrust curves and the delay. By the end of this you will be able 
 
 **02** `voice/02.wav`
 
-Every motor code has a picture behind it. This is the thrust curve of the G74 most of you will fly, from thrustcurve.org. Thrust, the push in Newtons, goes up the side. Time runs along the bottom. The area under the line is total impulse, Segment six's number: about eighty-three Newton-seconds. The height is thrust. It peaks just over ninety Newtons, and averages seventy-four across the burn, the number in the code. Where the line drops to zero is burnout, just after one second.
+Every motor code has a picture behind it. This is the thrust curve of the G74 some of you will fly, from thrustcurve.org. Thrust, the push in Newtons, goes up the side. Time runs along the bottom. The area under the line is total impulse, Segment six's number: about eighty-three Newton-seconds. The height is thrust. It peaks just over ninety Newtons, and averages seventy-four across the burn, the number in the code. Where the line drops to zero is burnout, just after one second.
 
 **03** `voice/03.wav`
 
@@ -22,7 +22,7 @@ Shape matters too. Here is another G, the G40, in orange. It pushes hardest in i
 
 **05** `voice/05.wav`
 
-Now the flight. OpenRocket's simulation of the BR-1 you are building, on the G74W-6 most of you will fly. At burnout, just over one second in, the motor stops. The rocket does not. It is doing about one hundred and fifty miles an hour, sixty-eight meters per second, and coasts upward, slowing the whole way. Five and a half seconds later it runs out of climb. That top is apogee, about seven hundred feet, two hundred and ten meters up, at six point eight seconds: the highest point and the slowest. That is where you want the parachute out. One more number from that first second. The G74 shoves the BR-1 up at about eight g, eight times the pull of gravity. The H, thirteen g. Astronauts on a Saturn V felt about four. Nobody rides a rocket that pulls thirteen.
+Now the flight. OpenRocket's simulation of the BR-1 you are building, on the G74W-6 some of you will fly. At burnout, just over one second in, the motor stops. The rocket does not. It is doing about one hundred and fifty miles an hour, sixty-eight meters per second, and coasts upward, slowing the whole way. Five and a half seconds later it runs out of climb. That top is apogee, about seven hundred feet, two hundred and ten meters up, at six point eight seconds: the highest point and the slowest. That is where you want the parachute out. One more number from that first second. The G74 shoves the BR-1 up at about eight g, eight times the pull of gravity. The H, thirteen g. Astronauts on a Saturn V felt about four. Nobody rides a rocket that pulls thirteen.
 
 **06** `voice/06.wav`
 

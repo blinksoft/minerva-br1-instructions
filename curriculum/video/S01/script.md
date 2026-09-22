@@ -18,7 +18,7 @@ Here are the lines. A rocket is high power if any one of these is true. The moto
 
 **04** `voice/04.wav`
 
-Now the three motors. The A8 in your Alpha III: two and a half Newton-seconds, three Newtons on average, a tenth of an ounce of propellant, three grams. The G74 most of you will fly in your BR-1: eighty-three Newton-seconds, seventy-four Newtons, one point four ounces, thirty-nine grams. An H for certification, the H135 for example: two hundred and twenty-six Newton-seconds, one hundred and sixteen Newtons, two point nine ounces, eighty-two grams. Hold those three against the four lines.
+Now the three motors. The A8 in your Alpha III: two and a half Newton-seconds, three Newtons on average, a tenth of an ounce of propellant, three grams. The G74 some of you will fly in your BR-1: eighty-three Newton-seconds, seventy-four Newtons, one point four ounces, thirty-nine grams. An H for certification, the H135 for example: two hundred and twenty-six Newton-seconds, one hundred and sixteen Newtons, two point nine ounces, eighty-two grams. Hold those three against the four lines.
 
 **05 — pause card, no narration.** The card reads: _Which of these three motors makes a rocket high power?_
 
@@ -36,7 +36,7 @@ So where does the BR-1 sit? It depends on the motor. On a G74 it flies under the
 
 **09** `voice/09.wav`
 
-Here is what today is. You are all building the same rocket. On its first flight, most of you will fly it on a G74. Those going for a certification will fly it on an H as their Level one attempt. Same airframe. So build it like it is going to carry an H. It might be yours that does.
+Here is what today is. You are all building the same rocket. On its first flight, some of you will fly it on a G74. Those going for a certification will fly it on an H as their Level one attempt. Same airframe. So build it like it is going to carry an H. It might be yours that does.
 
 **10** `voice/10.wav`
 

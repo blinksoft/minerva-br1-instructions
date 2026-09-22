@@ -28,24 +28,15 @@ press play. The video gives the answer. That is the whole job; no props, no setu
 5. **Trust, but weigh.** The sim is only as good as what you typed in. After the build you will weigh your
    rocket and balance it (S3), and correct the file. Then the numbers mean something.
 
-## Demo, filmed
-- Screen: OpenRocket with BR-1.ork open, window at 1280×720, fonts enlarged.
-- A finished BR-1 on the bench to point between the screen and the real thing.
-
 ## Pause point
 After beat 4. The card reads: "The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?"
 
 On resume the video answers: Believe the rocket; a scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one.
 
 ## Shot list
-- Screen capture only, with a brief bench-camera shot of the real rocket at the same angle as the side
-  view for the cut between them.
-- Slow zoom on the CP and CG markers and the stability readout.
-- Click through the component tree, pausing on each part.
+- The video is the segment: slides, pause card and answer card, see production.md.
 
-- Pause card and answer card as full-screen title cards, see production.md.
-
-## Check before filming
+## Check before showing
 - OpenRocket version and where the CP/CG markers and stability readout sit in that version's layout.
 - RockSim current price and version, if quoting them.
 - BR-1.ork is current with the actual kit (white tube, current fin stock).

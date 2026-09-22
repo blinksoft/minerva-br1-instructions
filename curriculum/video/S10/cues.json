@@ -1,199 +1,203 @@
 {
-  "meta": {
-    "title": "Why simulate, and what tools exist",
-    "eyebrow": "Segment 10  ·  While the epoxy cures",
-    "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
-    "description": "Why the program simulates before it flies, the two common tools, and how to recognize the CG and CP markers and the stability number in OpenRocket.",
-    "credits": [
-      "Rocket geometry, masses and flight: the program's BR-1.ork, simulated in OpenRocket",
-      "Photo: Georgia Wing High Power Rocketry"
-    ],
-    "tags": [
-      "rocketry",
-      "model rockets",
-      "high power rocketry",
-      "Civil Air Patrol",
-      "Georgia Wing",
-      "OpenRocket",
-      "RockSim",
-      "rocket simulation",
-      "stability margin"
-    ],
-    "say_fixes": [
-      [
-        "RockSim",
-        "Rock Sim"
-      ]
-    ]
-  },
-  "cues": [
-    {
-      "type": "title",
-      "title": "Why simulate, and what tools exist",
-      "sub": "Fly it a hundred times on the screen before you fly it once.",
-      "say": "Segment ten. Why simulate, and what tools exist. By the end of this you will be able to say why the program simulates before it flies, name the two common tools, and recognize the CG and CP markers and the stability number in OpenRocket."
-    },
-    {
-      "type": "flight",
-      "heading": "A flight is a test you run once",
-      "caption": "The BR-1 on a G74W-6, flown by OpenRocket before anyone lit a motor.",
-      "note": "Stable, how high, rail speed, delay: answered first.",
-      "say": "A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor most of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Segment twelve reads those numbers off the screen.",
-      "sim": 2
-    },
-    {
-      "type": "table",
-      "heading": "Two tools",
-      "columns": [
-        "",
-        "OpenRocket",
-        "RockSim"
-      ],
-      "widths": [
-        1,
-        1.5,
-        1.5
-      ],
-      "rows": [
-        [
-          "Cost",
-          "free",
-          "paid"
-        ],
-        [
-          "Made by",
-          "volunteers, open source",
-          "Apogee Components"
-        ],
-        [
-          "History",
-          "newer",
-          "longer, some extra features"
-        ],
-        [
-          "Answers",
-          "the same questions",
-          "the same questions"
-        ],
-        [
-          "The program uses",
-          "yes, and gives you BR-1.ork",
-          "no"
-        ]
-      ],
-      "note": "OpenRocket runs on Windows, Mac and Linux.",
-      "say": "There are two common tools. OpenRocket is free and open source, so anyone can read and improve the code. It runs on Windows, Mac and Linux. RockSim, from Apogee Components, is the paid alternative, with a longer history and some extra features. Both answer the same questions. Is it stable, how high, how fast, which delay. The program uses OpenRocket and gives you its BR-1 file, so you never start from a blank screen.",
-      "rowHeight": 88
-    },
-    {
-      "type": "figure",
-      "heading": "Open the BR-1 file",
-      "image": "assets/openrocket-design.png",
-      "caption": "Blue dot: CG, 27 1/2 in (698 mm). Red dot: CP, 33 3/4 in (858 mm). Top right: 2.0 calibers with the H loaded. Switch to the G74 and it reads 2.5.",
-      "credit": "OpenRocket 24.12, the program's BR-1.ork",
-      "say": "Open the file. This is the BR-1 in OpenRocket, as built, with an H115 loaded. OpenRocket draws two dots on it. The blue dot is the CG, the center of gravity, the balance point: twenty-seven and a half inches, six hundred and ninety-eight millimeters from the nose tip. The red dot is the CP, the center of pressure, where the push of the air adds up: thirty-three and three quarter inches, eight hundred and fifty-eight millimeters. The number in the top corner is the stability margin, the gap between them in calibers, body widths. With the H in, two point zero. Switch the flight configuration to the G74 and it reads two and a half. Segments three, four and five, computed in a blink."
-    },
-    {
-      "type": "photo",
-      "heading": "Every part has a mass",
-      "image": "assets/openrocket-tree.png",
-      "caption": "The component tree: every part of the kit is a line in the file.",
-      "lines": [
-        "Shape sets the CP",
-        "Mass sets the CG"
-      ],
-      "credit": "OpenRocket 24.12, the program's BR-1.ork",
-      "say": "Where do those dots come from. From the parts list. Every part in the kit is a line in this tree. Nose cone, body tube, motor mount, centering rings, fins, parachute, shock cord, rail buttons. Every part has a shape and a mass."
-    },
-    {
-      "type": "table",
-      "heading": "The parts list is the rocket",
-      "columns": [
-        "Part",
-        "Mass in the file",
-        "Sets"
-      ],
-      "widths": [
-        2,
-        2,
-        1
-      ],
-      "size": 36,
-      "rowHeight": 64,
-      "rows": [
-        [
-          "Nose cone",
-          "8.5 oz (240 g)",
-          "CG, CP"
-        ],
-        [
-          "Body tube",
-          "12.5 oz (354 g)",
-          "CG, CP"
-        ],
-        [
-          "Motor mount tube",
-          "1.1 oz (30 g)",
-          "CG"
-        ],
-        [
-          "Motor retainer",
-          "0.7 oz (20 g)",
-          "CG"
-        ],
-        [
-          "Two centering rings",
-          "from shape and material",
-          "CG"
-        ],
-        [
-          "Three fins",
-          "from shape and material",
-          "CP"
-        ],
-        [
-          "Parachute, 36 in",
-          "from shape and material",
-          "CG"
-        ],
-        [
-          "Shock cord, swivel, hardware",
-          "2.5 oz (70 g) of hardware",
-          "CG"
-        ],
-        [
-          "Two rail buttons",
-          "0.1 oz (3 g) each",
-          "CG"
-        ]
-      ],
-      "note": "Whole rocket in the file: 2 lb 2 oz (958 g) without a motor, 2 lb 9 oz (1,170 g) with the H135W.",
-      "say": "Here is the tree, with the masses the file carries. Nose cone, eight and a half ounces, two hundred and forty grams. Body tube, twelve and a half, three hundred and fifty-four grams. Motor mount, about one. The rings, fins and parachute have no number typed in. OpenRocket weighs them from their shape and material. Whole rocket, about two pounds two ounces, nine hundred and fifty-eight grams without a motor. Get the masses right and the CG is right. Get the shapes right and the CP is right."
-    },
-    {
-      "type": "pause",
-      "question": "The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?"
-    },
-    {
-      "type": "answer",
-      "text": "Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one.",
-      "say": "Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one. Now stretch that. Two inches further back means the real rocket is heavier toward the tail than the file thinks. Look for what the file is missing. Epoxy fillets, paint, the hydro-dip on the nose cone. Put those masses in where they really sit. The CG moves back toward the CP, the margin shrinks, and now the number on the screen tells the truth."
-    },
-    {
-      "type": "text",
-      "heading": "Trust, but weigh",
-      "lines": [
-        "The sim only knows what you typed in",
-        "Weigh it. Balance it. Correct the file",
-        "Then the numbers mean something"
-      ],
-      "note": "Balance it: Segment 3. Build the tree from scratch: Segment 11. Correct the file: Segment 12.",
-      "say": "One last thing. Trust, but weigh. The sim is only as good as what you typed in. After the build you will weigh your rocket and balance it on a finger, as in Segment three. Then you correct the file until it agrees. That is Segment twelve, and only then do the numbers mean something. Before that, Segment eleven builds this same tree from a blank screen."
-    },
-    {
-      "type": "close",
-      "text": "Simulate before you fly. The sim is only as true as what you typed in.",
-      "say": "The one thing to remember. Simulate before you fly. And the sim is only as true as what you typed in."
-    }
+ "meta": {
+  "title": "Why simulate, and what tools exist",
+  "eyebrow": "Segment 10  ·  While the epoxy cures",
+  "footer": "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry",
+  "description": "Why the program simulates before it flies, the two common tools, and how to recognize the CG and CP markers and the stability number in OpenRocket.",
+  "credits": [
+   "Rocket geometry, masses and flight: the program's BR-1.ork, simulated in OpenRocket",
+   "Photo: Georgia Wing High Power Rocketry"
+  ],
+  "tags": [
+   "rocketry",
+   "model rockets",
+   "high power rocketry",
+   "Civil Air Patrol",
+   "Georgia Wing",
+   "OpenRocket",
+   "RockSim",
+   "rocket simulation",
+   "stability margin"
+  ],
+  "say_fixes": [
+   [
+    "RockSim",
+    "Rock Sim"
+   ]
   ]
+ },
+ "cues": [
+  {
+   "type": "title",
+   "title": "Why simulate, and what tools exist",
+   "sub": "Fly it a hundred times on the screen before you fly it once.",
+   "say": "Segment ten. Why simulate, and what tools exist. By the end of this you will be able to say why the program simulates before it flies, name the two common tools, and recognize the CG and CP markers and the stability number in OpenRocket."
+  },
+  {
+   "type": "flight",
+   "heading": "A flight is a test you run once",
+   "caption": "The BR-1 on a G74W-6, flown by OpenRocket before anyone lit a motor.",
+   "note": "Stable, how high, rail speed, delay: answered first.",
+   "say": "A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor some of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Segment twelve reads those numbers off the screen.",
+   "sim": 2
+  },
+  {
+   "type": "table",
+   "heading": "Two tools",
+   "columns": [
+    "",
+    "OpenRocket",
+    "RockSim"
+   ],
+   "widths": [
+    1,
+    1.5,
+    1.5
+   ],
+   "rows": [
+    [
+     "Cost",
+     "free",
+     "paid"
+    ],
+    [
+     "Made by",
+     "volunteers, open source",
+     "Apogee Components"
+    ],
+    [
+     "History",
+     "newer",
+     "longer, some extra features"
+    ],
+    [
+     "Answers",
+     "the same questions",
+     "the same questions"
+    ],
+    [
+     "The program uses",
+     "yes, and gives you BR-1.ork",
+     "no"
+    ]
+   ],
+   "note": "OpenRocket runs on Windows, Mac and Linux.",
+   "say": "There are two common tools. OpenRocket is free and open source, so anyone can read and improve the code. It runs on Windows, Mac and Linux. RockSim, from Apogee Components, is the paid alternative, with a longer history and some extra features. Both answer the same questions. Is it stable, how high, how fast, which delay. The program uses OpenRocket and gives you its BR-1 file, so you never start from a blank screen.",
+   "rowHeight": 88
+  },
+  {
+   "type": "figure",
+   "heading": "Open the BR-1 file",
+   "image": "assets/openrocket-design.png",
+   "caption": "Blue dot: CG, 27 1/2 in (698 mm)  ·  Red dot: CP, 33 3/4 in (858 mm)  ·  Top right: 2.0 calibers with the H, 2.5 with the G74",
+   "credit": "OpenRocket 24.12, the program's BR-1.ork",
+   "say": "Open the file. This is the BR-1 in OpenRocket, as built, with an H115 loaded. OpenRocket draws two dots on it. The blue dot is the CG, the center of gravity, the balance point: twenty-seven and a half inches, six hundred and ninety-eight millimeters from the nose tip. The red dot is the CP, the center of pressure, where the push of the air adds up: thirty-three and three quarter inches, eight hundred and fifty-eight millimeters. The number in the top corner is the stability margin, the gap between them in calibers, body widths. With the H in, two point zero. Switch the flight configuration to the G74 and it reads two and a half. Segments three, four and five, computed in a blink."
+  },
+  {
+   "type": "photo",
+   "heading": "Every part has a mass",
+   "image": "assets/openrocket-tree.png",
+   "caption": "The component tree: every part of the kit is a line in the file.",
+   "lines": [
+    "Shape sets the CP",
+    "Mass sets the CG"
+   ],
+   "credit": "OpenRocket 24.12, the program's BR-1.ork",
+   "say": "Where do those dots come from. From the parts list. Every part in the kit is a line in this tree. Nose cone, body tube, motor mount, centering rings, fins, parachute, shock cord, rail buttons. Every part has a shape and a mass."
+  },
+  {
+   "type": "table",
+   "heading": "The parts list is the rocket",
+   "columns": [
+    "Part",
+    "Mass in the file",
+    "Sets"
+   ],
+   "widths": [
+    2,
+    2,
+    1
+   ],
+   "size": 36,
+   "rowHeight": 64,
+   "rows": [
+    [
+     "Nose cone",
+     "8.5 oz (240 g)",
+     "CG, CP"
+    ],
+    [
+     "Body tube",
+     "12.5 oz (354 g)",
+     "CG, CP"
+    ],
+    [
+     "Motor mount tube",
+     "1.1 oz (30 g)",
+     "CG"
+    ],
+    [
+     "Motor retainer",
+     "0.7 oz (20 g)",
+     "CG"
+    ],
+    [
+     "Two centering rings",
+     "from shape and material",
+     "CG"
+    ],
+    [
+     "Three fins",
+     "from shape and material",
+     "CP"
+    ],
+    [
+     "Parachute, 36 in",
+     "from shape and material",
+     "CG"
+    ],
+    [
+     "Shock cord, swivel, hardware",
+     "2.5 oz (70 g) of hardware",
+     "CG"
+    ],
+    [
+     "Two rail buttons",
+     "0.1 oz (3 g) each",
+     "CG"
+    ]
+   ],
+   "note": "Whole rocket in the file: 2 lb 2 oz (958 g) without a motor, 2 lb 9 oz (1,170 g) with the H135W.",
+   "say": "Here is the tree, with the masses the file carries. Nose cone, eight and a half ounces, two hundred and forty grams. Body tube, twelve and a half, three hundred and fifty-four grams. Motor mount, about one. The rings, fins and parachute have no number typed in. OpenRocket weighs them from their shape and material. Whole rocket, about two pounds two ounces, nine hundred and fifty-eight grams without a motor. Get the masses right and the CG is right. Get the shapes right and the CP is right."
+  },
+  {
+   "type": "pause",
+   "question": "The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?"
+  },
+  {
+   "type": "answer",
+   "text": "Believe the rocket.",
+   "say": "Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one. Now stretch that. Two inches further back means the real rocket is heavier toward the tail than the file thinks. Look for what the file is missing. Epoxy fillets, paint, the hydro-dip on the nose cone. Put those masses in where they really sit. The CG moves back toward the CP, the margin shrinks, and now the number on the screen tells the truth.",
+   "lines": [
+    "A scale and a string do not guess",
+    "Fix the masses in the sim, part by part, until its CG matches the real one"
+   ]
+  },
+  {
+   "type": "text",
+   "heading": "Trust, but weigh",
+   "lines": [
+    "The sim only knows what you typed in",
+    "Weigh it. Balance it. Correct the file",
+    "Then the numbers mean something"
+   ],
+   "note": "Balance it: Segment 3  ·  Build the tree from scratch: Segment 11  ·  Correct the file: Segment 12",
+   "say": "One last thing. Trust, but weigh. The sim is only as good as what you typed in. After the build you will weigh your rocket and balance it on a finger, as in Segment three. Then you correct the file until it agrees. That is Segment twelve, and only then do the numbers mean something. Before that, Segment eleven builds this same tree from a blank screen."
+  },
+  {
+   "type": "close",
+   "text": "Simulate before you fly. The sim is only as true as what you typed in.",
+   "say": "The one thing to remember. Simulate before you fly. And the sim is only as true as what you typed in."
+  }
+ ]
 }

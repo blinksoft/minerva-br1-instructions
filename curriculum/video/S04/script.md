@@ -32,7 +32,7 @@ Here it is on the BR-1. Same nose, same tube, no fins. OpenRocket now puts the C
 
 **08** `voice/08.wav`
 
-OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part of the rocket produces, nose, tube and fins, and where that force acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws on the rocket, and you will see it on screen in Segment ten. If you want the math, the links are in this video's description.
+OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part produces, nose, tube and fins, and where it acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws, and you will see it in Segment ten. Here is a brief example of the math. You can get the full details from the link in this video's description.
 
 **09** `voice/09.wav`
 

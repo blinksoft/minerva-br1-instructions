@@ -10,7 +10,7 @@ Segment ten. Why simulate, and what tools exist. By the end of this you will be 
 
 **02** `voice/02.wav`
 
-A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor most of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Segment twelve reads those numbers off the screen.
+A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor some of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Segment twelve reads those numbers off the screen.
 
 **03** `voice/03.wav`
 

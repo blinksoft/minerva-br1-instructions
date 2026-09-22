@@ -67,8 +67,13 @@
   },
   {
    "type": "answer",
-   "text": "Fins are a lot of area and very little mass. Area moves the CP, the red dot. Mass moves the CG, the blue dot, and three thin plywood fins barely move it.",
-   "say": "Area. Fins are a lot of area and very little mass. Area moves the CP, the red dot, because air pushes on area. Mass moves the CG, the blue dot, and three thin plywood fins barely move it. Now stretch that. Every part does one of two jobs. It gives the air something to push on, or it adds mass. Fins are almost all the first. A motor is almost all the second."
+   "text": "Area.",
+   "say": "Area. Fins are a lot of area and very little mass. Area moves the CP, the red dot, because air pushes on area. Mass moves the CG, the blue dot, and three thin plywood fins barely move it. Now stretch that. Every part does one of two jobs. It gives the air something to push on, or it adds mass. Fins are almost all the first. A motor is almost all the second.",
+   "lines": [
+    "Fins are a lot of area and very little mass",
+    "Area moves the CP, the red dot",
+    "Mass moves the CG, the blue dot, and three thin fins barely move it"
+   ]
   },
   {
    "type": "clip",
@@ -82,7 +87,7 @@
    "heading": "Now open the real one",
    "src": "assets/09-real-file.mp4",
    "fit": "hold",
-   "say": "Now open the program's file, BR-1.ork, next to yours. Same tree, same order, every number tuned to the kit on your table. With the G74 most of you fly loaded, the CG sits at twenty-six inches, sixty-six centimeters and the CP at thirty-three and three quarters. That gap is two and a half calibers, the stability margin from Segment five. Your from-scratch build teaches you what the file means. The program's file is what you fly. What the two dots do when the motor comes out is the next segment."
+   "say": "Now open the program's file, BR-1.ork, next to yours. Same tree, same order, every number tuned to the kit on your table. With the G74 some of you fly loaded, the CG sits at twenty-six inches, sixty-six centimeters and the CP at thirty-three and three quarters. That gap is two and a half calibers, the stability margin from Segment five. Your from-scratch build teaches you what the file means. The program's file is what you fly. What the two dots do when the motor comes out is the next segment."
   },
   {
    "type": "close",
