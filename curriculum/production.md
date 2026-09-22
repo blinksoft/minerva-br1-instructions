@@ -71,18 +71,18 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 
 | # | Title | Voice | YouTube ID | Master file | Recorded |
 |---|---|---|---|---|---|
-| S1 | What is high power rocketry? | Josh | | | |
-| S2 | NAR, Tripoli and certification | Nichalia | | | |
-| S3 | Center of gravity | Josh | | | |
-| S4 | Center of pressure | Nichalia | | | |
-| S5 | Stability margin | Josh | | | |
-| S6 | How a motor is measured | Nichalia | Dk7ehuakwdI | videos/S06.mp4 | published 2026-09-21 |
-| S7 | Reading the motor code | Josh | | | |
-| S8 | Thrust curves and the delay | Nichalia | | | |
-| S9 | Motor sizes, types and safety | Josh | | | |
-| S10 | Why simulate, and what tools exist | Nichalia | | | |
-| S11 | Building a rocket from scratch in OpenRocket | Josh | | | |
-| S12 | Stability with and without a motor | Nichalia | | | |
+| S1 | What is high power rocketry? | Josh | EMf62x6zXu0 | videos/S01.mp4 | published 2026-09-22 |
+| S2 | NAR, Tripoli and certification | Nichalia | LDCboFxTcVI | videos/S02.mp4 | published 2026-09-22 |
+| S3 | Center of gravity | Josh | K72AKyiQYYw | videos/S03.mp4 | published 2026-09-22 |
+| S4 | Center of pressure | Nichalia | SxHvgvVJ-f4 | videos/S04.mp4 | published 2026-09-22 |
+| S5 | Stability margin | Josh | EEmBGtfG09Q | videos/S05.mp4 | published 2026-09-22 |
+| S6 | How a motor is measured | Nichalia | 9QVB42KrN1E | videos/S06.mp4 | published 2026-09-22 |
+| S7 | Reading the motor code | Josh | PqqFyUP5h38 | videos/S07.mp4 | published 2026-09-22 |
+| S8 | Thrust curves and the delay | Nichalia | Mxy-jpmyiDw | videos/S08.mp4 | published 2026-09-22 |
+| S9 | Motor sizes, types and safety | Josh | y2lvHdUAGZU | videos/S09.mp4 | published 2026-09-22 |
+| S10 | Why simulate, and what tools exist | Nichalia | g4YKIFKWCks | videos/S10.mp4 | published 2026-09-22 |
+| S11 | Building a rocket from scratch in OpenRocket | Josh | yvPDSQfPAOY | videos/S11.mp4 | published 2026-09-22 |
+| S12 | Stability with and without a motor | Nichalia | xcXoR-tNCdA | videos/S12.mp4 | published 2026-09-22 |
 
 ## How the guide page will show them (not built yet)
 

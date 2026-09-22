@@ -3,13 +3,123 @@
   "playlistId": "PLS84YDwO4-U4",
   "segments": {
     "S06": {
-      "videoId": "Dk7ehuakwdI",
-      "outputSha": "fea68f82bcc4d714fc400cf000c142c54dd9496e",
-      "inputSha": "7c1c6477f7c9067cfbaef7f69086e886a3f1ef47",
+      "videoId": "9QVB42KrN1E",
+      "outputSha": "ed9470589fd1799fa661ecbacdb96256583ff722",
+      "inputSha": "4db349a5a8137f2911ccecbcd312324515f95fdf",
       "title": "How a motor is measured \u2014 BR-1 Build Day, Segment 6",
-      "url": "https://youtu.be/Dk7ehuakwdI",
-      "publishedAt": "2026-09-21T06:20:13+00:00",
-      "previousVideoId": "DU7hl1mqEZw",
+      "url": "https://youtu.be/9QVB42KrN1E",
+      "publishedAt": "2026-09-22T05:31:36+00:00",
+      "previousVideoId": "Dk7ehuakwdI",
+      "privacyStatus": "unlisted"
+    },
+    "S01": {
+      "videoId": "EMf62x6zXu0",
+      "outputSha": "0f9723600d788c9d062135e0d2d6c46f17874474",
+      "inputSha": "bd6ecd5ad921564e91e46983afce151008b715fb",
+      "title": "What is high power rocketry? \u2014 BR-1 Build Day, Segment 1",
+      "url": "https://youtu.be/EMf62x6zXu0",
+      "publishedAt": "2026-09-22T05:30:59+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S02": {
+      "videoId": "LDCboFxTcVI",
+      "outputSha": "aef4de33ed7bb5b397c371e62c0f49d4f55f9b86",
+      "inputSha": "42865ff1915a9832740b4a3fa392c354b53dd273",
+      "title": "NAR, Tripoli and certification \u2014 BR-1 Build Day, Segment 2",
+      "url": "https://youtu.be/LDCboFxTcVI",
+      "publishedAt": "2026-09-22T05:31:04+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S03": {
+      "videoId": "K72AKyiQYYw",
+      "outputSha": "3142e8f17e4ba0663f19ec416681e06cd8b6654f",
+      "inputSha": "49190f48a800467bf13a8119885d99f5fda21c46",
+      "title": "Center of gravity \u2014 BR-1 Build Day, Segment 3",
+      "url": "https://youtu.be/K72AKyiQYYw",
+      "publishedAt": "2026-09-22T05:31:13+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S04": {
+      "videoId": "SxHvgvVJ-f4",
+      "outputSha": "19078513fe0a282be0a1cbcb8785ae2585428baa",
+      "inputSha": "af464cc02a14cce13a232f6b4cea0a913d45c26e",
+      "title": "Center of pressure \u2014 BR-1 Build Day, Segment 4",
+      "url": "https://youtu.be/SxHvgvVJ-f4",
+      "publishedAt": "2026-09-22T05:31:21+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S05": {
+      "videoId": "EEmBGtfG09Q",
+      "outputSha": "e413cb8271bb96a8610f47be74a9d55025728fed",
+      "inputSha": "237ccae539ddf27bb4c80c14ec89fbdf47041bda",
+      "title": "Stability margin \u2014 BR-1 Build Day, Segment 5",
+      "url": "https://youtu.be/EEmBGtfG09Q",
+      "publishedAt": "2026-09-22T05:31:28+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S07": {
+      "videoId": "PqqFyUP5h38",
+      "outputSha": "28748396a85067bde057e5faf31090327cdeee30",
+      "inputSha": "12176d989cced74e4a46442fd444522d644059c6",
+      "title": "Reading the motor code \u2014 BR-1 Build Day, Segment 7",
+      "url": "https://youtu.be/PqqFyUP5h38",
+      "publishedAt": "2026-09-22T05:31:42+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S08": {
+      "videoId": "Mxy-jpmyiDw",
+      "outputSha": "72ee3837964efd3e28449bc3a20699ad35e2c2a3",
+      "inputSha": "5440e87121760199fa973b7dbcd318e08260af9b",
+      "title": "Thrust curves and the delay \u2014 BR-1 Build Day, Segment 8",
+      "url": "https://youtu.be/Mxy-jpmyiDw",
+      "publishedAt": "2026-09-22T05:31:47+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S09": {
+      "videoId": "y2lvHdUAGZU",
+      "outputSha": "8ad66fb4fc253da6832c29c3c79eb868134c23bb",
+      "inputSha": "c2e405f3e5f4884a589d86f58713c0fb01511303",
+      "title": "Motor sizes, types and safety \u2014 BR-1 Build Day, Segment 9",
+      "url": "https://youtu.be/y2lvHdUAGZU",
+      "publishedAt": "2026-09-22T05:31:52+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S10": {
+      "videoId": "g4YKIFKWCks",
+      "outputSha": "907210f3b3214344a553154535b4002f54b30695",
+      "inputSha": "62dd37e2da127b7197aa7e09da6f8ad1d9a359d9",
+      "title": "Why simulate, and what tools exist \u2014 BR-1 Build Day, Segment 10",
+      "url": "https://youtu.be/g4YKIFKWCks",
+      "publishedAt": "2026-09-22T05:31:56+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S11": {
+      "videoId": "yvPDSQfPAOY",
+      "outputSha": "4f3d719619680f1ac9bf3d1dbdb0b6c8bda5af0e",
+      "inputSha": "5bb806401887d31afbaf4e0f16331afc5046623e",
+      "title": "Building a rocket from scratch in OpenRocket \u2014 BR-1 Build Day, Segment 11",
+      "url": "https://youtu.be/yvPDSQfPAOY",
+      "publishedAt": "2026-09-22T05:32:00+00:00",
+      "previousVideoId": null,
+      "privacyStatus": "unlisted"
+    },
+    "S12": {
+      "videoId": "xcXoR-tNCdA",
+      "outputSha": "042fb63e75f167d41cc8560b897115bbf6c8006d",
+      "inputSha": "45cb39e7508e3b5ca23dd47f15ee1a73e5f718e8",
+      "title": "Stability with and without a motor \u2014 BR-1 Build Day, Segment 12",
+      "url": "https://youtu.be/xcXoR-tNCdA",
+      "publishedAt": "2026-09-22T05:32:03+00:00",
+      "previousVideoId": null,
       "privacyStatus": "unlisted"
     }
   }
