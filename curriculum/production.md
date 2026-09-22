@@ -74,7 +74,7 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 | S1 | What is high power rocketry? | Josh | EMf62x6zXu0 | videos/S01.mp4 | published 2026-09-22 |
 | S2 | NAR, Tripoli and certification | Nichalia | LDCboFxTcVI | videos/S02.mp4 | published 2026-09-22 |
 | S3 | Center of gravity | Josh | K72AKyiQYYw | videos/S03.mp4 | published 2026-09-22 |
-| S4 | Center of pressure | Nichalia | SxHvgvVJ-f4 | videos/S04.mp4 | published 2026-09-22 |
+| S4 | Center of pressure | Nichalia | eR_gO5_ybDc | videos/S04.mp4 | published 2026-09-22 |
 | S5 | Stability margin | Josh | EEmBGtfG09Q | videos/S05.mp4 | published 2026-09-22 |
 | S6 | How a motor is measured | Nichalia | 9QVB42KrN1E | videos/S06.mp4 | published 2026-09-22 |
 | S7 | Reading the motor code | Josh | PqqFyUP5h38 | videos/S07.mp4 | published 2026-09-22 |

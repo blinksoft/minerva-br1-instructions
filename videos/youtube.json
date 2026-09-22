@@ -47,15 +47,15 @@
       "thumbnail": true
     },
     "S04": {
-      "videoId": "SxHvgvVJ-f4",
+      "videoId": "eR_gO5_ybDc",
       "outputSha": "19078513fe0a282be0a1cbcb8785ae2585428baa",
       "inputSha": "af464cc02a14cce13a232f6b4cea0a913d45c26e",
       "title": "Center of pressure \u2014 BR-1 Build Day, Segment 4",
-      "url": "https://youtu.be/SxHvgvVJ-f4",
-      "publishedAt": "2026-09-22T05:31:21+00:00",
-      "previousVideoId": null,
-      "privacyStatus": "unlisted",
-      "thumbnail": true
+      "url": "https://youtu.be/eR_gO5_ybDc",
+      "publishedAt": "2026-09-22T05:36:43+00:00",
+      "previousVideoId": "SxHvgvVJ-f4",
+      "thumbnail": false,
+      "privacyStatus": "unlisted"
     },
     "S05": {
       "videoId": "EEmBGtfG09Q",
