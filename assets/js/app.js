@@ -2,7 +2,7 @@
    Progress is stored in this browser only (localStorage); nothing is sent anywhere. */
 (function () {
   "use strict";
-  var KEY = "minerva-br1-v1";
+  var KEY = "minerva-br1-v2";   // v2: steps renumbered when the videos became steps
 
   /* ---- storage (never let a blocked/full store break the page) ---- */
   function load() {

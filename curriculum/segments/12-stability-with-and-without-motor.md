@@ -1,8 +1,8 @@
 # S12 — Stability with and without a motor
 
 ## Slot
-Fillet round three (step 23), 5 minutes, with the 2:00 walkthrough block for the rest. Leads straight into
-homework step 28.
+Fillet round two (step 33), 5 minutes, with the 2:00 walkthrough block for the rest. Leads straight into
+homework step 40.
 
 ## Objective
 The cadet can add a motor to the OpenRocket model, see what it does to CG and stability, run a
@@ -27,7 +27,7 @@ press play. The video gives the answer. That is the whole job; no props, no setu
    speed, speed leaving the rail, and time to apogee. Compare time to apogee against the 6 second delay.
    Then run the H and read the same four.
 5. **Wind and angle.** Change the launch rod angle and the wind speed and run again. Watch the landing
-   distance. This is the homework in step 28: play with these until you know how far you might have to
+   distance. This is the homework in step 40: play with these until you know how far you might have to
    walk.
 6. **Close the loop.** Before the BR-1 flies: motor loaded, balanced on a finger, and the balance
    point compared with the CG the sim shows. If they match, the model is honest. Go fly.
@@ -48,4 +48,4 @@ On resume the video answers: Less. Propellant is mass at the very back. As it bu
 
 ## Sources to replace
 "Interpreting OpenRocket simulation results" (youtu.be/543Gnd63saM) and "Running a simulation in
-OpenRocket" (youtu.be/H9S6yn9iwqc), both linked from homework step 28.
+OpenRocket" (youtu.be/H9S6yn9iwqc), both linked from homework step 40.

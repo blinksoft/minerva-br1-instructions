@@ -3,6 +3,10 @@
 
 Edit content/steps.json (and drop new photos in assets/img/), then run:
     python3 build.py
+
+Video steps: a step with "video": "S03" is one of the build-day segments. Its YouTube URL comes from
+videos/youtube.json (kept current by curriculum/video/publish.py), falling back to the MP4 master in
+videos/. A link note may use "href": "@playlist" or "@S03" to resolve the same way.
 """
 import json, html, os, re, sys, datetime
 
@@ -11,7 +15,31 @@ D    = json.load(open(os.path.join(ROOT, "content/steps.json"), encoding="utf-8"
 DIMS = {m["file"]: (m["w"], m["h"])
         for m in json.load(open(os.path.join(ROOT, "content/images.json"), encoding="utf-8"))}
 
+try:
+    YT = json.load(open(os.path.join(ROOT, "videos/youtube.json"), encoding="utf-8"))
+except FileNotFoundError:
+    YT = {"playlistId": None, "segments": {}}
+
 e = lambda s: html.escape(str(s), quote=True)
+
+
+def video_url(seg):
+    """YouTube link for a segment (S03), else the MP4 master served from the site."""
+    live = YT.get("segments", {}).get(seg, {}).get("url")
+    return live or f"videos/{seg}.mp4"
+
+
+def playlist_url():
+    pid = YT.get("playlistId")
+    return f"https://www.youtube.com/playlist?list={pid}" if pid else "videos/"
+
+
+def href(h):
+    if h == "@playlist":
+        return playlist_url()
+    if h.startswith("@S"):
+        return video_url(h[1:])
+    return h
 
 ICON = {"warn": "!", "tip": "i", "time": "⏱", "link": "↗"}
 
@@ -19,7 +47,7 @@ ICON = {"warn": "!", "tip": "i", "time": "⏱", "link": "↗"}
 def callout(n):
     kind = n.get("type", "tip")
     if kind == "link":
-        inner = f'<a href="{e(n["href"])}" target="_blank" rel="noopener">{e(n["text"])}</a>'
+        inner = f'<a href="{e(href(n["href"]))}" target="_blank" rel="noopener">{e(n["text"])}</a>'
     else:
         inner = e(n["text"])
     return (f'<div class="callout {kind}"><span class="ic" aria-hidden="true">{ICON[kind]}</span>'
@@ -69,14 +97,35 @@ def figures(imgs):
     return f'<div class="figs n{min(len(cells),5)}">' + "".join(cells) + "</div>"
 
 
+def video_html(st):
+    seg = st["video"]
+    url = video_url(seg)
+    thumb = f"videos/{seg}-thumb.jpg"
+    num = int(seg[1:])
+    poster = ""
+    if os.path.exists(os.path.join(ROOT, thumb)):
+        poster = (f'<a class="videolink" href="{e(url)}" target="_blank" rel="noopener" '
+                  f'aria-label="Play video: {e(st['title'].removeprefix('Watch: '))}">'
+                  f'<img src="{e(thumb)}" width="1280" height="720" loading="lazy" decoding="async" alt="">'
+                  f'<span class="play" aria-hidden="true"></span></a>')
+    link = callout({"type": "link", "href": url,
+                    "text": f"Watch on YouTube  ·  Build-day video {num} of 12"})
+    return poster + link
+
+
 def step_html(st):
     sid = f"step-{st['n']}"
+    kind = " video" if st.get("video") else ""
     notes_top = []
     if st.get("epoxy"):
         notes_top.append(callout({"type": "time", "text": st["epoxy"]}))
+    if st.get("when"):
+        notes_top.append(callout({"type": "time", "text": st["when"]}))
     notes = "".join(callout(n) for n in st.get("notes", []))
+    if st.get("video"):
+        notes += video_html(st)
     return f"""
-<article class="card step" id="{sid}" data-step="{st['n']}">
+<article class="card step{kind}" id="{sid}" data-step="{st['n']}">
   <div class="step-head">
     <div class="step-num" aria-hidden="true">{st['n']}</div>
     <h3 class="step-title">{e(st['title'])}</h3>
@@ -102,6 +151,7 @@ def checklist(items, key):
 
 meta = D["meta"]
 total = sum(len(s["steps"]) for s in D["stages"])
+nvideo = sum(1 for s in D["stages"] for st in s["steps"] if st.get("video"))
 
 toc = "".join(
     f'<li><a href="#{e(s["id"])}">{e(s["name"])}</a> '
@@ -156,6 +206,7 @@ page = f"""<!doctype html>
       <p class="lede">{e(meta['subtitle'])}</p>
       <div class="metastrip">
         <span class="chip">{total} steps</span>
+        <span class="chip">{nvideo} videos</span>
         <span class="chip">{len(D['stages'])} stages</span>
         <span class="chip">Progress saves on this device</span>
       </div>
@@ -210,4 +261,4 @@ page = f"""<!doctype html>
 """
 
 open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(page)
-print(f"index.html written — {total} steps, {len(D['stages'])} stages, {len(DIMS)} images indexed")
+print(f"index.html written — {total} steps ({nvideo} videos), {len(D['stages'])} stages, {len(DIMS)} images indexed")

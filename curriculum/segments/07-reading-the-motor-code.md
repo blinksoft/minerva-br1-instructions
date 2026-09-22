@@ -1,8 +1,8 @@
 # S7 — Reading the motor code
 
 ## Slot
-Before lunch, while the installed motor mount sets (after step 19), if the class is ahead. Otherwise
-the step 20 aft-joint wait right after lunch. Fallback: 2:00 walkthrough block.
+Before lunch, while the installed motor mount sets (after step 25), if the class is ahead. Otherwise
+the step 26 aft-joint wait right after lunch. Fallback: 2:00 walkthrough block.
 
 ## Objective
 The cadet can decode a motor designation like G74W-6 or H128W-14 and say why average thrust, not just the

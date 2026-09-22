@@ -1,7 +1,7 @@
 # S8 — Thrust curves and the delay
 
 ## Slot
-First fin wait (step 22, first fin curing), 5 minutes. Fallback: 2:00 walkthrough block.
+First fin wait (step 29, first fin curing), 5 minutes. Fallback: 2:00 walkthrough block.
 
 ## Objective
 The cadet can read a thrust curve, point to total impulse, peak thrust and burn time on it, and explain

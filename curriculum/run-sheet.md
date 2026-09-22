@@ -4,7 +4,9 @@ One page for whoever is leading the build. Print it. Every teaching moment is a 
 one is to press play, pause when the card says to, take a few answers, press play again.
 
 Videos are in the "BR-1 Build Day" playlist on the program's YouTube channel (IDs in production.md).
-Have the playlist open and the room's screen or projector working before 8:30.
+Each one is also a numbered step in the assembly guide, at the cure wait it fills, so a cadet following
+on a phone sees it at the right moment. Have the playlist open and the room's screen or projector
+working before 8:30.
 
 ## Before the class
 
@@ -17,28 +19,28 @@ Have the playlist open and the room's screen or projector working before 8:30.
 
 | When | Build | Then play |
 |---|---|---|
-| 8:30 | Alpha III build | S1 What is high power rocketry? — during a glue wait |
-| 9:30 | Guide steps 1–2, rail buttons | — |
-| 9:45 | Steps 3–8, motor mount | S2 NAR, Tripoli and certification — while step 8 sets |
-| | Step 9 | S3 Center of gravity — while step 9 sets |
-| 10:05 | Step 10, stand it up to cure | S4 Center of pressure, then S5 Stability margin and the swing test |
-| 10:35 | Steps 11–12, eyebolt | S6 How a motor is measured — while step 12 sets |
-| 10:50 | Steps 13–19, install the motor mount | S7 Reading the motor code — only if you are ahead |
+| 8:30 | Alpha III build | Step 1: S1 What is high power rocketry? — during a glue wait |
+| 9:30 | Guide steps 2–3, rail buttons | — |
+| 9:45 | Steps 4–9, motor mount | Step 10: S2 NAR, Tripoli and certification — while step 9 sets |
+| | Step 11, forward ring | Step 12: S3 Center of gravity — while step 11 sets |
+| 10:05 | Step 13, stand it up to cure | Steps 14–15: S4 Center of pressure, then S5 Stability margin |
+| 10:35 | Steps 16–17, eyebolt | Step 18: S6 How a motor is measured — while step 17 sets |
+| 10:50 | Steps 19–25, install the motor mount | Step 27: S7 Reading the motor code — only if you are ahead |
 | 11:30 or 12:00 | Lunch. Hydro dip. Install cures. | — |
 
 ## Afternoon (times from the end of lunch)
 
 | When | Build | Then play |
 |---|---|---|
-| +0 | Step 20, aft joint | S7 Reading the motor code — if not played before lunch |
-| +10 | Steps 21–22, test fit then fin 1 | S8 Thrust curves and the delay |
-| | Step 22, fin 2 | S9 Motor sizes, types and safety |
-| | Step 22, fin 3 | S10 Why simulate, and what tools exist |
-| +40 | Step 23, fillet round 1 | S11 OpenRocket from scratch, part 1 |
-| | Step 23, fillet round 2 | S11 OpenRocket from scratch, part 2 |
-| | Step 23, fillet round 3 | S12 Stability with and without a motor |
-| +75 | Steps 24–27, recovery harness and decorating | — |
-| about 2:00 | Step 28 homework | Open BR-1.ork on the screen and repeat what S12 showed, live, with questions |
+| +0 | Step 26, aft joint | Step 27: S7 Reading the motor code — if not played before lunch |
+| +10 | Steps 28–29, test fit then fin 1 | Step 30: S8 Thrust curves and the delay |
+| | Step 29, fin 2 | Step 31: S9 Motor sizes, types and safety |
+| | Step 29, fin 3 | Step 32: S10 Why simulate, and what tools exist |
+| +40 | Step 33, fillet round 1 | Step 34: S11 OpenRocket from scratch |
+| | Step 33, fillet round 2 | Step 35: S12 Stability with and without a motor |
+| | Step 33, fillet round 3 | — (spare; replay anything skipped) |
+| +75 | Steps 36–39, recovery harness and decorating | — |
+| about 2:00 | Step 40 homework | Open BR-1.ork on the screen and repeat what S12 showed, live, with questions |
 | 3:30 | Done | — |
 
 ## At every pause card

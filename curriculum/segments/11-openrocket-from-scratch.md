@@ -1,8 +1,8 @@
 # S11 — Building a rocket from scratch in OpenRocket
 
 ## Slot
-Fillet rounds one and two (step 23), two 5 minute pieces. Cut at 5 minutes each; the 2:00 walkthrough
-block picks up whatever is left. Fallback: 2:00 block entirely.
+Fillet round one (step 33), 5 minutes; the 2:00 walkthrough block picks up whatever is left.
+Fallback: 2:00 block entirely.
 
 ## Objective
 The cadet can start a new OpenRocket design and add the parts of a simple rocket in the right order, then

@@ -1,7 +1,7 @@
 # S10 — Why simulate, and what tools exist
 
 ## Slot
-Third fin wait (step 22), 5 minutes. Fallback: 2:00 walkthrough block.
+Third fin wait (step 29), 5 minutes. Fallback: 2:00 walkthrough block.
 
 ## Objective
 The cadet can say why we simulate before flying, name the two common tools, and recognise the CP and CG
@@ -42,4 +42,4 @@ On resume the video answers: Believe the rocket; a scale and a string do not gue
 - BR-1.ork is current with the actual kit (white tube, current fin stock).
 
 ## Sources to replace
-"Basics of OpenRocket" (youtu.be/z16_uUnMarE), linked from homework step 28.
+"Basics of OpenRocket" (youtu.be/z16_uUnMarE), linked from homework step 40.

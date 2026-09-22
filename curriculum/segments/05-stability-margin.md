@@ -1,7 +1,7 @@
 # S5 — Stability margin
 
 ## Slot
-Step 10 motor mount cure, second half. Fallback: install cure.
+Step 13 motor mount cure, second half. Fallback: install cure.
 
 ## Objective
 The cadet can state the stability rule (CG ahead of CP by one to three body diameters), say what happens

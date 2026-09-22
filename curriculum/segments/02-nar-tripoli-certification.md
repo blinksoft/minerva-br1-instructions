@@ -1,7 +1,7 @@
 # S2 — NAR, Tripoli and certification
 
 ## Slot
-Step 8 wait (aft ring and retainer curing), 5 minutes. Fallback: step 12 wait.
+Step 9 wait (aft ring and retainer curing), 5 minutes. Fallback: step 17 wait.
 
 ## Objective
 The cadet can name the two national organizations, say what a Level 1 certification is, and know when

@@ -1,7 +1,7 @@
 # S4 — Center of pressure
 
 ## Slot
-Step 10 motor mount cure, first half. Fallback: install cure.
+Step 13 motor mount cure, first half. Fallback: install cure.
 
 ## Objective
 The cadet can explain what the center of pressure is, which parts of the rocket make it, and why fins

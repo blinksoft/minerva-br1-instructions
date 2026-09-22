@@ -1,7 +1,7 @@
 # S3 — Center of gravity
 
 ## Slot
-Step 9 wait (forward ring curing), 5 minutes. Fallback: step 12 wait.
+Step 11 wait (forward ring curing), 5 minutes. Fallback: step 17 wait.
 
 ## Objective
 The cadet can find the center of gravity of any rocket with a finger or a loop of string and predict which

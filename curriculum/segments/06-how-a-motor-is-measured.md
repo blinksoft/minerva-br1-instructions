@@ -1,7 +1,7 @@
 # S6 — How a motor is measured
 
 ## Slot
-Step 12 wait (back of the rings and eyebolt nuts curing), 5 to 10 minutes. Fallback: step 20 wait.
+Step 17 wait (back of the rings and eyebolt nuts curing), 5 to 10 minutes. Fallback: step 26 wait.
 
 ## Objective
 The cadet can say what a Newton-second is in plain words and read the letter ladder from A to O.

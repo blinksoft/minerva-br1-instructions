@@ -1,7 +1,7 @@
 # S9 — Motor sizes, types and safety
 
 ## Slot
-Second fin wait (step 22), 5 minutes. Fallback: step 20 wait if S7 was done before lunch.
+Second fin wait (step 29), 5 minutes. Fallback: step 26 wait if S7 was done before lunch.
 
 ## Objective
 The cadet can name the common motor diameters, tell a black powder motor from a composite one, and repeat

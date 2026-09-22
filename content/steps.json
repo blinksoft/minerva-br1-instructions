@@ -62,6 +62,15 @@
       "steps": [
         {
           "n": 1,
+          "video": "S01",
+          "title": "Watch: What is high power rocketry?",
+          "when": "Before the build starts. On build day this plays during the Alpha III glue wait.",
+          "body": [
+            "What makes a rocket “high power” instead of a model rocket, and which of the two rockets on the table is which."
+          ]
+        },
+        {
+          "n": 2,
           "slide": 11,
           "title": "Install the forward rail button",
           "body": [
@@ -119,7 +128,7 @@
           ]
         },
         {
-          "n": 2,
+          "n": 3,
           "slide": 12,
           "title": "Install the aft rail button",
           "body": [
@@ -173,7 +182,7 @@
       "blurb": "Build the motor mount as its own subassembly. It has to be square and fully cured before it goes anywhere near the body tube.",
       "steps": [
         {
-          "n": 3,
+          "n": 4,
           "slide": 3,
           "title": "Sand the motor mount tube",
           "body": [
@@ -198,7 +207,7 @@
           ]
         },
         {
-          "n": 4,
+          "n": 5,
           "slide": 4,
           "title": "Test fit the centering rings",
           "body": [
@@ -208,7 +217,7 @@
           "notes": [
             {
               "type": "warn",
-              "text": "A tight fit is what you want. Sand the ring, not the tube — you already sized the tube in step 3."
+              "text": "A tight fit is what you want. Sand the ring, not the tube — you already sized the tube in step 4."
             }
           ],
           "images": [
@@ -219,7 +228,7 @@
           ]
         },
         {
-          "n": 5,
+          "n": 6,
           "slide": 5,
           "title": "Mark the aft end",
           "body": [
@@ -230,7 +239,7 @@
           "notes": [
             {
               "type": "tip",
-              "text": "That line is the forward edge of your epoxy zone for step 8. Everything aft of it gets glue."
+              "text": "That line is the forward edge of your epoxy zone for step 9. Everything aft of it gets glue."
             }
           ],
           "images": [
@@ -241,7 +250,7 @@
           ]
         },
         {
-          "n": 6,
+          "n": 7,
           "slide": 6,
           "title": "Mark the forward end",
           "body": [
@@ -261,7 +270,7 @@
           ]
         },
         {
-          "n": 7,
+          "n": 8,
           "slide": 7,
           "title": "Move the rings clear",
           "body": [
@@ -276,12 +285,12 @@
           ]
         },
         {
-          "n": 8,
+          "n": 9,
           "slide": 8,
           "title": "Epoxy the motor retainer and aft centering ring",
           "epoxy": "5-minute epoxy",
           "body": [
-            "Spread epoxy on the tube from the aft end up to the mark you made in step 5.",
+            "Spread epoxy on the tube from the aft end up to the mark you made in step 6.",
             "Slide the motor retainer on, then slide the aft centering ring down until it touches the retainer.",
             "Check that the ring is square to the tube before the epoxy grabs."
           ],
@@ -311,7 +320,16 @@
           ]
         },
         {
-          "n": 9,
+          "n": 10,
+          "video": "S02",
+          "title": "Watch: NAR, Tripoli and certification",
+          "when": "While step 9 sets.",
+          "body": [
+            "The two national organizations, what a Level 1 certification is, and when you are old enough to try for one."
+          ]
+        },
+        {
+          "n": 11,
           "slide": 9,
           "title": "Epoxy the forward centering ring",
           "epoxy": "5-minute epoxy",
@@ -343,7 +361,16 @@
           ]
         },
         {
-          "n": 10,
+          "n": 12,
+          "video": "S03",
+          "title": "Watch: Center of gravity",
+          "when": "While step 11 sets.",
+          "body": [
+            "How to find the center of gravity of any rocket with one finger, and which way it moves when weight is added."
+          ]
+        },
+        {
+          "n": 13,
           "slide": 10,
           "title": "Let the motor mount cure",
           "body": [
@@ -361,6 +388,24 @@
               "cap": "Motor mount standing on the forward ring while it cures."
             }
           ]
+        },
+        {
+          "n": 14,
+          "video": "S04",
+          "title": "Watch: Center of pressure",
+          "when": "While the motor mount cures (step 13), first video.",
+          "body": [
+            "What the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft."
+          ]
+        },
+        {
+          "n": 15,
+          "video": "S05",
+          "title": "Watch: Stability margin",
+          "when": "While the motor mount cures (step 13), second video.",
+          "body": [
+            "The stability rule: CG ahead of CP by one to three body diameters. What happens when it is broken in either direction, and how the program checks it before a flight."
+          ]
         }
       ]
     },
@@ -370,7 +415,7 @@
       "blurb": "The eyebolt in the forward centering ring is what the whole recovery system hangs off. Do not skimp here.",
       "steps": [
         {
-          "n": 11,
+          "n": 16,
           "slide": 13,
           "title": "Assemble the eyebolt",
           "body": [
@@ -394,7 +439,7 @@
           ]
         },
         {
-          "n": 12,
+          "n": 17,
           "slide": 14,
           "title": "Epoxy the back side of the centering rings",
           "epoxy": "5-minute epoxy",
@@ -419,7 +464,16 @@
           ]
         },
         {
-          "n": 13,
+          "n": 18,
+          "video": "S06",
+          "title": "Watch: How a motor is measured",
+          "when": "While step 17 sets.",
+          "body": [
+            "What a Newton-second is in plain words, and how to read the motor letter ladder from A to O."
+          ]
+        },
+        {
+          "n": 19,
           "slide": 15,
           "title": "Test fit the motor mount in the body tube",
           "body": [
@@ -444,7 +498,7 @@
           ]
         },
         {
-          "n": 14,
+          "n": 20,
           "slide": 16,
           "title": "Tie the Kevlar cord to the eyebolt",
           "body": [
@@ -478,7 +532,7 @@
           ]
         },
         {
-          "n": 15,
+          "n": 21,
           "slide": 17,
           "title": "Protect the Kevlar from epoxy",
           "body": [
@@ -510,7 +564,7 @@
       "blurb": "15-minute epoxy from here — you need the working time. Read all four steps before you mix.",
       "steps": [
         {
-          "n": 16,
+          "n": 22,
           "slide": 18,
           "title": "Mark your epoxy stick",
           "body": [
@@ -531,7 +585,7 @@
           ]
         },
         {
-          "n": 17,
+          "n": 23,
           "slide": 19,
           "title": "Put a ring of epoxy inside the body tube",
           "epoxy": "15-minute epoxy",
@@ -546,7 +600,7 @@
           ]
         },
         {
-          "n": 18,
+          "n": 24,
           "slide": 20,
           "title": "Start the motor mount in and add epoxy",
           "epoxy": "15-minute epoxy",
@@ -567,7 +621,7 @@
           ]
         },
         {
-          "n": 19,
+          "n": 25,
           "slide": 21,
           "title": "Seat the motor mount",
           "body": [
@@ -588,7 +642,7 @@
           ]
         },
         {
-          "n": 20,
+          "n": 26,
           "slide": 22,
           "title": "Epoxy the aft joint",
           "epoxy": "5-minute epoxy",
@@ -607,6 +661,15 @@
               "cap": "Filleting the aft ring to body tube joint."
             }
           ]
+        },
+        {
+          "n": 27,
+          "video": "S07",
+          "title": "Watch: Reading the motor code",
+          "when": "While step 26 sets. If the class is ahead, it can play before lunch while the install cures.",
+          "body": [
+            "How to decode a motor designation like G74W-6 or H128W-14, and why average thrust, not just the letter, decides whether a motor is safe for a rocket."
+          ]
         }
       ]
     },
@@ -616,7 +679,7 @@
       "blurb": "Three fins, through-the-wall into the motor mount. Alignment here is what makes the rocket fly straight.",
       "steps": [
         {
-          "n": 21,
+          "n": 28,
           "slide": 23,
           "title": "Test fit the fins",
           "body": [
@@ -643,7 +706,7 @@
           ]
         },
         {
-          "n": 22,
+          "n": 29,
           "slide": 24,
           "title": "Epoxy the fins",
           "epoxy": "5-minute epoxy",
@@ -666,7 +729,34 @@
           ]
         },
         {
-          "n": 23,
+          "n": 30,
+          "video": "S08",
+          "title": "Watch: Thrust curves and the delay",
+          "when": "While the first fin sets (step 29).",
+          "body": [
+            "How to read a thrust curve: total impulse, peak thrust and burn time, and what a wrong delay looks like on the field."
+          ]
+        },
+        {
+          "n": 31,
+          "video": "S09",
+          "title": "Watch: Motor sizes, types and safety",
+          "when": "While the second fin sets (step 29).",
+          "body": [
+            "The common motor diameters, black powder versus composite, and the program’s motor handling rules."
+          ]
+        },
+        {
+          "n": 32,
+          "video": "S10",
+          "title": "Watch: Why simulate, and what tools exist",
+          "when": "While the third fin sets (step 29).",
+          "body": [
+            "Why we simulate before flying, the two common tools, and what the CP and CG markers and the stability number look like in OpenRocket."
+          ]
+        },
+        {
+          "n": 33,
           "slide": 25,
           "title": "Fillet the fin roots",
           "epoxy": "5-minute epoxy",
@@ -699,6 +789,24 @@
               "cap": "The two joints to fill in this position. Roll the rocket and repeat twice more for the other four."
             }
           ]
+        },
+        {
+          "n": 34,
+          "video": "S11",
+          "title": "Watch: Building a rocket from scratch in OpenRocket",
+          "when": "During fillet round one (step 33).",
+          "body": [
+            "Starting a new OpenRocket design, adding the parts of a simple rocket in the right order, then opening the program’s BR-1 file and understanding what you are looking at."
+          ]
+        },
+        {
+          "n": 35,
+          "video": "S12",
+          "title": "Watch: Stability with and without a motor",
+          "when": "During fillet round two (step 33). This one leads straight into the homework.",
+          "body": [
+            "Adding a motor to the OpenRocket model and what it does to CG and stability, then running a simulation and reading apogee, rail-exit speed and the optimum delay."
+          ]
         }
       ]
     },
@@ -708,7 +816,7 @@
       "blurb": "Kevlar to nylon, nylon to nose cone, and a loop in the middle for the parachute.",
       "steps": [
         {
-          "n": 24,
+          "n": 36,
           "slide": 26,
           "title": "Tie the nylon shock cord to the Kevlar",
           "body": [
@@ -742,7 +850,7 @@
           ]
         },
         {
-          "n": 25,
+          "n": 37,
           "slide": 27,
           "title": "Tie the nylon to the nose cone",
           "body": [
@@ -771,7 +879,7 @@
           ]
         },
         {
-          "n": 26,
+          "n": 38,
           "slide": 28,
           "title": "Make the parachute attachment point",
           "body": [
@@ -805,7 +913,7 @@
       "blurb": "",
       "steps": [
         {
-          "n": 27,
+          "n": 39,
           "slide": 29,
           "title": "Decorate your rocket",
           "body": [
@@ -815,7 +923,7 @@
           "images": []
         },
         {
-          "n": 28,
+          "n": 40,
           "slide": 29,
           "title": "Homework: simulate your rocket in OpenRocket",
           "body": [
@@ -847,6 +955,11 @@
               "type": "link",
               "text": "Running a simulation in OpenRocket",
               "href": "https://www.youtube.com/watch?v=H9S6yn9iwqc"
+            },
+            {
+              "type": "link",
+              "text": "All twelve build-day videos, in order: the BR-1 Build Day playlist on YouTube",
+              "href": "@playlist"
             }
           ],
           "images": []
