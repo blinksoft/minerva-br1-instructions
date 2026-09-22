@@ -308,7 +308,7 @@ def publish(segs):
                                    "publishedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
                                    "previousVideoId": old_id}
             save_state(st)                      # record the new ID before anything else can fail
-            set_thumbnail(yt, seg, vid)
+            st["segments"][seg]["thumbnail"] = bool(set_thumbnail(yt, seg, vid))
             set_captions(yt, seg, vid)
             add_to_playlist(yt, playlist_id, seg, vid, st)
             if old_id:
@@ -331,7 +331,20 @@ def publish(segs):
                 return 0
             print(f"{seg}: YouTube error {e.resp.status}: {e.content[:300]}")
             return 1
+    retry_thumbnails(yt, st)
     return 0
+
+
+def retry_thumbnails(yt, st):
+    """YouTube rate-limits thumbnail uploads (HTTP 429) separately from the upload quota, so a batch
+    publish can leave the last few videos without one. Every run retries those; the nightly run picks
+    up whatever is still missing."""
+    for seg in sorted(st["segments"], key=seg_number):
+        v = st["segments"][seg]
+        if v.get("videoId") and not v.get("thumbnail"):
+            if set_thumbnail(yt, seg, v["videoId"]):
+                v["thumbnail"] = True; save_state(st)
+                print(f"{seg}: thumbnail set on {v['videoId']}")
 
 
 def refresh_thumbnails():
@@ -340,6 +353,7 @@ def refresh_thumbnails():
     for seg in sorted(st["segments"], key=seg_number):
         vid = st["segments"][seg].get("videoId")
         if vid and set_thumbnail(yt, seg, vid):
+            st["segments"][seg]["thumbnail"] = True; save_state(st)
             print(f"{seg}: thumbnail set on {vid}")
 
 
@@ -349,7 +363,8 @@ def status():
     for seg in sorted(st["segments"], key=seg_number):
         v = st["segments"][seg]
         state = "current" if output_hash(seg) == v.get("outputSha") else "output changed, republish pending"
-        print(f"{seg}: {v.get('url')}  {v.get('privacyStatus', '?')}  {state}")
+        thumb = "" if v.get("thumbnail") else "  (no thumbnail yet)"
+        print(f"{seg}: {v.get('url')}  {v.get('privacyStatus', '?')}  {state}{thumb}")
 
 
 if __name__ == "__main__":
