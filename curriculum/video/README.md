@@ -1,7 +1,7 @@
 # Generating segment videos
 
 Slides, narration, pause card and captions are built from one JSON file per segment. Nothing is filmed
-and there are no demos; S11 and S12 play screen recordings of OpenRocket through the `clip` cue type.
+and there are no demos; S12 and S13 play screen recordings of OpenRocket through the `clip` cue type.
 
 ```
 curriculum/video/
@@ -130,7 +130,7 @@ Slide types, each one function in render.py (the docstring lists its fields):
 | `curves` | real thrust curves from a thrustcurve.org data file, area under each filled |
 | `flight` | a line from the BR-1's stored OpenRocket flight: altitude, speed, mass, CG, CP or stability against time, events marked |
 | `ladder` | the A to O impulse ladder, `reveal` low or all, optional highlight |
-| `compare` | one square against sixty-four (S06's A8 against G74) |
+| `compare` | one square against sixty-four (S07's A8 against G74) |
 | `clip` | a screen-recording clip (`src` under the segment folder, optional `crop` [x, y, w, h]) under a heading; the narration sets the length: `fit` "hold" (default) keeps the last frame up or cuts the tail, "stretch" retimes the clip to end with the narration |
 | `pause` | the five-second countdown card; `question` only |
 | `answer` | the answer card: `text` is the short verdict, `lines` the reasons as bullets (every segment uses both) |
@@ -139,12 +139,12 @@ Slide types, each one function in render.py (the docstring lists its fields):
 Screen-recording clips: the raw OBS takes live in `recordings/` (git-ignored); `SNN/assets/clips.json`
 names the second ranges each clip is cut from and `python3 shared/cut_clips.py SNN` writes the clips into
 `SNN/assets/`, which the repo keeps. A `clip` cue's narration sets its length; the footage is stretched or
-held to fit, so a take only needs a few seconds of the right thing on screen (see S11/RECORDING.md).
+held to fit, so a take only needs a few seconds of the right thing on screen (see S12/RECORDING.md).
 
 A segment that needs a slide type nobody else does adds `SNN/slides.py` with a
 `register(render)` function that puts its drawing function into `render.SLIDES`; it can use every
 helper and colour in render.py, and it is part of the segment's fingerprint. Keep new slides to the
-same palette so the twelve videos look like one series.
+same palette so the thirteen videos look like one series.
 
 `shared/` holds data every segment may draw from, and is part of every segment's fingerprint:
 `br1-sim.json` (the BR-1's geometry, masses and stored OpenRocket flight results, extracted by

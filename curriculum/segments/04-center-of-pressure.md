@@ -1,7 +1,7 @@
 # S4 — Center of pressure
 
 ## Slot
-Step 13 motor mount cure, first half. Fallback: install cure.
+Step 13 motor mount cure, first of three. Fallback: install cure.
 
 ## Objective
 The cadet can explain what the center of pressure is, which parts of the rocket make it, and why fins
@@ -25,7 +25,7 @@ press play. The video gives the answer. That is the whole job; no props, no setu
    - **Pause card.** On screen: "If I took the fins off this rocket, which way would the CP move?" Hold five seconds with a countdown, then a chime. On resume: Forward. The fins are most of the push and they are at the back; take them away and what is left adds up near the nose.
 4. **What the software does.** It uses the Barrowman equations, a set
    of formulas from 1966 that compute how much sideways force each part produces and where, then adds
-   them up. You will see the CP as a red dot on the rocket in S10.
+   them up. You will see the CP as a red dot on the rocket in S11.
 5. **The trick.** Fins are at the back for one reason: to drag the CP aft. Next segment: why aft is where
    we want it.
 

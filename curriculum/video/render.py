@@ -12,7 +12,8 @@ its own in SNN/slides.py (a `register(render)` function that adds to render.SLID
 slides draw from (the BR-1's OpenRocket results, the motors' thrust curves) lives in shared/. Narration audio is looked up in
 this order: SNN/voice/NN.wav (a real person reading script.md), then SNN/narration/NN-<hash>.mp3
 (synthesized earlier and committed), and only if neither exists is the TTS engine called. The hash
-is of the spoken text plus the voice, so a cue is synthesized once per wording and never again.
+is of the spoken text plus the voice, so a cue is synthesized once per wording and never again. On the
+timeline every narration is time-stretched by NARRATION_TEMPO (1.25, the speed the class plays at).
 
 A segment is skipped when the fingerprint of its inputs (cues.json, assets/, narration/, voice/,
 this script) matches videos/SNN.sha from the last render.
@@ -33,6 +34,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 W, H, FPS = 1920, 1080, 30
 PAD_AFTER = 0.7          # seconds of silence after each narration line
+NARRATION_TEMPO = 1.25   # narration is time-stretched (pitch kept) to the speed the class plays the videos at.
+                         # The cached MP3s in SNN/narration/ stay at 1x; the stretch is applied when they are
+                         # laid on the timeline, so captions and clip timing follow it. Part of the fingerprint.
 FONT_DIR = os.path.join(HERE, "fonts")
 LOGO = os.path.join(ROOT, "assets", "img", "logo.png")
 VIDEOS = os.path.join(ROOT, "videos")
@@ -782,8 +786,10 @@ def fingerprint(sdir):
 
 
 def to_wav(ff, src, dst):
+    """Convert narration to the timeline's wav, stretched by NARRATION_TEMPO."""
     if not os.path.exists(dst):
-        run(ff, "-y", "-v", "error", "-i", src, "-ar", "44100", "-ac", "1", dst)
+        af = ["-af", f"atempo={NARRATION_TEMPO}"] if NARRATION_TEMPO != 1 else []
+        run(ff, "-y", "-v", "error", "-i", src, *af, "-ar", "44100", "-ac", "1", dst)
     return dst
 
 
@@ -791,7 +797,8 @@ def narration_for(sdir, work, n, text, ff):
     """Return a wav path for cue n, synthesizing (and saving to narration/) only when needed."""
     rec = os.path.join(sdir, "voice", f"{n:02d}.wav")
     if os.path.exists(rec):
-        return rec
+        stamp = f"{int(os.path.getmtime(rec))}_{os.path.getsize(rec)}"
+        return to_wav(ff, rec, os.path.join(work, f"rec_{n:02d}_{stamp}_x{NARRATION_TEMPO}.wav"))
     ndir = os.path.join(sdir, "narration"); os.makedirs(ndir, exist_ok=True)
     h = tts_cache_key(text)
     mp3 = os.path.join(ndir, f"{n:02d}-{h}.mp3")
@@ -807,7 +814,7 @@ def narration_for(sdir, work, n, text, ff):
         for f in os.listdir(ndir):
             if f.startswith(f"{n:02d}-") and f != os.path.basename(mp3):
                 os.remove(os.path.join(ndir, f))
-    return to_wav(ff, mp3, os.path.join(work, f"nar_{n:02d}_{h}.wav"))
+    return to_wav(ff, mp3, os.path.join(work, f"nar_{n:02d}_{h}_x{NARRATION_TEMPO}.wav"))
 
 
 GUIDE_URL = "https://blinksoft.github.io/minerva-br1-instructions/"
@@ -895,7 +902,7 @@ def build(seg, script_only=False, force=False, slides_only=False):
         words = sum(len(c.get("say", "").split()) for c in cues)
         longest = max((len(c.get("say", "").split()) for c in cues), default=0)
         print(f"{seg}: {n} slides written to {os.path.relpath(slides, ROOT)}; {words} narration words "
-              f"(about {words / 150 + 5 / 60 + 0.7 * n / 60:.1f} min), longest cue {longest} words")
+              f"(about {words / (150 * NARRATION_TEMPO) + 5 / 60 + 0.7 * n / 60:.1f} min at {NARRATION_TEMPO}x), longest cue {longest} words")
         return
 
     ff = ffmpeg()

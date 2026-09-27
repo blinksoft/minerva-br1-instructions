@@ -1,39 +1,39 @@
 1
-00:00:00,000 --> 00:00:17,929
-Segment ten. Why simulate, and what tools exist. By the end of this you will be able to say why the program simulates before it flies, name the two common tools, and recognize the CG and CP markers and the stability number in OpenRocket.
+00:00:00,000 --> 00:00:10,664
+Motor sizes, types and safety. By the end of this you will be able to name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules.
 
 2
-00:00:17,929 --> 00:00:52,065
-A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor some of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Segment twelve reads those numbers off the screen.
+00:00:10,664 --> 00:00:29,288
+Start with size. Motors come in standard diameters, and the diameter is the fit. A motor either slides into the mount or it does not. Eighteen millimeters is the motor in the Alpha III you built this morning. Then twenty-four, twenty-nine, thirty-eight, fifty-four, seventy-five and ninety-eight. The BR-1 you are building right now takes the third one. Twenty-nine millimeters.
 
 3
-00:00:52,065 --> 00:01:21,465
-There are two common tools. OpenRocket is free and open source, so anyone can read and improve the code. It runs on Windows, Mac and Linux. RockSim, from Apogee Components, is the paid alternative, with a longer history and some extra features. Both answer the same questions. Is it stable, how high, how fast, which delay. The program uses OpenRocket and gives you its BR-1 file, so you never start from a blank screen.
+00:00:29,288 --> 00:00:58,903
+This is your motor mount from this morning, standing up to cure. The tube inside is twenty-nine millimeters, and the threaded ring on top is the retainer that holds the motor in. Every twenty-nine millimeter motor from a G to a small H fits it. The G74 some of you will fly is three and five eighths inches long, ninety-three millimeters. The H135 in the program's flight file is more than twice that. Same tube, same retainer. That is why one airframe covers the everyday flight and the certification flight.
 
 4
-00:01:21,465 --> 00:02:10,231
-Open the file. This is the BR-1 in OpenRocket, as built, with an H115 loaded. OpenRocket draws two dots on it. The blue dot is the CG, the center of gravity, the balance point: twenty-seven and a half inches, six hundred and ninety-eight millimeters from the nose tip. The red dot is the CP, the center of pressure, where the push of the air adds up: thirty-three and three quarter inches, eight hundred and fifty-eight millimeters. The number in the top corner is the stability margin, the gap between them in calibers, body widths. With the H in, two point zero. Switch the flight configuration to the G74 and it reads two and a half. Segments three, four and five, computed in a blink.
+00:00:58,903 --> 00:01:28,299
+Now what is inside. Two kinds of propellant. Black powder motors are the small paper-cased ones, like the A8 in the Alpha III. Cheap, simple, and they top out around a D or an E. Composite motors use ammonium perchlorate composite propellant, APCP for short, the same family the Space Shuttle boosters burned. Much more energy per ounce, plastic or fiberglass cases, and sizes from D all the way to O. Every motor the BR-1 flies is composite. A spent case tells you which. Paper is black powder. Plastic is composite.
 
 5
-00:02:10,231 --> 00:02:26,906
-Where do those dots come from. From the parts list. Every part in the kit is a line in this tree. Nose cone, body tube, motor mount, centering rings, fins, parachute, shock cord, rail buttons. Every part has a shape and a mass.
+00:01:28,299 --> 00:01:58,723
+One more split. A single-use motor is used once and thrown away. A reloadable motor is a metal casing you own, plus a reload kit: propellant grains, a liner, a nozzle and a delay, assembled before each flight. Once you own the case, reloads are cheaper per flight, and assembling one is a skill in itself. Every motor the program flies, the G74 and whichever H arrives for launch day, is an AeroTech DMS, a twenty-nine millimeter single-use motor. Nothing to assemble. Motor in the tube, retainer on, done.
 
 6
-00:02:26,906 --> 00:02:59,139
-Here is the tree, with the masses the file carries. Nose cone, eight and a half ounces, two hundred and forty grams. Body tube, twelve and a half, three hundred and fifty-four grams. Motor mount, about one. The rings, fins and parachute have no number typed in. OpenRocket weighs them from their shape and material. Whole rocket, about two pounds two ounces, nine hundred and fifty-eight grams without a motor. Get the masses right and the CG is right. Get the shapes right and the CP is right.
+00:01:58,723 --> 00:02:17,071
+Now the rules, and there are three. One. Motors stay in the range box until launch day. Two. No motor, igniter or black powder on a build table, ever. Three. Motors are stored cool, dry and in their packaging. That is the whole list. The range box is closed today, and it stays closed. The reason is in the next card.
 
 7
-00:02:59,139 --> 00:03:04,139
-[Pause card: The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?]
+00:02:17,071 --> 00:02:22,071
+[Pause card: On the high power pads the igniter goes in last, at the pad. At our low power table the RSO wants the igniter and plug in before you walk up. Why the difference?]
 
 8
-00:03:04,139 --> 00:03:37,811
-Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one. Now stretch that. Two inches further back means the real rocket is heavier toward the tail than the file thinks. Look for what the file is missing. Epoxy fillets, paint, the hydro-dip on the nose cone. Put those masses in where they really sit. The CG moves back toward the CP, the margin shrinks, and now the number on the screen tells the truth.
+00:02:22,071 --> 00:02:47,855
+The igniter. An installed igniter is the only thing that can start the motor. On a G or an H there is enough energy that the range takes no chances, and you are leaning over the rail to install it. Low power igniters are small, and the pads are a shared rack that has to turn over fast, so the RSO checks the rocket at the table and takes the trade. Either way, do what your RSO says. Notice what both rules share. You do not decide when the igniter goes in. The RSO does.
 
 9
-00:03:37,811 --> 00:04:01,731
-One last thing. Trust, but weigh. The sim is only as good as what you typed in. After the build you will weigh your rocket and balance it on a finger, as in Segment three. Then you correct the file until it agrees. That is Segment twelve, and only then do the numbers mean something. Before that, Segment eleven builds this same tree from a blank screen.
+00:02:47,855 --> 00:03:10,594
+Why so strict. A motor cannot tell the difference between a launch pad and a classroom. It only knows whether the igniter fired. Every rule here exists because someone learned it the hard way. That closes the motor segments. From How a motor is measured to this one, you can read a motor's size, its code, its curve, and now its rules. The next segment moves to the computer, and asks why you simulate a flight before you fly it.
 
 10
-00:04:01,731 --> 00:04:08,933
-The one thing to remember. Simulate before you fly. And the sim is only as true as what you typed in.
+00:03:10,594 --> 00:03:15,802
+The one thing to remember. Motors stay in the range box until launch day, and never on a build table.

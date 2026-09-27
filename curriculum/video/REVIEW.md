@@ -6,24 +6,25 @@ should confirm before it is shown (from each segment's CHECK.md). Watch the MP4,
 
 | # | Title | Voice | Length | Words | Video |
 |---|---|---|---|---|---|
-| S01 | What is high power rocketry? | Josh | 4:15 | 598 | `videos/S01.mp4` |
-| S02 | NAR, Tripoli and certification | Nichalia | 4:00 | 610 | `videos/S02.mp4` |
-| S03 | Center of gravity | Josh | 4:03 | 618 | `videos/S03.mp4` |
-| S04 | Center of pressure | Nichalia | 4:09 | 679 | `videos/S04.mp4` |
-| S05 | Stability margin | Josh | 3:58 | 564 | `videos/S05.mp4` |
-| S06 | How a motor is measured | Nichalia | 3:22 | 545 | `videos/S06.mp4` |
-| S07 | Reading the motor code | Josh | 5:03 | 662 | `videos/S07.mp4` |
-| S08 | Thrust curves and the delay | Nichalia | 4:12 | 654 | `videos/S08.mp4` |
-| S09 | Motor sizes, types and safety | Josh | 4:34 | 620 | `videos/S09.mp4` |
-| S10 | Why simulate, and what tools exist | Nichalia | 4:11 | 655 | `videos/S10.mp4` |
-| S11 | Building a rocket from scratch in OpenRocket | Josh | 4:49 | 676 | `videos/S11.mp4` |
-| S12 | Stability with and without a motor | Nichalia | 4:30 | 672 | `videos/S12.mp4` |
+| S01 | What is high power rocketry? | Josh | 3:36 | 640 | `videos/S01.mp4` |
+| S02 | NAR, Tripoli and certification | Nichalia | 3:16 | 624 | `videos/S02.mp4` |
+| S03 | Center of gravity | Josh | 3:14 | 628 | `videos/S03.mp4` |
+| S04 | Center of pressure | Nichalia | 3:20 | 678 | `videos/S04.mp4` |
+| S05 | Why a rocket points into the wind | Josh | 3:23 | 639 | `videos/S05.mp4` |
+| S06 | Stability margin | Nichalia | 2:54 | 571 | `videos/S06.mp4` |
+| S07 | How a motor is measured | Josh | 3:00 | 543 | `videos/S07.mp4` |
+| S08 | Reading the motor code | Nichalia | 3:40 | 660 | `videos/S08.mp4` |
+| S09 | Thrust curves and the delay | Josh | 3:50 | 663 | `videos/S09.mp4` |
+| S10 | Motor sizes, types and safety | Nichalia | 3:15 | 621 | `videos/S10.mp4` |
+| S11 | Why simulate, and what tools exist | Josh | 3:52 | 671 | `videos/S11.mp4` |
+| S12 | Building a rocket from scratch in OpenRocket | Nichalia | 3:25 | 677 | `videos/S12.mp4` |
+| S13 | Stability with and without a motor | Josh | 4:01 | 671 | `videos/S13.mp4` |
 
 ## S01: What is high power rocketry?
 
 What makes a rocket high power instead of a model rocket, and which of the two rockets on the table is which.
 
-Voice Josh, 4:15, 598 words, 10 cues. Cue file `curriculum/video/S01/cues.json`.
+Voice Josh, 3:36, 640 words, 10 cues. Cue file `curriculum/video/S01/cues.json`.
 
 Slides:
 
@@ -45,7 +46,7 @@ Confirm before showing:
 
 Name the two national rocketry organizations, say what a Level 1 certification is, and know when you are old enough to try for one.
 
-Voice Nichalia, 4:00, 610 words, 9 cues. Cue file `curriculum/video/S02/cues.json`.
+Voice Nichalia, 3:16, 624 words, 9 cues. Cue file `curriculum/video/S02/cues.json`.
 
 Slides:
 
@@ -69,7 +70,7 @@ Confirm before showing:
 
 Find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when weight is added.
 
-Voice Josh, 4:03, 618 words, 10 cues. Cue file `curriculum/video/S03/cues.json`.
+Voice Josh, 3:14, 628 words, 10 cues. Cue file `curriculum/video/S03/cues.json`.
 
 Slides:
 
@@ -91,7 +92,7 @@ Confirm before showing:
 
 What the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft.
 
-Voice Nichalia, 4:09, 679 words, 11 cues. Cue file `curriculum/video/S04/cues.json`.
+Voice Nichalia, 3:20, 678 words, 11 cues. Cue file `curriculum/video/S04/cues.json`.
 
 Slides:
 
@@ -113,11 +114,33 @@ Confirm before showing:
 - CP 33 3/4 in (86 cm) is the design-window value at zero angle of attack, Mach 0.3.
 - Slide 9 shows the classic Barrowman method solved on the BR-1 (33.6 in); references are in the video description.
 
-## S05: Stability margin
+## S05: Why a rocket points into the wind
+
+Why a rocket with its CP behind its CG straightens itself after a gust, and why one with the CP in front comes around and dives. A weather vane, then the three pushes on a rocket.
+
+Voice Josh, 3:23, 639 words, 10 cues. Cue file `curriculum/video/S05/cues.json`.
+
+Slides:
+
+1. title: Why a rocket points into the wind
+2. clip: Start with a weather vane
+3. clip: A push behind the pivot
+4. clip: Three pushes on a rocket
+5. **pause**: _A gust hits the rocket from the side. Which point does it turn around?_
+6. answer: The CG.
+7. clip: CP behind: the gust fixes itself
+8. clip: CP in front: the gust wins
+9. text: Behind, and by how much
+10. close: The air pushes at the CP. The rocket pivots at the CG. Keep the CP behind the CG, and every gust straightens the rocket.
+
+Confirm before showing:
+
+
+## S06: Stability margin
 
 The stability rule, CG ahead of CP by one to three calibers, what happens when it is broken either way, and how the program checks it before a flight.
 
-Voice Josh, 3:58, 564 words, 9 cues. Cue file `curriculum/video/S05/cues.json`.
+Voice Nichalia, 2:54, 571 words, 9 cues. Cue file `curriculum/video/S06/cues.json`.
 
 Slides:
 
@@ -138,11 +161,11 @@ Confirm before showing:
 - Tumble photo is the U.S. Navy's Trident II test photo, credited "Photo: U.S. Navy". The weathercocking diagram is our own drawing (assets/draw_weathercock.py).
 - say_fixes keep the hyphenated weathervane/weathercocks until the first render is heard.
 
-## S06: How a motor is measured
+## S07: How a motor is measured
 
 What a Newton-second is in plain words, and how to read the motor letter ladder from A to O.
 
-Voice Nichalia, 3:22, 545 words, 10 cues. Cue file `curriculum/video/S06/cues.json`.
+Voice Josh, 3:00, 543 words, 10 cues. Cue file `curriculum/video/S07/cues.json`.
 
 Slides:
 
@@ -157,11 +180,11 @@ Slides:
 9. text: The letter is the size of the box
 10. close: Total impulse is how hard, times how long, in Newton-seconds. Every letter doubles.
 
-## S07: Reading the motor code
+## S08: Reading the motor code
 
 How to decode a motor designation like G74W-6 or H128W-14, and why average thrust, not just the letter, decides whether a motor is safe for a given rocket.
 
-Voice Josh, 5:03, 662 words, 9 cues. Cue file `curriculum/video/S07/cues.json`.
+Voice Nichalia, 3:40, 660 words, 10 cues. Cue file `curriculum/video/S08/cues.json`.
 
 Slides:
 
@@ -170,19 +193,20 @@ Slides:
 3. table: Read a few
 4. figure: Three to five times its weight
 5. **pause**: _Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?_
-6. answer: H class, 115 N average, 14 second delay.
-7. text: The delay: the last number
-8. photo: Every motor is certified
-9. close: The letter is the box. The number is the push. Read the whole code before you fly.
+6. answer: H class, 115 N average, 14 s delay  ·  G40 marginal, G74 plenty
+7. text: Same rule on an H
+8. text: The delay: the last number
+9. photo: Every motor is certified
+10. close: The letter is the box. The number is the push. Read the whole code before you fly.
 
 Confirm before showing:
 
 
-## S08: Thrust curves and the delay
+## S09: Thrust curves and the delay
 
 How to read a thrust curve, point to total impulse, peak thrust and burn time on it, and explain what a wrong delay looks like on the field.
 
-Voice Nichalia, 4:12, 654 words, 10 cues. Cue file `curriculum/video/S08/cues.json`.
+Voice Josh, 3:50, 663 words, 10 cues. Cue file `curriculum/video/S09/cues.json`.
 
 Slides:
 
@@ -205,11 +229,11 @@ Confirm before showing:
 - G-forces: 8 g on the G74, 13 g on the H135 (peak acceleration from the runs); Saturn V crews felt about 4 g.
 - No screenshots are used; the plotted curves and the stored flight stand in for the filmed screen captures.
 
-## S09: Motor sizes, types and safety
+## S10: Motor sizes, types and safety
 
 Name the common motor diameters, tell a black powder motor from a composite one, and repeat the program's motor handling rules.
 
-Voice Josh, 4:34, 620 words, 10 cues. Cue file `curriculum/video/S09/cues.json`.
+Voice Nichalia, 3:15, 621 words, 10 cues. Cue file `curriculum/video/S10/cues.json`.
 
 Slides:
 
@@ -228,11 +252,11 @@ Confirm before showing:
 
 - The program flies only AeroTech DMS (disposable) 29 mm motors: the G74W and whichever H is on hand
 
-## S10: Why simulate, and what tools exist
+## S11: Why simulate, and what tools exist
 
 Why the program simulates before it flies, the two common tools, and how to recognize the CG and CP markers and the stability number in OpenRocket.
 
-Voice Nichalia, 4:11, 655 words, 10 cues. Cue file `curriculum/video/S10/cues.json`.
+Voice Josh, 3:52, 671 words, 10 cues. Cue file `curriculum/video/S11/cues.json`.
 
 Slides:
 
@@ -254,11 +278,11 @@ Confirm before showing:
 - Slides 4 and 5 are frames from the 2026-09-21 screen recording of the real BR-1.ork (OpenRocket 24.12, inches): slide 4 the rocket view with the H115DM-8 loaded, 2.05 cal, CG 27.447 in, CP 33.913 in at M=0.3, matching the narration's 27 1/2 in, 33 3/4 in and 2.0; slide 5 the component tree.
 - Whole-rocket masses (2 lb 2 oz empty, 2 lb 9 oz with the H135W) accepted as close enough to a real weigh-in.
 
-## S11: Building a rocket from scratch in OpenRocket
+## S12: Building a rocket from scratch in OpenRocket
 
 How to start a new OpenRocket design, add the parts of a simple rocket in the right order, then open the program's BR-1 file and understand what you are looking at.
 
-Voice Josh, 4:49, 676 words, 10 cues. Cue file `curriculum/video/S11/cues.json`.
+Voice Nichalia, 3:25, 677 words, 10 cues. Cue file `curriculum/video/S12/cues.json`.
 
 Slides:
 
@@ -293,11 +317,11 @@ Confirm before showing:
 - Cue 2's narration was changed for the footage: the parts table is gone, the empty tree and the metric
 - Clips are sped up or slowed to end with their narration ("stretch": cues 2 to 5, about 1.2 to 1.5 times)
 
-## S12: Stability with and without a motor
+## S13: Stability with and without a motor
 
 Add a motor to the OpenRocket model, see what it does to CG and stability, run a simulation, and read apogee, rail-exit speed and the optimum delay.
 
-Voice Nichalia, 4:30, 672 words, 11 cues. Cue file `curriculum/video/S12/cues.json`.
+Voice Josh, 4:01, 671 words, 11 cues. Cue file `curriculum/video/S13/cues.json`.
 
 Slides:
 

@@ -1,4 +1,4 @@
-# S08 — Thrust curves and the delay: narration script
+# S08 — Reading the motor code: narration script
 
 Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
 Leave a beat of silence at the start and end of each. Re-run render.py and the slides
@@ -6,38 +6,38 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment eight. Thrust curves and the delay. By the end of this you will be able to read a thrust curve, point to total impulse, peak thrust and burn time on it, and explain what a wrong delay looks like on the field.
+Reading the motor code. By the end of this you will be able to decode a motor designation like G74W-6 or H128W-14, and say why average thrust, not just the letter, decides whether a motor is safe for a given rocket.
 
 **02** `voice/02.wav`
 
-Every motor code has a picture behind it. This is the thrust curve of the G74 some of you will fly, from thrustcurve.org. Thrust, the push in Newtons, goes up the side. Time runs along the bottom. The area under the line is total impulse, Segment six's number: about eighty-three Newton-seconds. The height is thrust. It peaks just over ninety Newtons, and averages seventy-four across the burn, the number in the code. Where the line drops to zero is burnout, just after one second.
+Here is the motor some of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out.
 
 **03** `voice/03.wav`
 
-Now put an H next to it. The orange curve is the H128, a motor some of you will certify on. Bigger area: one hundred and seventy-three Newton-seconds, about twice the G74. Taller line: one hundred and twenty-eight Newtons average. And it burns a little longer. One step up the letter ladder, drawn.
+Read a few more. A8-3. A class, eight Newtons average, three second delay. That is the motor in the Alpha III you built this morning. G74W-6, the BR-1's everyday motor. H128W-14. An H, one hundred and twenty-eight Newtons average, fourteen second delay. H115DM-14. Same idea. An H, one hundred and fifteen Newtons, fourteen seconds. Only the propellant code differs. DM is Dark Matter, another AeroTech recipe. Some of you will certify on an H like these. Try reading the last two out loud.
 
 **04** `voice/04.wav`
 
-Shape matters too. Here is another G, the G40, in orange. It pushes hardest in its first instant, then fades for over two seconds. The G74 climbs to about ninety Newtons, holds it for a second, and stops. A motor that spikes at the start is built to get a heavy rocket moving on the rail. A flat one is a steady push. Same letter, different shape, different job.
+Now, why the middle number matters most. A rocket has to leave the rail fast enough for the fins to work, because fins only steer once air is moving past them. Two rules of thumb. Average thrust three to five times the rocket's weight, and about fifty feet per second, fifteen meters per second, off the rail. If the rail speed comes up short, a longer rail buys it, which is why the program flies six foot rails. Look at a G40 next to a G74. Same letter. The G40 even has more total push, ninety-seven Newton-seconds against eighty-three. But it pushes half as hard. On a heavy rocket it may crawl off the rail and go sideways.
 
-**05** `voice/05.wav`
-
-Now the flight. OpenRocket's simulation of the BR-1 you are building, on the G74W-6 some of you will fly. At burnout, just over one second in, the motor stops. The rocket does not. It is doing about one hundred and fifty miles an hour, sixty-eight meters per second, and coasts upward, slowing the whole way. Five and a half seconds later it runs out of climb. That top is apogee, about seven hundred feet, two hundred and ten meters up, at six point eight seconds: the highest point and the slowest. That is where you want the parachute out. One more number from that first second. The G74 shoves the BR-1 up at about eight g, eight times the pull of gravity. The H, thirteen g. Astronauts on a Saturn V felt about four. Nobody rides a rocket that pulls thirteen.
+**05 — pause card, no narration.** The card reads: _Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?_
 
 **06** `voice/06.wav`
 
-The delay is a timer in the motor. It starts at burnout and fires the charge that pushes the chute out. Same flight, now as speed. Too short, the green line at two seconds, and the chute opens with the rocket still doing about eighty-five miles an hour, thirty-eight meters per second. Shredded chute, zippered tube. Too long, and the rocket is past apogee, nose down and gaining speed when the chute opens. Same result, or worse. The right delay is the coast time, burnout to apogee.
+H class, one hundred and fifteen Newtons average, fourteen second delay. Now the weight. Your BR-1 with no motor is two pounds two ounces, nine hundred and fifty-eight grams. Add a G74, three ounces, and it is about two pounds five, about a thousand and fifty grams. That weighs about ten Newtons. Three to one wants thirty-one, five to one wants fifty-one. The G40 at forty-one is four to one, in the gray zone. The G74 at seventy-four is seven to one, with room to spare.
 
-**07 — pause card, no narration.** The card reads: _Same rocket, same G motor, but a 12 second delay instead of 6. Where is the rocket pointing when the chute comes out?_
+**07** `voice/07.wav`
+
+Now stretch that. With an H135 loaded, the rocket is about two pounds nine ounces, one thousand one hundred and seventy grams, eleven and a half Newtons. Five to one wants fifty-eight. An H115 gives ten to one. Plenty.
 
 **08** `voice/08.wav`
 
-Nose down and speeding up. It passed apogee six seconds ago. The chute opens into a fast, falling rocket: a shredded chute, or a zippered tube. Now stretch that. Six seconds late is bad. Six seconds early is bad the other way. The same BR-1 on an H135 coasts eight seconds, on the G74 five and a half. Rocket and motor together set the coast, so the delay must match both.
+The last number is the delay. After burnout the rocket keeps climbing, and the delay is how long the motor waits before it fires the ejection charge. The G74W is sold in six and eight second delays. The program's H motors have an adjustable delay. On launch day, during prep, it is drilled to eight seconds, the closest you can get to the eight point six OpenRocket recommends. A motor marked P is plugged. No ejection at all, because that flyer uses electronics. Which delay is right, and what happens when it is wrong, is the next segment.
 
 **09** `voice/09.wav`
 
-How do you find the coast time? OpenRocket flies the rocket and prints the best delay. For the BR-1 on the G74 it prints five point seven seconds. The closest you can buy is six, so the program flies the G74W-6 from Segment seven, and the ejection lands just past the top. The green line is where a twelve second delay would fire: more than six seconds past apogee. Segment twelve shows where OpenRocket prints it.
+One last thing. Every number on that label was measured. Before a motor can be sold for this, NAR or Tripoli fires it on a test stand, records the thrust curve, and publishes the results. The A8 and the G74W were certified by NAR. The H motors, by Tripoli. That is why the RSO can trust the label on the motor going into this mount, and why you fly only certified motors. Never homemade, never altered.
 
 **10** `voice/10.wav`
 
-The one thing to remember. On a thrust curve the area is the letter and the height is the thrust. And the delay must match the coast, burnout to apogee.
+The one thing to remember. The letter is the size of the box. The number is the push. Read the whole code before you fly.

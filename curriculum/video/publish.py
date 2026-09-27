@@ -5,7 +5,7 @@
     python3 publish.py S06           publish one segment if its render changed
     python3 publish.py all           publish every rendered segment whose render changed
     python3 publish.py --status      show what is live
-    python3 publish.py --thumbnails  (re)set the title-slide thumbnail on every live video, no re-upload
+    python3 publish.py --thumbnails  set the thumbnail on every live video still missing one (--force: all)
 
 A segment is published when the rendered output (videos/SNN.mp4 + .srt) differs from what is live,
 by content hash recorded in videos/youtube.json. Re-rendering is decided separately by render.py from
@@ -246,6 +246,9 @@ def set_thumbnail(yt, seg, video_id):
     except Exception as e:
         if is_quota(e):
             raise
+        if getattr(e, "resp", None) is not None and e.resp.status == 429:
+            print(f"  {seg}: thumbnail rate-limited (HTTP 429, about eight per batch); the next run retries it.")
+            return None
         print(f"  {seg}: thumbnail not set ({str(e)[:90]}). Custom thumbnails need a phone-verified channel.")
         return False
 
@@ -342,19 +345,26 @@ def retry_thumbnails(yt, st):
     for seg in sorted(st["segments"], key=seg_number):
         v = st["segments"][seg]
         if v.get("videoId") and not v.get("thumbnail"):
-            if set_thumbnail(yt, seg, v["videoId"]):
+            r = set_thumbnail(yt, seg, v["videoId"])
+            if r:
                 v["thumbnail"] = True; save_state(st)
                 print(f"{seg}: thumbnail set on {v['videoId']}")
+            elif r is None:
+                break   # rate-limited: every further attempt in this batch would fail too
 
 
-def refresh_thumbnails():
+def refresh_thumbnails(force=False):
+    """--thumbnails: only the videos still missing one, so the batch limit goes to those that need it.
+    --force re-sets every live video (after a thumbnail redesign)."""
     yt = service()
     st = load_state()
-    for seg in sorted(st["segments"], key=seg_number):
-        vid = st["segments"][seg].get("videoId")
-        if vid and set_thumbnail(yt, seg, vid):
-            st["segments"][seg]["thumbnail"] = True; save_state(st)
-            print(f"{seg}: thumbnail set on {vid}")
+    if force:
+        for seg in sorted(st["segments"], key=seg_number):
+            st["segments"][seg]["thumbnail"] = False
+    retry_thumbnails(yt, st)
+    missing = [s for s, v in sorted(st["segments"].items(), key=lambda kv: seg_number(kv[0]))
+               if v.get("videoId") and not v.get("thumbnail")]
+    print("all thumbnails set" if not missing else f"still missing: {', '.join(missing)}")
 
 
 def status():
@@ -375,7 +385,7 @@ if __name__ == "__main__":
     if "--status" in sys.argv:
         status(); sys.exit(0)
     if "--thumbnails" in sys.argv:
-        refresh_thumbnails(); sys.exit(0)
+        refresh_thumbnails(force="--force" in sys.argv); sys.exit(0)
     if not args:
         sys.exit(__doc__)
     if args[0] == "all":

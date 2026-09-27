@@ -15,14 +15,14 @@
 
 ## Two setups
 
-**Bench camera** for props and demos (S1–S6, S9, the closing shot of S12).
+**Bench camera** for props and demos (S1–S7, S10, the closing shot of S13).
 - Phone on a tripod, looking down at the bench from about 45 degrees.
 - A plain background: the same brown craft paper the build tables are covered in.
 - A lapel mic or a second phone recording audio close to the speaker. Room audio from a tripod is the
   single most common reason instructional videos are unwatchable.
 - Light from the side, not behind the speaker.
 
-**Screen capture** for OpenRocket and thrustcurve.org (S7 partly, S8, S10–S12).
+**Screen capture** for OpenRocket and thrustcurve.org (S8 partly, S9, S11–S13).
 - OBS Studio (free) capturing one window, plus the same mic.
 - Set OpenRocket's window to 1280×720 before recording so everything scales up cleanly.
 - Increase the font size in OpenRocket preferences. Zoom the rocket view so the CP and CG markers fill the
@@ -40,7 +40,7 @@ instructor delivers it the same way.
   without an instructor still gets a beat to think.
 - **Answer card.** Right after the countdown, a second card with the answer in one or two lines, then
   the video continues into the demo or the next beat that proves it.
-- Keep both cards in the same style across all twelve videos: same font, same colours, same chime.
+- Keep both cards in the same style across all thirteen videos: same font, same colours, same chime.
   Make them once as a template.
 - Screen-capture segments: cut to the card, do not overlay it on the OpenRocket window.
 
@@ -65,7 +65,7 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
   changed render with its thumbnail and captions, adds it to the playlist, deletes the superseded video
   and fills in the table below. `videos/youtube.json` is the authoritative list of live video IDs.
 - The MP4 masters are committed in `videos/` and served by GitHub Pages, so each one is also directly
-  shareable at `https://blinksoft.github.io/minerva-br1-instructions/videos/S06.mp4` and survives any
+  shareable at `https://blinksoft.github.io/minerva-br1-instructions/videos/S7.mp4` and survives any
   change to the YouTube channel.
 - Record the YouTube ID and the master filename for each segment in the table below as they are made.
 
@@ -75,14 +75,15 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 | S2 | NAR, Tripoli and certification | Nichalia | LDCboFxTcVI | videos/S02.mp4 | published 2026-09-22 |
 | S3 | Center of gravity | Josh | K72AKyiQYYw | videos/S03.mp4 | published 2026-09-22 |
 | S4 | Center of pressure | Nichalia | eR_gO5_ybDc | videos/S04.mp4 | published 2026-09-22 |
-| S5 | Stability margin | Josh | EEmBGtfG09Q | videos/S05.mp4 | published 2026-09-22 |
-| S6 | How a motor is measured | Nichalia | 9QVB42KrN1E | videos/S06.mp4 | published 2026-09-22 |
-| S7 | Reading the motor code | Josh | PqqFyUP5h38 | videos/S07.mp4 | published 2026-09-22 |
-| S8 | Thrust curves and the delay | Nichalia | Mxy-jpmyiDw | videos/S08.mp4 | published 2026-09-22 |
-| S9 | Motor sizes, types and safety | Josh | y2lvHdUAGZU | videos/S09.mp4 | published 2026-09-22 |
-| S10 | Why simulate, and what tools exist | Nichalia | g4YKIFKWCks | videos/S10.mp4 | published 2026-09-22 |
-| S11 | Building a rocket from scratch in OpenRocket | Josh | yvPDSQfPAOY | videos/S11.mp4 | published 2026-09-22 |
-| S12 | Stability with and without a motor | Nichalia | xcXoR-tNCdA | videos/S12.mp4 | published 2026-09-22 |
+| S5 | Why a rocket points into the wind | Josh | — | videos/S05.mp4 | not yet published |
+| S6 | Stability margin | Josh | EEmBGtfG09Q | videos/S06.mp4 | published 2026-09-22 |
+| S7 | How a motor is measured | Nichalia | 9QVB42KrN1E | videos/S07.mp4 | published 2026-09-22 |
+| S8 | Reading the motor code | Josh | PqqFyUP5h38 | videos/S08.mp4 | published 2026-09-22 |
+| S9 | Thrust curves and the delay | Nichalia | Mxy-jpmyiDw | videos/S09.mp4 | published 2026-09-22 |
+| S10 | Motor sizes, types and safety | Josh | y2lvHdUAGZU | videos/S10.mp4 | published 2026-09-22 |
+| S11 | Why simulate, and what tools exist | Nichalia | g4YKIFKWCks | videos/S11.mp4 | published 2026-09-22 |
+| S12 | Building a rocket from scratch in OpenRocket | Josh | yvPDSQfPAOY | videos/S12.mp4 | published 2026-09-22 |
+| S13 | Stability with and without a motor | Nichalia | xcXoR-tNCdA | videos/S13.mp4 | published 2026-09-22 |
 
 ## How the guide page will show them (not built yet)
 

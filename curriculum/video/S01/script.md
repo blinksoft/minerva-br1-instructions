@@ -6,7 +6,7 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment one. What is high power rocketry? By the end of this you will be able to say what makes a rocket high power instead of a model rocket, and point to which of the two rockets on the table is which.
+What is high power rocketry? By the end of this you will be able to say what makes a rocket high power instead of a model rocket, and point to which of the two rockets on the table is which.
 
 **02** `voice/02.wav`
 
@@ -14,7 +14,7 @@ Two rockets on the table. The Alpha III you are gluing right now, and a finished
 
 **03** `voice/03.wav`
 
-Here are the lines. A rocket is high power if any one of these is true. The motors together have more than one hundred and sixty Newton-seconds of total impulse. Total impulse is a motor's whole push added up, and Newton-seconds is its unit. Segment six explains both. Any one motor averages more than eighty Newtons of thrust. The propellant weighs more than four point four ounces, one hundred and twenty-five grams. Or the rocket weighs more than three point three pounds, fifteen hundred grams at liftoff. Cross any one line and you are high power.
+Here are the lines. A rocket is high power if any one of these is true. The motors together have more than one hundred and sixty Newton-seconds of total impulse. Total impulse is a motor's whole push added up, and Newton-seconds is its unit. The segment on how a motor is measured explains both. Any one motor averages more than eighty Newtons of thrust. The propellant weighs more than four point four ounces, one hundred and twenty-five grams. Or the rocket weighs more than three point three pounds, fifteen hundred grams at liftoff. Cross any one line and you are high power.
 
 **04** `voice/04.wav`
 
@@ -28,7 +28,7 @@ Only the H. A G is the biggest motor you can fly and still be flying a model roc
 
 **07** `voice/07.wav`
 
-Why does the line matter? Above it, the FAA cares. The launch needs a waiver, permission to use the airspace. The field has to be bigger. The flyer has to be certified, and that is Segment two. And the rocket has to be built to take it. That is why the BR-1's fins go through the wall and sit on the motor mount, and why a threaded retainer holds the motor. The Alpha III's fins are one molded plastic piece that slides on, and a clip holds its motor.
+Why does the line matter? The flyer has to be certified, and that is the certification segment. The field has to be rated for high power. The FAA has its own rules, by propellant and weight, not the motor letter. Over four point four ounces, one hundred and twenty-five grams, of propellant, or over three point three pounds, fifteen hundred grams, and the FAA has to be told before the launch, with a waiver if the flight reaches controlled airspace. The BR-1 on an H stays under both, so it needs no waiver of its own. It is still high power to the club. And it has to be built to take the H: fins through the wall onto the motor mount, and a threaded motor retainer.
 
 **08** `voice/08.wav`
 

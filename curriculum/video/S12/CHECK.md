@@ -1,27 +1,25 @@
-# S12 — check before the video is shown
+# S11 check before showing
 
-- The exact G and H motors the program flies this season are present in OpenRocket's motor database (BR-1.ork holds G74W-6, H135W-8 and H115DM-8; the video names G74W-6 and H135W-8).
-- BR-1.ork mass overrides updated from a real weighed rocket, so the on-screen numbers are believable (video quotes 2 lb 5 oz loaded with the G, 2 lb 9 oz with the H, CG 26 in and 27 1/2 in, margins 2.47 and 1.99 calibers, apogees 705 ft and 2,150 ft).
-- The program's stability margin target for an L1 flight, if it differs from the general 1 to 2 calibers (the video says the H flight "deserves a second look ... sometimes a little nose weight" without naming a target).
-- CP is 33 3/4 in on every rocket slide: the design-window value at zero angle of attack and Mach 0.3, from the file's `design` block. The in-flight CP wanders 31 1/2 to 33 1/2 in with angle of attack and is not what the video quotes.
-- Empty-rocket CG "24 3/4 in" (24 3/4 in) and "about 2.6 calibers" are estimates: each configuration's motor removed from its on-pad CG, not a stored OpenRocket number; confirm against the design window with no configuration selected.
-- The "Margin through the burn" plot is the margin against the design CP (`marginCal`, 2.47 on the pad to 2.69 at burnout). OpenRocket's own stability plot uses the in-flight CP and will look lower early on (about 1.7 leaving the rail on the G); the shape and the burnout value are the same.
-- G run four numbers and delay: apogee 705 ft at 6.8 s, top speed 153 mph, 54 ft/s off the 72 in rail, ejection at 7.2 s, optimum delay 5.6 s, all from the stored run 3 events and summary; narration rounds to "about two hundred and ten", "sixty-nine" and "twelve".
-- H run four numbers and delay: 2,150 ft at 10.4 s, 339 mph, 68 ft/s off the 72 in rail at 3 degrees, ejection at 10.1 s, optimum delay 8.5 s, from stored run 1; they appear in the run slide's caption, not as a second chart, to stay within eleven cues.
-- Cue 9 (wind and rail angle) is the recorded ground-track sequence on the real file's H run 1 (72 in rail at 3°,
-  4 mph wind): lands about 440 ft out on the plot (the stored run says 400 ft; narration says "about four hundred");
-  then the same run edited to 20 mph wind, landing about 2,500 ft out ("nearly half a mile"); then the rail at 15°
-  into that wind, about 1,400 ft; then 30°, near the pad. Those three edited runs exist only in the recording,
-  read off the plot axes, not in BR-1.ork. "The most the safety code allows" is the NAR 20 mph wind limit and
-  30° is the NAR maximum launch angle.
-- "Spent casing balances at 25 1/4 in" uses the sim's burnout CG with the G (25 1/4 in, motor mass 1.7 oz); a real spent casing after ejection is a little lighter, so expect the balance point a touch further forward.
-- The H slide's note "Burnout: 2.3 calibers" is the H's `marginCal` at 2.1 s (2.9 oz of propellant gone, CG 26 1/2 in); narration does not read it aloud.
-- Departure: beat 6, the bench camera shot of the rocket balanced on a finger, is not filmed; a rocket slide with the live-motor and spent-casing CG markers stands in.
-- Cues 3, 7, 8, 9 and 10 are screen recordings from 2026-09-21 (see S11/RECORDING.md). Cue 3 opens on the
-  from-scratch example's New Configuration dialog (its readout says 2.85 cal) and cuts to the real file's G74W-6
-  readout (2.51 cal, CG 25.995 in); cue 7 likewise shows the H135 being picked with an 8 s delay on the example,
-  then the real file's H135W-8 readout (2.03 cal, CG 27.486 in). Cue 8 is the real file's sim table, cropped:
-  G74W-6 54.2 ft/s, 705 ft, 5.68 s, 226 ft/s, 6.82 s; H135W-8 67.8 ft/s, 2150 ft, 8.57 s, 498 ft/s, 10.4 s.
-- Cue 2 (empty rocket) and cue 6 (margin plot) stay drawn: the recording never shows the real file with
-  [No motors] selected or a stability-against-time plot. A 15-second pickup of either can replace them.
-- Cue 9's narration changed for the footage and is re-narrated at the next render; every other cue is cached.
+- OpenRocket version: menu names and dialog layouts change between releases, so the narration describes actions ("add a nose cone", "mark it as a motor mount", "override its mass") and never a menu path; confirm the actions read true in the version the room will use (the program's file is from OpenRocket 24.12).
+- BR-1 dimensions on slides 3 to 5 come from shared/br1-sim.json, extracted from files/BR-1.ork: nose 8 in ellipsoid, body 37 in by 3 1/4 in, motor mount 29 mm by 7 1/2 in, three fins root 3 1/2, tip 2 3/8, height 3 1/2, sweep 5/8, 1/8 in thick; re-check if BR-1.ork changes.
+- The segment file allows two 5-minute pieces; this is one 4.3-minute video covering beats 1 to 6, and the hands-on version happens in the live 2:00 OpenRocket walkthrough block.
+- Slides 3 and 4 place the CP marker near the nose by reasoning only (an ellipsoid nose's CP sits about half way along it, and a plain tube adds none); the shared data has no fins-off CP, so no number is shown or spoken for it.
+- Slides 4 and 5 place the CG marker at 24 3/4 in from the tip, the empty-rocket CG estimated in shared/br1-sim.json design.empty (a motor-removed estimate, not a value stored in the file); slide 5 shows it as "24 3/4 in" and no number is spoken for it.
+- Slide 5 and its narration give the fins-added CP as 33 3/4 in "in the program's file"; that is the finished file's design-window CP (design.cpM 33 3/4 in, zero angle of attack, Mach 0.3), not the exact value at the instant fins are added in a from-scratch build.
+- Slide 9's CG 26 in, CP 33 3/4 in and 2.2 calibers are the file's design-window values for the G74W-6 configuration (design.configurations: 26 in, 33 3/4 in, 2.47 cal, 2 lb 5 oz); the narration says the G74 is loaded.
+- Slide 9's note and narration say the H reads 1.8 calibers: the H135W-8 configuration in the same design window (CG 27 1/2 in, CP 33 3/4 in, 1.99 cal, 2 lb 9 oz); the H115DM configuration has no stored stability figure, so it is not quoted.
+- Nose cone 8.5 oz and body tube 12.5 oz are the values in shared/br1-sim.json massesKg; the narration presents them as mass overrides from a scale, so confirm they were measured, not calculated.
+- "OpenRocket draws the CP as a red dot and the CG as a blue dot" is the default view; confirm for the version used. The slides keep the series colours (CG blue accent, CP orange).
+- The `rocket` slide type always draws the rail-button stubs, and slide 4 shows the motor mount in orange before fins exist; the narration adds those parts in outline order, so the picture runs slightly ahead of the words on slides 3 and 4.
+- Departures from the outline, all to stay menu-agnostic: "File, New" became "start a new design and name it"; "right-click a part" became "put the real part on a scale, and override its mass"; "click OK" became "accept the dialog".
+- Nose cone shoulder in BR-1.ork is 78.7 mm diameter, 75 mm long, 2 mm wall; with the corrected 80.3 mm tube and 2.03 mm wall the tube's inside is 76.2 mm, so the shoulder in the file is oversize, and the recording shows 78.7 mm typed in. Fix it in BR-1.ork when convenient (it does not move the CP or CG enough to matter; nobody will read it off the clip).
+- Cues 2, 3, 4, 5, 8 and 9 are screen recordings from 2026-09-21 (see RECORDING.md). Cues 2 to 8 show the
+  from-scratch BR-1-Example, whose readout differs from the real file (empty 3.49 cal, 804 g, no rail buttons,
+  shoulder still 78.7 mm); no narration quotes those example numbers. Cue 9 shows the real BR-1.ork in inches:
+  G74W-6, 2.51 cal, CG 25.995 in, CP 33.913 in, which is what the narration says.
+- Cue 5's narration ends "add the rail buttons"; the recording never adds them (the fin dialog is on screen).
+- Cue 2's narration was changed for the footage: the parts table is gone, the empty tree and the metric
+  preferences are on screen instead. Cue 2 is re-narrated at the next render; every other cue is cached.
+- Clips are sped up or slowed to end with their narration ("stretch": cues 2 to 5, about 1.2 to 1.5 times)
+  or hold their last frame ("hold": cues 8 and 9). If a stretched clip looks rushed, trim its ranges in
+  assets/clips.json rather than slowing it.

@@ -1,9 +1,5 @@
-# S08 check before showing
+# S07 check before showing
 
-All items reviewed and resolved on 2026-09-21. Notes kept from that review:
+Reviewed 2026-09-21. Facts recorded: the program teaches 3:1 to 5:1 thrust to weight with 50 ft/s off the rail, and flies 6 ft rails to get there; the H motors are adjustable-delay, drilled to 8 s during launch-day prep against an OpenRocket optimum of 8.6 s (the stored run in the repo's BR-1.ork says 8.5 s; the re-run below will bring the file in line). The video says all of it.
 
-- Delays: the G74W-6 flies a 6 s delay (OpenRocket optimum 5.6 s); the H135W-8 is drilled to 8 s (optimum 8.5 s). Both from the file's 72 in rail runs at the field site.
-- The "2 s delay: 85 mph" line is illustrative (the G74W is sold in 6 and 8 s only); the "12 s delay" line marks a time, since the stored run is under the parachute by then.
-- Thrust curves are thrustcurve.org data: G74W peak about 91 N in the samples (95 N listed); G40W is a user-contributed file, accepted as drawn.
-- G-forces: 8 g on the G74, 13 g on the H135 (peak acceleration from the runs); Saturn V crews felt about 4 g.
-- No screenshots are used; the plotted curves and the stored flight stand in for the filmed screen captures.
+Rail: BR-1.ork now runs every simulation on the program's 72 in rail (updated 2026-09-21). Off that rail the G74W-6 leaves at 54 ft/s (16.5 m/s) and the H135W-8 at 68 ft/s (20.7 m/s), both over the 50 ft/s rule; the videos quote those. Nothing open.

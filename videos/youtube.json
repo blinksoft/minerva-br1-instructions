@@ -2,17 +2,6 @@
   "channel": "GA Wing AeroSpace and STEM Education, https://www.youtube.com/@GAWingAEO",
   "playlistId": "PLS84YDwO4-U4",
   "segments": {
-    "S06": {
-      "videoId": "9QVB42KrN1E",
-      "outputSha": "ed9470589fd1799fa661ecbacdb96256583ff722",
-      "inputSha": "4db349a5a8137f2911ccecbcd312324515f95fdf",
-      "title": "How a motor is measured \u2014 BR-1 Build Day, Segment 6",
-      "url": "https://youtu.be/9QVB42KrN1E",
-      "publishedAt": "2026-09-22T05:31:36+00:00",
-      "previousVideoId": "Dk7ehuakwdI",
-      "privacyStatus": "unlisted",
-      "thumbnail": true
-    },
     "S01": {
       "videoId": "EMf62x6zXu0",
       "outputSha": "0f9723600d788c9d062135e0d2d6c46f17874474",
@@ -57,7 +46,7 @@
       "thumbnail": true,
       "privacyStatus": "unlisted"
     },
-    "S05": {
+    "S06": {
       "videoId": "EEmBGtfG09Q",
       "outputSha": "e413cb8271bb96a8610f47be74a9d55025728fed",
       "inputSha": "237ccae539ddf27bb4c80c14ec89fbdf47041bda",
@@ -69,6 +58,17 @@
       "thumbnail": true
     },
     "S07": {
+      "videoId": "9QVB42KrN1E",
+      "outputSha": "ed9470589fd1799fa661ecbacdb96256583ff722",
+      "inputSha": "4db349a5a8137f2911ccecbcd312324515f95fdf",
+      "title": "How a motor is measured \u2014 BR-1 Build Day, Segment 6",
+      "url": "https://youtu.be/9QVB42KrN1E",
+      "publishedAt": "2026-09-22T05:31:36+00:00",
+      "previousVideoId": "Dk7ehuakwdI",
+      "privacyStatus": "unlisted",
+      "thumbnail": true
+    },
+    "S08": {
       "videoId": "PqqFyUP5h38",
       "outputSha": "28748396a85067bde057e5faf31090327cdeee30",
       "inputSha": "12176d989cced74e4a46442fd444522d644059c6",
@@ -79,7 +79,7 @@
       "privacyStatus": "unlisted",
       "thumbnail": true
     },
-    "S08": {
+    "S09": {
       "videoId": "Mxy-jpmyiDw",
       "outputSha": "72ee3837964efd3e28449bc3a20699ad35e2c2a3",
       "inputSha": "5440e87121760199fa973b7dbcd318e08260af9b",
@@ -90,7 +90,7 @@
       "privacyStatus": "unlisted",
       "thumbnail": true
     },
-    "S09": {
+    "S10": {
       "videoId": "y2lvHdUAGZU",
       "outputSha": "8ad66fb4fc253da6832c29c3c79eb868134c23bb",
       "inputSha": "c2e405f3e5f4884a589d86f58713c0fb01511303",
@@ -101,7 +101,7 @@
       "privacyStatus": "unlisted",
       "thumbnail": true
     },
-    "S10": {
+    "S11": {
       "videoId": "g4YKIFKWCks",
       "outputSha": "907210f3b3214344a553154535b4002f54b30695",
       "inputSha": "62dd37e2da127b7197aa7e09da6f8ad1d9a359d9",
@@ -112,7 +112,7 @@
       "privacyStatus": "unlisted",
       "thumbnail": true
     },
-    "S11": {
+    "S12": {
       "videoId": "yvPDSQfPAOY",
       "outputSha": "4f3d719619680f1ac9bf3d1dbdb0b6c8bda5af0e",
       "inputSha": "5bb806401887d31afbaf4e0f16331afc5046623e",
@@ -123,7 +123,7 @@
       "privacyStatus": "unlisted",
       "thumbnail": true
     },
-    "S12": {
+    "S13": {
       "videoId": "xcXoR-tNCdA",
       "outputSha": "042fb63e75f167d41cc8560b897115bbf6c8006d",
       "inputSha": "45cb39e7508e3b5ca23dd47f15ee1a73e5f718e8",

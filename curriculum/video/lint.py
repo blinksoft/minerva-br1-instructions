@@ -20,6 +20,8 @@ BANNED = {r"\bawesome\b": "hype word", r"\bsuper\b": "hype word", r"\bepic\b": "
           r"\bBR1\b": "BR-1", r"\bnewton[- ]seconds?\b": "Newton-seconds, capital N", r"\bmm\b": "spell out millimetres in narration",
           r"\bNs\b": "N·s on slides, Newton-seconds spoken"}
 NARRATOR_WE = re.compile(r"\b(we|we're|we've|let's|our|us)\b", re.I)
+# Narration never names another segment by number: titles survive a reorder, numbers re-buy audio.
+SEG_NUMBER = re.compile(r"\bSegments? (\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen)\b", re.I)
 
 
 def words(s):
@@ -33,7 +35,7 @@ def lint(seg):
     out = []
     E = lambda m: out.append(("E", m)); Wn = lambda m: out.append(("W", m))
     num = int(re.sub(r"\D", "", seg))
-    if meta.get("eyebrow") != f"Segment {num}  ·  While the epoxy cures":
+    if meta.get("eyebrow") != f"Segment {num}  ·  While the epoxy cures":   # slides keep the number; it is free to redraw
         E(f"eyebrow should be 'Segment {num}  ·  While the epoxy cures', is {meta.get('eyebrow')!r}")
     if meta.get("footer") != "Minerva BR-1 build day  ·  Georgia Wing High Power Rocketry":
         E("footer differs from S06")
@@ -52,8 +54,9 @@ def lint(seg):
     elif pauses[0] + 1 >= len(cues) or cues[pauses[0] + 1]["type"] != "answer":
         E("the cue after the pause is not an answer")
     first = cues[0].get("say", "")
-    if not re.match(rf"Segment {num_word(num)}[.,]", first, re.I) and not re.match(rf"Segment {num}[.,]", first):
-        Wn(f"title narration should open 'Segment {num_word(num)}.'; opens {first[:40]!r}")
+    title = re.sub(r"[?.!]+$", "", meta.get("title", "")).strip().lower()
+    if title and not first.lower().startswith(title):
+        Wn(f"title narration should open with the title, {meta.get('title')!r}; opens {first[:40]!r}")
     if "by the end of this you will be able to" not in first.lower():
         Wn("title narration should say 'By the end of this you will be able to ...'")
     last = cues[-1].get("say", "")
@@ -70,6 +73,8 @@ def lint(seg):
             continue
         if not say:
             E(f"cue {i} ({c['type']}): no narration")
+        if SEG_NUMBER.search(say):
+            E(f"cue {i}: narration names a segment by number ({SEG_NUMBER.search(say).group(0)!r}); refer to it by title")
         n = words(say); total += n
         if n > CUE_MAX:
             Wn(f"cue {i} ({c['type']}): {n} words, over {CUE_MAX}")

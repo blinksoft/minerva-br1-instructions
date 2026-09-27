@@ -6,7 +6,7 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment four. Center of pressure. By the end of this you will be able to explain what the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft.
+Center of pressure. By the end of this you will be able to explain what the center of pressure is, which parts of the rocket make it, and why fins at the back move it aft.
 
 **02** `voice/02.wav`
 
@@ -14,7 +14,7 @@ A rocket never flies perfectly straight. A gust tips it a little sideways. Now t
 
 **03** `voice/03.wav`
 
-Where the CP sits depends on shape, not weight. A big fin catches a lot of air, so a rocket with big fins has its CP back near the fins. A rocket with tiny fins has its CP further forward. Now notice what is not on that list. Slide a motor in. Add weight to the nose. The CP does not move at all. The outline has not changed, so the air pushes on it the same way. Weight moves the center of gravity, the CG you met in Segment three. Shape moves the CP.
+Where the CP sits depends on shape, not weight. A big fin catches a lot of air, so a rocket with big fins has its CP back near the fins. A rocket with tiny fins has its CP further forward. Now notice what is not on that list. Slide a motor in. Add weight to the nose. The CP does not move at all. The outline has not changed, so the air pushes on it the same way. Weight moves the center of gravity, the CG you met in Center of gravity. Shape moves the CP.
 
 **04** `voice/04.wav`
 
@@ -32,7 +32,7 @@ Here it is on the BR-1. Same nose, same tube, no fins. OpenRocket now puts the C
 
 **08** `voice/08.wav`
 
-OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part produces, nose, tube and fins, and where it acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws, and you will see it in Segment ten. Here is a brief example of the math. You can get the full details from the link in this video's description.
+OpenRocket uses the Barrowman equations, a set of formulas from 1966. They work out how much sideways force each part produces, nose, tube and fins, and where it acts. Then they add those up. One push at one point. That is the red dot OpenRocket draws, and you will see it in Why simulate. Here is a brief example of the math. You can get the full details from the link in this video's description.
 
 **09** `voice/09.wav`
 

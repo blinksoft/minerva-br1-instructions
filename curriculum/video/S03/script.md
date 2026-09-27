@@ -6,7 +6,7 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment three. Center of gravity. By the end of this you will be able to find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when you add weight.
+Center of gravity. By the end of this you will be able to find the center of gravity of any rocket with a finger or a loop of string, and predict which way it moves when you add weight.
 
 **02** `voice/02.wav`
 
@@ -24,7 +24,7 @@ Here is the BR-1 you are building, drawn to scale. Empty, with no motor in it, i
 
 **06** `voice/06.wav`
 
-Toward the tail. Weight goes in, and the CG moves toward it. The motor is heavy and it sits at the very back, so the balance point slides back to meet it. Now stretch that. The same rule runs in reverse. Add weight to the nose and the CG moves forward. The program did exactly that on this rocket. The bare nose cone weighs about five ounces, one hundred and fifty grams. The program adds weight inside it to bring it to eight and a half, and the CG moves forward. Why forward is the safe direction is Segment five. For now: the CG moves toward whatever you add.
+Toward the tail. Weight goes in, and the CG moves toward it. The motor is heavy and it sits at the very back, so the balance point slides back to meet it. Now stretch that. The same rule runs in reverse. Add weight to the nose and the CG moves forward. The program did exactly that on this rocket. The bare nose cone weighs about five ounces, one hundred and fifty grams. The program adds weight inside it to bring it to eight and a half, and the CG moves forward. Why forward is the safe direction is the segment on why a rocket points into the wind. For now: the CG moves toward whatever you add.
 
 **07** `voice/07.wav`
 
@@ -36,7 +36,7 @@ Why care? Because a rocket in the air spins around its CG. Where the CG sits com
 
 **09** `voice/09.wav`
 
-One last thing. Before your BR-1 ever flies, you will load the motor, balance it across a finger and mark its CG. Then you compare that mark with the number OpenRocket predicts. That is Segment twelve. And if the two disagree, Segment ten says which one to believe.
+One last thing. Before your BR-1 ever flies, you will load the motor, balance it across a finger and mark its CG. Then you compare that mark with the number OpenRocket predicts. That is Stability with and without a motor. And if the two disagree, Why simulate says which one to believe.
 
 **10** `voice/10.wav`
 

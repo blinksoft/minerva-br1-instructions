@@ -1,4 +1,4 @@
-# S11 — Building a rocket from scratch in OpenRocket: narration script
+# S11 — Why simulate, and what tools exist: narration script
 
 Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
 Leave a beat of silence at the start and end of each. Re-run render.py and the slides
@@ -6,38 +6,38 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment eleven. Building a rocket from scratch in OpenRocket. By the end of this you will be able to start a new OpenRocket design, add the parts of a simple rocket in the right order, then open the program's BR-1 file and understand what you are looking at.
+Why simulate, and what tools exist. By the end of this you will be able to say why the program simulates before it flies, name the two common tools, and recognize the CG and CP markers and the stability number in OpenRocket.
 
 **02** `voice/02.wav`
 
-Start a new design and name it. It is empty, and it is a tree. At the top is a stage. Every part hangs off the stage, or off another part. Fins hang off a tube. Rings sit inside a tube. One rule before the first part. Engineers build in metric, and so does OpenRocket, so every number you type in this segment is millimeters and grams. The inches are there so you can picture it. The order is nose to tail: nose cone, body tube, then everything that lives inside the tube.
+A flight is a test you only get to run once. A simulator flies your rocket as numbers on a screen, a hundred times before you fly it once for real. This is the BR-1 you are building right now, flown by OpenRocket on a G74W-6, the motor some of you will fly. It says stable. It says about seven hundred feet, two hundred and ten meters on the G, and about twenty-one hundred, six hundred and forty meters on the H. It says how fast it leaves the rail and which delay to buy. Stability with and without a motor reads those numbers off the screen.
 
 **03** `voice/03.wav`
 
-Add a nose cone: for the BR-1, an ellipsoid two hundred and three millimeters long, eight inches, with a shoulder that slides into the tube. Add a body tube. Set the diameter and length: eighty millimeters across, nine hundred and forty long. Three and an eighth inches by thirty-seven. The moment there is a shape for air to push on, OpenRocket puts a red dot on it, the CP from Segment four. For now it sits near the nose, because the nose is the only thing pushing air aside.
+There are two common tools. OpenRocket is free and open source, so anyone can read and improve the code. It runs on Windows, Mac and Linux. RockSim, from Apogee Components, is the paid alternative, with a longer history and some extra features. Both answer the same questions. Is it stable, how high, how fast, which delay. The program uses OpenRocket and gives you its BR-1 file, so you never start from a blank screen.
 
 **04** `voice/04.wav`
 
-Now the inside. Select the body tube, so the next part hangs off it. Add an inner tube sized for the motor, and mark it as a motor mount. That is the tube you built this morning. Add two centering rings to hold it, one near the aft end and one six inches up, then a parachute and a shock cord. The blue dot, the CG, moves as each part goes in, toward whatever you added.
+Open the file. This is the BR-1 in OpenRocket, as built, with an H115 loaded. OpenRocket draws two dots on it. The blue dot is the CG, the center of gravity, the balance point: twenty-seven and a half inches, six hundred and ninety-eight millimeters from the nose tip. The red dot is the CP, the center of pressure, where the push of the air adds up: thirty-three and three quarter inches, eight hundred and fifty-eight millimeters. The number in the top corner is the stability margin, the gap between them in calibers, body widths. With the H in, two point zero. Switch the flight configuration to the G74 and it reads two and a half. Center of gravity, center of pressure and stability margin, computed in a blink.
 
 **05** `voice/05.wav`
 
-Add a fin set to the body tube: three trapezoidal fins. Ninety millimeters along the root, three and a half inches. Sixty at the tip, ninety tall, with a fifteen millimeter sweep. Those are the BR-1's real fins, the ones you are filleting right now. Accept the dialog, and the red dot jumps toward the tail. In the program's file it lands at thirty-three and three quarter inches, eighty-six centimeters from the nose tip. Last, add the rail buttons. They add drag and mass, so they belong in the file.
+Where do those dots come from. From the parts list. Every part in the kit is a line in this tree. Nose cone, body tube, motor mount, centering rings, fins, parachute, shock cord, rail buttons. Every part has a shape and a mass.
 
-**06 — pause card, no narration.** The card reads: _I added the fins and the red dot jumped toward the tail. Why the red one and not the blue one?_
+**06** `voice/06.wav`
 
-**07** `voice/07.wav`
+Here is the tree, with the masses the file carries. Nose cone, eight and a half ounces, two hundred and forty grams. Body tube, twelve and a half, three hundred and fifty-four grams. Motor mount, about one. The rings, fins and parachute have no number typed in. OpenRocket weighs them from their shape and material. Whole rocket, about two pounds two ounces, nine hundred and fifty-eight grams without a motor. Get the masses right and the CG is right. Get the shapes right and the CP is right.
 
-Area. Fins are a lot of area and very little mass. Area moves the CP, the red dot, because air pushes on area. Mass moves the CG, the blue dot, and three thin plywood fins barely move it. Now stretch that. Every part does one of two jobs. It gives the air something to push on, or it adds mass. Fins are almost all the first. A motor is almost all the second.
+**07 — pause card, no narration.** The card reads: _The sim says the CG is here. My real rocket balances two inches further back. Which do I believe, and what do I fix?_
 
 **08** `voice/08.wav`
 
-Now the step most people skip. OpenRocket works out each part's mass from its material and size. That is a guess. So put the real part on a scale, and override its mass with what the scale says. The program's file does exactly this. The nose cone is set to two hundred and forty grams, eight and a half ounces. The body tube to three hundred and fifty-four, twelve and a half ounces. Those came from a scale, not a formula. Do this and the blue dot stops lying.
+Believe the rocket. A scale and a string do not guess. Fix the masses in the sim, part by part, until its CG matches the real one. Now stretch that. Two inches further back means the real rocket is heavier toward the tail than the file thinks. Look for what the file is missing. Epoxy fillets, paint, the hydro-dip on the nose cone. Put those masses in where they really sit. The CG moves back toward the CP, the margin shrinks, and now the number on the screen tells the truth.
 
 **09** `voice/09.wav`
 
-Now open the program's file, BR-1.ork, next to yours. Same tree, same order, every number tuned to the kit on your table. With the G74 some of you fly loaded, the CG sits at twenty-six inches, sixty-six centimeters and the CP at thirty-three and three quarters. That gap is two and a half calibers, the stability margin from Segment five. Your from-scratch build teaches you what the file means. The program's file is what you fly. What the two dots do when the motor comes out is the next segment.
+One last thing. Trust, but weigh. The sim is only as good as what you typed in. After the build you will weigh your rocket and balance it on a finger, as in Center of gravity. Then you correct the file until it agrees. That is Stability with and without a motor, and only then do the numbers mean something. Before that, Building a rocket from scratch in OpenRocket builds this same tree from a blank screen.
 
 **10** `voice/10.wav`
 
-The one thing to remember. In OpenRocket a rocket is a tree of parts. Area moves the CP, mass moves the CG, and a scale beats a guess.
+The one thing to remember. Simulate before you fly. And the sim is only as true as what you typed in.

@@ -1,4 +1,4 @@
-# S07 — Reading the motor code: narration script
+# S07 — How a motor is measured: narration script
 
 Record one file per numbered cue, as `voice/NN.wav` (any sample rate, mono is fine).
 Leave a beat of silence at the start and end of each. Re-run render.py and the slides
@@ -6,34 +6,38 @@ re-time themselves to your voice.
 
 **01** `voice/01.wav`
 
-Segment seven. Reading the motor code. By the end of this you will be able to decode a motor designation like G74W-6 or H128W-14, and say why average thrust, not just the letter, decides whether a motor is safe for a given rocket.
+How a rocket motor is measured. By the end of this you will be able to say what a Newton-second is in plain words, and read the motor letter ladder from A all the way to O.
 
 **02** `voice/02.wav`
 
-Here is the motor some of you will fly in the BR-1 you are building right now. G74W-6. Four parts. The letter, G, is the total impulse class from the last segment. The size of the box. The number, seventy-four, is the average thrust in Newtons. How hard it pushes while it burns. The W is the propellant type, the manufacturer's code for the fuel recipe. AeroTech calls this one White Lightning. The number after the dash, six, is the delay. Six seconds between burnout and the ejection charge that pushes the parachute out.
+Start with the unit. A Newton is a push. Hold an apple in your hand. The Earth is pulling it down with a force of about one Newton. That is all a Newton is: roughly the weight of an apple. A rocket motor pushes with tens or hundreds of Newtons. The motor in the Alpha III you built this morning pushes with about eight. The G motor in your BR-1 pushes with about seventy-four.
 
 **03** `voice/03.wav`
 
-Read a few more. A8-3. A class, eight Newtons average, three second delay. That is the motor in the Alpha III you built this morning. G74W-6, the BR-1's everyday motor. H128W-14. An H, one hundred and twenty-eight Newtons average, fourteen second delay. H115DM-14. Same idea. An H, one hundred and fifteen Newtons, fourteen seconds. Only the propellant code differs. DM is Dark Matter, another AeroTech recipe. Some of you will certify on an H like these. Try reading the last two out loud.
+Now the second half. A shove that lasts a tenth of a second and a gentle lean that lasts ten seconds can move a cart the same distance. What matters is the push multiplied by how long it lasts. Multiply Newtons by seconds and you get Newton-seconds. That number is called total impulse, and on a thrust curve it is the area under the line. These are two real motors. The blue one is the G74 you will fly: seventy-four Newtons average, done in just over a second. The orange one is a G12: eleven Newtons average, but it burns for almost thirteen seconds. Both are G motors. They would fly the same rocket very differently.
 
 **04** `voice/04.wav`
 
-Now, why the middle number matters most. A rocket has to leave the rail fast enough for the fins to work, because fins only steer once air is moving past them. Two rules of thumb. Average thrust three to five times the rocket's weight, and about fifty feet per second, fifteen meters per second, off the rail. If the rail speed comes up short, a longer rail buys it, which is why the program flies six foot rails. Look at a G40 next to a G74. Same letter. The G40 even has more total push, ninety-seven Newton-seconds against eighty-three. But it pushes half as hard. On a heavy rocket it may crawl off the rail and go sideways.
+Motors are sorted by total impulse into letters, and each letter is double the one before. An A motor is up to two and a half Newton-seconds. A B is five. A C is ten. Keep doubling, all the way up to G at one hundred and sixty. Everything up to G is a model rocket motor. A G is the biggest motor you can fly and still be flying a model rocket.
 
-**05 — pause card, no narration.** The card reads: _Two parts. What does H115-14 mean? And this rocket weighs about 2 lb 5 oz (1,045 g) loaded, so about 10 Newtons of weight: is a G40 enough? Is a G74?_
+**05** `voice/05.wav`
 
-**06** `voice/06.wav`
+Above G is high power. H is three hundred and twenty. I is six hundred and forty. Keep doubling, all the way to O, at about forty thousand Newton-seconds. That is more than sixteen thousand times the A8 that the Alpha III flies on. Same rule the whole way up. Every letter doubles.
 
-H class, one hundred and fifteen Newtons average, fourteen second delay. Now the weight. Your BR-1 with no motor is two pounds two ounces, nine hundred and fifty-eight grams. Add a G74, three ounces, and it is about two pounds five, about a thousand and fifty grams. That weighs about ten Newtons. Three to one wants thirty-one, five to one wants fifty-one. The G40 at forty-one is four to one, in the gray zone. The G74 at seventy-four is seven to one, with room to spare. Now stretch that. With an H135 loaded, the rocket is about two pounds nine ounces, one thousand one hundred and seventy grams, eleven and a half Newtons. Five to one wants fifty-eight. An H115 gives ten to one. Plenty.
+**06 — pause card, no narration.** The card reads: _An F motor and a G motor: how many times more total push does the G have, at most?_
 
 **07** `voice/07.wav`
 
-The last number is the delay. After burnout the rocket keeps climbing, and the delay is how long the motor waits before it fires the ejection charge. The G74W is sold in six and eight second delays. The program's H motors have an adjustable delay. On launch day, during prep, it is drilled to eight seconds, the closest you can get to the eight point six OpenRocket recommends. A motor marked P is plugged. No ejection at all, because that flyer uses electronics. Which delay is right, and what happens when it is wrong, is the next segment.
+Two. At the top of each range, a G has twice the total impulse of an F, because every step on the ladder is a doubling. Now stretch that. An A next to a G is six steps. Two, four, eight, sixteen, thirty-two, sixty-four. Sixty-four times the total push.
 
 **08** `voice/08.wav`
 
-One last thing. Every number on that label was measured. Before a motor can be sold for this, NAR or Tripoli fires it on a test stand, records the thrust curve, and publishes the results. The A8 and the G74W were certified by NAR. The H motors, by Tripoli. That is why the RSO can trust the label on the motor going into this mount, and why you fly only certified motors. Never homemade, never altered.
+Here is what that looks like. One square for the A8 in the Alpha III you built this morning. Sixty-four squares for the G74 in the BR-1 you are building right now. And the H that some of you will certify on is double that again. One hundred and twenty-eight of these squares.
 
 **09** `voice/09.wav`
 
-The one thing to remember. The letter is the size of the box. The number is the push. Read the whole code before you fly.
+One last thing. The letter tells you the size of the box, not the whole story. You just saw two G motors. The G74 pushes hard for about a second. The G12 pushes gently for almost thirteen. Same letter, very different flight. The rest of the code printed on the motor tells you which one you have, and that is the next segment.
+
+**10** `voice/10.wav`
+
+The one thing to remember. Total impulse is how hard, times how long, in Newton-seconds. And every letter on the ladder doubles the one before.

@@ -1,7 +1,7 @@
 # S3 — Center of gravity
 
 ## Slot
-Step 11 wait (forward ring curing), 5 minutes. Fallback: step 17 wait.
+Step 11 wait (forward ring curing), 5 minutes. Fallback: step 18 wait.
 
 ## Objective
 The cadet can find the center of gravity of any rocket with a finger or a loop of string and predict which
@@ -24,7 +24,7 @@ press play. The video gives the answer. That is the whole job; no props, no setu
    straight or tumbles. That other point is next (S4). For now: CG is real, you can find it in ten
    seconds, and it changes every time you change the rocket.
 5. **On your BR-1.** Before it ever flies, you will find its CG with a motor loaded and compare it to the
-   number OpenRocket predicts (S12). If they disagree, one of them is wrong and it is usually the sim's
+   number OpenRocket predicts (S13). If they disagree, one of them is wrong and it is usually the sim's
    guess at the mass.
 
 ## Pause point

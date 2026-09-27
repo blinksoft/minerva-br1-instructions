@@ -7,12 +7,12 @@ program's Minerva BR-1 rocket. Owner: Tim Perry. Audience 12 to 99, written for 
   (`deploy.yml` runs on push to main).
 - `files/BR-1.ork` — the program's OpenRocket design. Every stability or flight number in the
   guide and the videos comes from this file via `curriculum/video/shared/extract_ork.py`.
-- `curriculum/` — twelve "While the epoxy cures" segments, one outline per segment in
+- `curriculum/` — thirteen "While the epoxy cures" segments, one outline per segment in
   `segments/`, the run sheet, and `production.md` (which video ID is live).
 - `curriculum/video/` — the video pipeline. Read its README before touching it.
 - `videos/` — rendered MP4s, captions, thumbnails, `youtube.json` (live IDs). Committed.
-- `recordings/` — raw OBS screen recordings, git-ignored. The cut clips in `S11/assets/` and
-  `S12/assets/` are what the repo keeps; `shared/cut_clips.py` re-cuts them from `clips.json`.
+- `recordings/` — raw OBS screen recordings, git-ignored. The cut clips in `S12/assets/` and
+  `S13/assets/` are what the repo keeps; `shared/cut_clips.py` re-cuts them from `clips.json`.
 
 ## Working rules
 
@@ -33,7 +33,7 @@ before a render; the workflow runs it too). The rules people have had to restate
 - No swing test, ever, even as an aside. It has damaged too many rockets. Stability is checked in
   OpenRocket and by balancing on a finger against the sim's CG.
 - Units: imperial first with metric in parentheses (inches to the nearest 1/8, lb and oz, cm or mm,
-  never decimal metres). S11 alone is metric-first because OpenRocket parts are built in mm and g.
+  never decimal metres). S12 alone is metric-first because OpenRocket parts are built in mm and g.
 - The G74 and the H are a roughly even split of flyers. Say "some of you", never "most of you".
 - The program flies only AeroTech DMS 29 mm motors: G74W and whichever H is on hand. No reloads.
 - NAR is spoken as a word (rhymes with bar), set in `SAY_FIXES` in `render.py`.

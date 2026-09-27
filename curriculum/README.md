@@ -21,15 +21,15 @@ candidates fly it on an H115 to H189 depending on what is available. Same airfra
 | 8:30 | Alpha III low-power build | glue waits | S1 |
 | 9:30 | Parts and tools, safety, rail buttons (steps 2–3) | superglue, about 1 min | – |
 | 9:45 | Motor mount, steps 4–11 | 5 min after step 9, 5 min after step 11 | S2 (step 10), S3 (step 12) |
-| 10:05 | Step 13, motor mount cure | 20–30 min | S4, S5 (steps 14–15) |
-| 10:35 | Eyebolt, step 17 epoxy on the back of the rings | 5–10 min | S6 (step 18) |
-| 10:50 | Kevlar, install steps 22–25, 15-minute epoxy | sets before lunch | S7 (step 27) if time allows |
+| 10:05 | Step 13, motor mount cure | 20–30 min | S4, S5, S6 (steps 14–16) |
+| 10:35 | Eyebolt, step 18 epoxy on the back of the rings | 5–10 min | S7 (step 19) |
+| 10:50 | Kevlar, install steps 23–26, 15-minute epoxy | sets before lunch | S8 (step 28) if time allows |
 | 11:30 or 12:00 | Lunch, hydro-dip nose cones; the install cures fully meanwhile | 30 min | – |
-| after lunch | Step 26, aft joint | 5 min | S7 (step 27) if not done, else buffer |
-| +10 min | Fins, step 29, one at a time | 3 × 5 min | S8, S9, S10 (steps 30–32) |
-| +40 min | Fillets, step 33, three rounds | 3 × 5 min | S11, S12 (steps 34–35); round three is a spare |
+| after lunch | Step 27, aft joint | 5 min | S8 (step 28) if not done, else buffer |
+| +10 min | Fins, step 30, one at a time | 3 × 5 min | S9, S10, S11 (steps 31–33) |
+| +40 min | Fillets, step 34, three rounds | 3 × 5 min | S12, S13 (steps 35–36); round three is a spare |
 | +75 min | Recovery harness, decorate | none | open Q&A |
-| about 2:00 | OpenRocket walkthrough, homework, slack | | live version of S10–S12 |
+| about 2:00 | OpenRocket walkthrough, homework, slack | | live version of S11–S13 |
 | 3:30 | Done | | |
 
 The morning goal is the motor mount built and installed, then lunch. Lunch lands at 11:30 or 12:00
@@ -39,8 +39,8 @@ Times are targets, not a schedule. The last hour or so is deliberately loose bec
 fallback slot so an instructor can shuffle the order without losing anything.
 
 Teaching time adds up to about 50 minutes. The afternoon has exactly seven 5-minute waits (aft joint,
-three fins, three fillet rounds) and segments S7 to S12 need six, so the third fillet round is a spare,
-and so is the aft-joint wait if S7 happens before lunch.
+three fins, three fillet rounds) and segments S8 to S13 need six, so the third fillet round is a spare,
+and so is the aft-joint wait if S8 happens before lunch.
 
 ## Segments
 
@@ -50,17 +50,18 @@ and so is the aft-joint wait if S7 happens before lunch.
 | S2 | segments/02-nar-tripoli-certification.md | NAR, Tripoli and certification | Step 9 wait | 10 |
 | S3 | segments/03-center-of-gravity.md | Center of gravity | Step 11 wait | 12 |
 | S4 | segments/04-center-of-pressure.md | Center of pressure | Step 13 cure | 14 |
-| S5 | segments/05-stability-margin.md | Stability margin | Step 13 cure | 15 |
-| S6 | segments/06-how-a-motor-is-measured.md | How a motor is measured | Step 17 wait | 18 |
-| S7 | segments/07-reading-the-motor-code.md | Reading the motor code | Before lunch while the install sets, or the step 26 wait | 27 |
-| S8 | segments/08-thrust-curves-and-delay.md | Thrust curves and the delay | First fin wait (step 29) | 30 |
-| S9 | segments/09-motor-sizes-types-safety.md | Motor sizes, types and safety | Second fin wait (step 29) | 31 |
-| S10 | segments/10-why-simulate.md | Why simulate, and what tools exist | Third fin wait (step 29) | 32 |
-| S11 | segments/11-openrocket-from-scratch.md | Building a rocket from scratch in OpenRocket | Fillet round one (step 33) | 34 |
-| S12 | segments/12-stability-with-and-without-motor.md | Stability with and without a motor | Fillet round two (step 33) | 35 |
+| S5 | segments/05-why-a-rocket-points-into-the-wind.md | Why a rocket points into the wind | Step 13 cure | 15 |
+| S6 | segments/06-stability-margin.md | Stability margin | Step 13 cure | 16 |
+| S7 | segments/07-how-a-motor-is-measured.md | How a motor is measured | Step 18 wait | 19 |
+| S8 | segments/08-reading-the-motor-code.md | Reading the motor code | Before lunch while the install sets, or the step 27 wait | 28 |
+| S9 | segments/09-thrust-curves-and-delay.md | Thrust curves and the delay | First fin wait (step 30) | 31 |
+| S10 | segments/10-motor-sizes-types-safety.md | Motor sizes, types and safety | Second fin wait (step 30) | 32 |
+| S11 | segments/11-why-simulate.md | Why simulate, and what tools exist | Third fin wait (step 30) | 33 |
+| S12 | segments/12-openrocket-from-scratch.md | Building a rocket from scratch in OpenRocket | Fillet round one (step 34) | 35 |
+| S13 | segments/13-stability-with-and-without-motor.md | Stability with and without a motor | Fillet round two (step 34) | 36 |
 
-The four topic areas map to segments like this: high power and NAR (S1, S2), stability (S3–S5), motors
-(S6–S9), OpenRocket (S10–S12).
+The four topic areas map to segments like this: high power and NAR (S1, S2), stability (S3–S6), motors
+(S7–S10), OpenRocket (S11–S13).
 
 ## The rule: the video carries the lesson
 
@@ -82,7 +83,7 @@ line and link to the video):
    script; the person recording should talk it in their own voice.
 5. **Pause point** — the one question built into the video as a pause card, where it sits in the
    script, and the answer the video gives on resume. The instructor pauses, takes answers, presses play.
-6. **Shot list** — one line: the video is slides, a pause card and an answer card (S11 and S12 add
+6. **Shot list** — one line: the video is slides, a pause card and an answer card (S12 and S13 add
    screen recordings of OpenRocket).
 7. **Check before showing** — facts to verify against the current NAR / Tripoli / FAA rules before the
    day, because these change. Nothing in a segment should be shown until it is checked.
@@ -93,7 +94,7 @@ line and link to the video):
 If a cure runs long and every planned segment is used up:
 
 - **Hydro-dip mass check.** Weigh a nose cone before and after dipping. Ask where that mass sits and what
-  it does to CG (S3) and to the sim (S12).
+  it does to CG (S3) and to the sim (S13).
 - **Parachute sizing rule of thumb.** Aim for a descent of roughly 15 to 20 feet per second. Too slow and
   the rocket drifts off the field; too fast and fins break.
 - **Launch-day checklist.** Motor retainer tight, igniter in last, rail buttons slide freely, shock cord
@@ -109,4 +110,4 @@ what to do at a pause card, and what to skip if the day runs late.
 See production.md for the recording format, the pause and answer cards, hosting, and how the guide page
 will embed the videos later. video/README.md covers the generated videos: slides, placeholder narration,
 pause card and captions are built from one cue file per segment, and a recorded voice drops in afterward
-without re-editing. All twelve segments are built this way; STYLE.md in that folder is the voice contract and REVIEW.md the walk-through sheet.
+without re-editing. All thirteen segments are built this way; STYLE.md in that folder is the voice contract and REVIEW.md the walk-through sheet.
