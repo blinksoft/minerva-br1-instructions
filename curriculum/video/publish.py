@@ -6,6 +6,7 @@
     python3 publish.py all           publish every rendered segment whose render changed
     python3 publish.py --status      show what is live
     python3 publish.py --thumbnails  set the thumbnail on every live video still missing one (--force: all)
+    python3 publish.py --prune       drop playlist rows left behind by deleted videos
 
 A segment is published when the rendered output (videos/SNN.mp4 + .srt) differs from what is live,
 by content hash recorded in videos/youtube.json. Re-rendering is decided separately by render.py from
@@ -269,6 +270,27 @@ def add_to_playlist(yt, playlist_id, seg, video_id, st):
         "resourceId": {"kind": "youtube#video", "videoId": video_id}}}).execute()
 
 
+def playlist_rows(yt, playlist_id):
+    items, page = [], None
+    while True:
+        r = yt.playlistItems().list(part="snippet", playlistId=playlist_id, maxResults=50, pageToken=page).execute()
+        items += r["items"]; page = r.get("nextPageToken")
+        if not page:
+            return items
+
+
+def prune_playlist(yt, playlist_id, st):
+    """Drop playlist rows whose video is no longer one of ours. Deleting a video leaves its row behind
+    as "Deleted video", so this runs after every publish (and by hand: publish.py --prune)."""
+    live = {v["videoId"] for v in st["segments"].values() if v.get("videoId")}
+    gone = 0
+    for it in playlist_rows(yt, playlist_id):
+        if it["snippet"]["resourceId"].get("videoId") not in live:
+            yt.playlistItems().delete(id=it["id"]).execute(); gone += 1
+    if gone:
+        print(f"playlist: removed {gone} row(s) for deleted videos")
+
+
 def update_production_table(seg, video_id):
     if not os.path.exists(PRODUCTION):
         return
@@ -316,8 +338,11 @@ def publish(segs):
             add_to_playlist(yt, playlist_id, seg, vid, st)
             if old_id:
                 try:
+                    for it in playlist_rows(yt, playlist_id):
+                        if it["snippet"]["resourceId"].get("videoId") == old_id:
+                            yt.playlistItems().delete(id=it["id"]).execute()
                     yt.videos().delete(id=old_id).execute()
-                    print(f"  {seg}: deleted superseded video {old_id}")
+                    print(f"  {seg}: deleted superseded video {old_id} and its playlist row")
                 except HttpError as e:
                     if is_quota(e):
                         raise
@@ -334,6 +359,7 @@ def publish(segs):
                 return 0
             print(f"{seg}: YouTube error {e.resp.status}: {e.content[:300]}")
             return 1
+    prune_playlist(yt, playlist_id, st)
     retry_thumbnails(yt, st)
     return 0
 
@@ -384,6 +410,8 @@ if __name__ == "__main__":
         auth(r); sys.exit(0)
     if "--status" in sys.argv:
         status(); sys.exit(0)
+    if "--prune" in sys.argv:
+        yt = service(); st = load_state(); prune_playlist(yt, ensure_playlist(yt, st), st); sys.exit(0)
     if "--thumbnails" in sys.argv:
         refresh_thumbnails(force="--force" in sys.argv); sys.exit(0)
     if not args:
