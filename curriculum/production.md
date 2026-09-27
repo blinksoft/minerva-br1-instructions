@@ -76,14 +76,14 @@ Friendly") on even-numbered ones. Say in each video description that the narrati
 | S3 | Center of gravity | Josh | 29GpQTEA2mQ | videos/S03.mp4 | published 2026-09-27 |
 | S4 | Center of pressure | Nichalia | 1lmt_ceUCqQ | videos/S04.mp4 | published 2026-09-27 |
 | S5 | Why a rocket points into the wind | Josh | AKugmx6ZpGc | videos/S05.mp4 | published 2026-09-27 |
-| S6 | Stability margin | Josh | YrSVFfrJGYU | videos/S06.mp4 | published 2026-09-27 |
-| S7 | How a motor is measured | Nichalia | -QnBTYbHej0 | videos/S07.mp4 | published 2026-09-27 |
-| S8 | Reading the motor code | Josh | rJpPr1nUSC4 | videos/S08.mp4 | published 2026-09-27 |
-| S9 | Thrust curves and the delay | Nichalia | S2Wtf3w8ccM | videos/S09.mp4 | published 2026-09-27 |
-| S10 | Motor sizes, types and safety | Josh | Sev-mXSvD_w | videos/S10.mp4 | published 2026-09-27 |
-| S11 | Why simulate, and what tools exist | Nichalia | L0SdsCrbslA | videos/S11.mp4 | published 2026-09-27 |
-| S12 | Building a rocket from scratch in OpenRocket | Josh | G9YAQl_mJ4U | videos/S12.mp4 | published 2026-09-27 |
-| S13 | Stability with and without a motor | Nichalia | q9jO0sII2Jk | videos/S13.mp4 | published 2026-09-27 |
+| S6 | Stability margin | Nichalia | YrSVFfrJGYU | videos/S06.mp4 | published 2026-09-27 |
+| S7 | How a motor is measured | Josh | -QnBTYbHej0 | videos/S07.mp4 | published 2026-09-27 |
+| S8 | Reading the motor code | Nichalia | rJpPr1nUSC4 | videos/S08.mp4 | published 2026-09-27 |
+| S9 | Thrust curves and the delay | Josh | S2Wtf3w8ccM | videos/S09.mp4 | published 2026-09-27 |
+| S10 | Motor sizes, types and safety | Nichalia | Sev-mXSvD_w | videos/S10.mp4 | published 2026-09-27 |
+| S11 | Why simulate, and what tools exist | Josh | L0SdsCrbslA | videos/S11.mp4 | published 2026-09-27 |
+| S12 | Building a rocket from scratch in OpenRocket | Nichalia | G9YAQl_mJ4U | videos/S12.mp4 | published 2026-09-27 |
+| S13 | Stability with and without a motor | Josh | q9jO0sII2Jk | videos/S13.mp4 | published 2026-09-27 |
 
 ## How the guide page will show them (not built yet)
 
